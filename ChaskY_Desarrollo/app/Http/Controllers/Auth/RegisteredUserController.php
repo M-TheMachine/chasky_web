@@ -47,29 +47,11 @@ class RegisteredUserController extends Controller
 
             Log::info('Usuario creado:', ['user_id' => $user->id, 'name' => $user->name]);
 
-            // Crear un seller asociado al usuario
-            $seller = new Seller();
-            $seller->name = $request->name;
-            $seller->position = 'Vendedor';
-            $seller->email = $request->email;
-            $seller->phone = '';
-            $seller->slug = Str::slug($request->name);
-            $seller->user_id = $user->id;
-            $seller->company = '';
-            $seller->address = '';
-            $seller->website = '';
-            $seller->whatsapp = '';
-            $seller->linkedin = '';
-            $seller->bio = '';
-            $seller->save();
-
-            Log::info('Seller creado:', ['seller_id' => $seller->id, 'user_id' => $user->id]);
-
             event(new Registered($user));
 
             Auth::login($user);
 
-            return redirect(route('dashboard', absolute: false));
+            return redirect(route('sellers.index', absolute: false));
         } catch (\Exception $e) {
             Log::error('Error durante el registro:', ['error' => $e->getMessage()]);
             throw $e;

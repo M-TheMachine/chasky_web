@@ -14,46 +14,18 @@ class DashboardController extends Controller
         $user = auth()->user();
         Log::info('Usuario actual:', ['user_id' => $user->id, 'name' => $user->name]);
 
-        $seller = $user->seller;
-        Log::info('Seller encontrado:', [
-            'seller' => $seller ? 'sí' : 'no',
-            'seller_data' => $seller ? $seller->toArray() : null
+        // Obtenemos los sellers del usuario
+        $sellers = $user->sellers;
+        Log::info('Sellers encontrados:', [
+            'count' => $sellers->count(),
+            'seller_data' => $sellers->toArray()
         ]);
 
-        // Si no existe el seller, lo creamos
-        if (!$seller) {
-            try {
-                $seller = new Seller();
-                $seller->name = $user->name;
-                $seller->position = 'Vendedor';
-                $seller->email = $user->email;
-                $seller->phone = '';
-                $seller->slug = Str::slug($user->name);
-                $seller->user_id = $user->id;
-                $seller->company = '';
-                $seller->address = '';
-                $seller->website = '';
-                $seller->whatsapp = '';
-                $seller->linkedin = '';
-                $seller->bio = '';
-                $seller->save();
-
-                Log::info('Seller creado exitosamente:', ['seller_id' => $seller->id]);
-
-                // Recargamos el seller
-                $seller = $user->seller()->fresh();
-                Log::info('Seller recargado:', ['seller' => $seller ? 'sí' : 'no']);
-            } catch (\Exception $e) {
-                Log::error('Error al crear seller:', ['error' => $e->getMessage()]);
-                return view('dashboard', ['seller' => null, 'error' => $e->getMessage()]);
-            }
-        }
-
         $data = [
-            'seller' => $seller,
+            'sellers' => $sellers,
             'debug_info' => [
-                'has_seller' => !is_null($seller),
-                'seller_attributes' => $seller ? $seller->toArray() : null,
+                'has_sellers' => $sellers->isNotEmpty(),
+                'sellers_count' => $sellers->count(),
                 'is_authenticated' => auth()->check(),
                 'user_id' => auth()->id(),
                 'template_used' => 'layouts.app',

@@ -35,6 +35,14 @@ return [
             'title' => 'Diseño UX/UI',
             'description' => 'Creamos interfaces de usuario intuitivas y atractivas que enamoran.',
         ],
+        'offshoring' => [
+            'title' => 'Offshoring',
+            'description' => 'Optimiza costos y accede a talento especializado manteniendo la máxima calidad.',
+        ],
+        'nearshoring' => [
+            'title' => 'Nearshoring',
+            'description' => 'Aprovecha las ventajas de la proximidad geográfica y cultural para tus proyectos.',
+        ],
         'view_all' => 'Ver todos los servicios',
     ],
     'portfolio' => [

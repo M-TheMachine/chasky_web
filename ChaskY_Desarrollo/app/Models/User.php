@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'google_id',
     ];
 
     /**
@@ -46,8 +47,8 @@ class User extends Authenticatable
         ];
     }
 
-    public function seller()
+    public function sellers()
     {
-        return $this->hasOne(\App\Models\Seller::class);
+        return $this->hasMany(\App\Models\Seller::class);
     }
 }

@@ -3,6 +3,8 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SellerController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Auth\GoogleController;
 use Illuminate\Support\Facades\Route;
 
 // Rutas principales
@@ -19,12 +21,14 @@ Route::get('/portafolio', function () {
 })->name('portafolio');
 
 Route::get('/nosotros', function () {
-    return view('nosotros');
-})->name('nosotros');
+    return view('about');
+})->name('about');
 
 Route::get('/contacto', function () {
     return view('contacto');
 })->name('contacto');
+
+Route::post('/contacto', [ContactController::class, 'store'])->name('contacto.store');
 
 Route::get('/dashboard', [DashboardController::class, 'index'])
     ->middleware(['auth', 'verified'])
@@ -49,5 +53,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 // Ruta pública para ver un vendedor
 Route::get('/v/{slug}', [SellerController::class, 'show'])->name('sellers.show');
+
+Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('google.login');
+Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback'])->name('google.callback');
 
 require __DIR__.'/auth.php';

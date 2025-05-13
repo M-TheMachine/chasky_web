@@ -26,7 +26,7 @@ class SellerController extends Controller
 
     public function index()
     {
-        $sellers = auth()->user()->seller()->get();
+        $sellers = auth()->user()->sellers;
         return view('sellers.index', compact('sellers'));
     }
 

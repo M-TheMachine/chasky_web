@@ -1,21 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="relative min-h-screen bg-gradient-to-br from-purple-700 to-pink-500 text-white flex items-center overflow-hidden">
-        <div class="absolute inset-0 bg-pattern opacity-10"></div>
-        <div class="container mx-auto px-4 py-32 relative">
+    <section class="relative min-h-screen bg-gradient-to-br from-[#701516] to-[#c40606] text-white flex items-center overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+        <div class="container mx-auto px-4 relative pt-32">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="text-left" data-aos="fade-right">
-                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
                         {{ __('home.hero.title') }}
                         <span class="typing-text"></span>
                     </h1>
-                    <p class="text-xl mb-8 text-gray-200">{{ __('home.hero.subtitle') }}</p>
+                    <p class="text-xl mb-8 text-white drop-shadow-md font-medium">{{ __('home.hero.subtitle') }}</p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="/servicios" class="bg-yellow-500 hover:bg-yellow-600 text-gray-800 font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                        <a href="/servicios" class="bg-[#f4bc21] hover:bg-[#f4bc21]/90 text-[#701516] font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
                             {{ __('home.hero.cta_button') }}
                         </a>
-                        <a href="#contact" class="border-2 border-white text-white hover:bg-white hover:text-purple-600 font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                        <a href="#contact" class="border-2 border-white text-white hover:bg-white hover:text-[#701516] font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
                             {{ __('home.hero.contact_button') }}
                         </a>
                     </div>
@@ -45,37 +45,37 @@
             <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">{{ __('home.services.title') }}</h2>
             <p class="text-gray-600 text-lg max-w-2xl mx-auto">{{ __('home.services.subtitle') }}</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8">
             <div class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up">
-                <div class="text-blue-600 mb-6 group-hover:scale-110 transition-transform duration-500">
+                <div class="text-[#701516] mb-6 group-hover:scale-110 transition-transform duration-500">
                     <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-4">{{ __('home.services.web_dev.title') }}</h3>
+                <h3 class="text-xl font-semibold text-[#701516] mb-4">{{ __('home.services.web_dev.title') }}</h3>
                 <p class="text-gray-600">{{ __('home.services.web_dev.description') }}</p>
             </div>
             <div class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
-                <div class="text-green-600 mb-6 group-hover:scale-110 transition-transform duration-500">
+                <div class="text-[#c40606] mb-6 group-hover:scale-110 transition-transform duration-500">
                     <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-4">{{ __('home.services.marketing.title') }}</h3>
+                <h3 class="text-xl font-semibold text-[#701516] mb-4">{{ __('home.services.marketing.title') }}</h3>
                 <p class="text-gray-600">{{ __('home.services.marketing.description') }}</p>
             </div>
             <div class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
-                <div class="text-purple-600 mb-6 group-hover:scale-110 transition-transform duration-500">
+                <div class="text-[#701516] mb-6 group-hover:scale-110 transition-transform duration-500">
                     <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-4">{{ __('home.services.mobile.title') }}</h3>
+                <h3 class="text-xl font-semibold text-[#701516] mb-4">{{ __('home.services.mobile.title') }}</h3>
                 <p class="text-gray-600">{{ __('home.services.mobile.description') }}</p>
             </div>
             <div class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
-                <div class="text-yellow-500 mb-6 group-hover:scale-110 transition-transform duration-500">
+                <div class="text-[#f4bc21] mb-6 group-hover:scale-110 transition-transform duration-500">
                     <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                     </svg>
@@ -83,9 +83,27 @@
                 <h3 class="text-xl font-semibold text-gray-800 mb-4">{{ __('home.services.ux.title') }}</h3>
                 <p class="text-gray-600">{{ __('home.services.ux.description') }}</p>
             </div>
+            <div class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
+                <div class="text-[#701516] mb-6 group-hover:scale-110 transition-transform duration-500">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-[#701516] mb-4">{{ __('home.services.offshoring.title') }}</h3>
+                <p class="text-gray-600">{{ __('home.services.offshoring.description') }}</p>
+            </div>
+            <div class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="500">
+                <div class="text-[#c40606] mb-6 group-hover:scale-110 transition-transform duration-500">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-[#701516] mb-4">{{ __('home.services.nearshoring.title') }}</h3>
+                <p class="text-gray-600">{{ __('home.services.nearshoring.description') }}</p>
+            </div>
         </div>
         <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="400">
-            <a href="/servicios" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center">
+            <a href="/servicios" class="bg-gradient-to-r from-[#701516] to-[#c40606] text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center">
                 {{ __('home.services.view_all') }}
                 <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -187,7 +205,7 @@
                         <div class="relative">
                             <svg class="absolute text-purple-200 w-16 h-16 -top-6 -left-6 opacity-20" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                        </svg>
+                            </svg>
                             <p class="text-gray-700 mb-6 relative z-10">"Gracias a Chasky, nuestra presencia en línea se fortaleció y logramos aumentar nuestras ventas significativamente. Un equipo verdaderamente profesional."</p>
                             <div class="flex text-yellow-400">
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -248,7 +266,7 @@
                         <div class="relative">
                             <svg class="absolute text-purple-200 w-16 h-16 -top-6 -left-6 opacity-20" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                        </svg>
+                            </svg>
                             <p class="text-gray-700 mb-6 relative z-10">"El trabajo de Chasky superó nuestras expectativas. Su profesionalismo y dedicación se reflejaron en los resultados obtenidos. La implementación fue impecable."</p>
                             <div class="flex text-yellow-400">
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -310,33 +328,45 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
                             <h3 class="font-semibold text-xl mb-4">Ubicación</h3>
-                            <p class="text-gray-300">Lima, Perú<br>San Isidro</p>
+                            <p class="text-gray-300">Calle Salamanca esq Calle Antezana<br>Edificio Chasky Piso 1<br>Cochabamba, Bolivia</p>
                         </div>
                         <div>
                             <h3 class="font-semibold text-xl mb-4">Contacto</h3>
                             <p class="text-gray-300">
-                                info@chasky.pe<br>
-                                +51 999 999 999
+                                chasky@chaskymkt.com<br>
+                                +591 77739802
                             </p>
                         </div>
                     </div>
                     <div class="mt-8">
                         <h3 class="font-semibold text-xl mb-4">Síguenos</h3>
                         <div class="flex space-x-4">
-                            <a href="#" class="text-white hover:text-yellow-400 transition duration-300">
+                            <!-- Facebook -->
+                            <a href="https://www.facebook.com/chaskyMyD" target="_blank" rel="noopener noreferrer" class="text-white hover:text-yellow-400 transition duration-300">
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M18.77,7.46H14.5v-1.9c0-.9.6-1.1,1-1.1h3V.5h-4.33C10.24.5,9.5,3.44,9.5,5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4Z"/>
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                                 </svg>
                             </a>
-                            <a href="#" class="text-white hover:text-yellow-400 transition duration-300">
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/chasky_mkt_software/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-yellow-400 transition duration-300">
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"/>
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                                 </svg>
                             </a>
-                            <a href="#" class="text-white hover:text-yellow-400 transition duration-300">
+                            <!-- TikTok -->
+                            <a href="https://www.tiktok.com/@chaskymkt?lang=es-419" target="_blank" rel="noopener noreferrer" class="text-white hover:text-yellow-400 transition duration-300">
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1Z"/>
                                 </svg>
+                            </a>
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/company/chasky-marketing-y-dise%C3%B1o/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-yellow-400 transition duration-300">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V3.055z"></path>
+                                    <path d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
+                                </svg>
+                            </a>
+
                             </a>
                         </div>
                     </div>
