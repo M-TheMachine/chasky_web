@@ -36,6 +36,24 @@
         <x-input-error class="mt-2" :messages="$errors->get('linkedin')" />
     </div>
 
+    <div>
+        <x-input-label for="company" :value="__('Empresa')" />
+        <x-text-input id="company" name="company" type="text" class="mt-1 block w-full" :value="old('company', $seller->company ?? '')" />
+        <x-input-error class="mt-2" :messages="$errors->get('company')" />
+    </div>
+
+    <div>
+        <x-input-label for="address" :value="__('Dirección')" />
+        <x-text-input id="address" name="address" type="text" class="mt-1 block w-full" :value="old('address', $seller->address ?? '')" />
+        <x-input-error class="mt-2" :messages="$errors->get('address')" />
+    </div>
+
+    <div>
+        <x-input-label for="website" :value="__('Sitio Web')" />
+        <x-text-input id="website" name="website" type="url" class="mt-1 block w-full" :value="old('website', $seller->website ?? '')" />
+        <x-input-error class="mt-2" :messages="$errors->get('website')" />
+    </div>
+
     <div class="col-span-2">
         <x-input-label for="bio" :value="__('Biografía')" />
         <textarea id="bio" name="bio" rows="4" class="mt-1 block w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm">{{ old('bio', $seller->bio ?? '') }}</textarea>

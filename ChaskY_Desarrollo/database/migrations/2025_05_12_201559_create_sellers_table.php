@@ -21,7 +21,11 @@ return new class extends Migration
             $table->string('whatsapp')->nullable();
             $table->string('linkedin')->nullable();
             $table->text('bio')->nullable();
+            $table->string('company')->nullable();
+            $table->string('address')->nullable();
+            $table->string('website')->nullable();
             $table->string('slug')->unique();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }

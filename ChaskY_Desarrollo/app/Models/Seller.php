@@ -17,6 +17,10 @@ class Seller extends Model
         'linkedin',
         'bio',
         'slug',
+        'user_id',
+        'company',
+        'address',
+        'website',
     ];
 
     protected static function boot()
@@ -42,5 +46,10 @@ class Seller extends Model
         return $this->whatsapp
             ? 'https://wa.me/' . preg_replace('/[^0-9]/', '', $this->whatsapp)
             : null;
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(\App\Models\User::class);
     }
 }

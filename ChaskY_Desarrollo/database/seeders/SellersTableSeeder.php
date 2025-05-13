@@ -46,7 +46,31 @@ class SellersTableSeeder extends Seeder
         ];
 
         foreach ($sellers as $seller) {
-            Seller::create($seller);
+            try {
+                \Log::info('Creando usuario:', ['name' => $seller['name'], 'email' => $seller['email']]);
+                
+                // Crear un usuario primero
+                $user = \App\Models\User::create([
+                    'name' => $seller['name'],
+                    'email' => $seller['email'],
+                    'password' => bcrypt('password'),
+                ]);
+
+                \Log::info('Usuario creado:', ['user_id' => $user->id]);
+
+                // Asignar el user_id al seller y crearlo
+                $seller['user_id'] = $user->id;
+                $newSeller = Seller::create($seller);
+
+                \Log::info('Seller creado:', ['seller_id' => $newSeller->id]);
+            } catch (\Exception $e) {
+                \Log::error('Error al crear seller:', [
+                    'error' => $e->getMessage(),
+                    'name' => $seller['name'],
+                    'email' => $seller['email']
+                ]);
+                throw $e;
+            }
         }
     }
 }

@@ -60,5 +60,23 @@
                 >{{ __('Saved.') }}</p>
             @endif
         </div>
+
+        @if(auth()->user()->seller)
+            <div class="mt-4">
+                <h3 class="text-lg font-medium text-gray-900">{{ __('Información de la Tarjeta de Negocio') }}</h3>
+                <div class="mt-2">
+                    <p><strong>{{ __('Empresa') }}:</strong> {{ auth()->user()->seller->company }}</p>
+                    <p><strong>{{ __('Cargo') }}:</strong> {{ auth()->user()->seller->position }}</p>
+                    <p><strong>{{ __('Teléfono') }}:</strong> {{ auth()->user()->seller->phone }}</p>
+                    <p><strong>{{ __('Dirección') }}:</strong> {{ auth()->user()->seller->address }}</p>
+                    <p><strong>{{ __('Sitio Web') }}:</strong> {{ auth()->user()->seller->website }}</p>
+                </div>
+                <div class="mt-4">
+                    <a href="{{ route('sellers.edit', auth()->user()->seller->slug) }}" class="text-blue-500 hover:text-blue-700">
+                        {{ __('Editar Tarjeta de Negocio') }}
+                    </a>
+                </div>
+            </div>
+        @endif
     </form>
 </section>

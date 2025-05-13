@@ -57,6 +57,12 @@
                             {{ __('Profile') }}
                         </x-dropdown-link>
 
+                        @if(auth()->user()->seller)
+                            <x-dropdown-link :href="route('sellers.edit', auth()->user()->seller->slug)">
+                                {{ __('Editar Tarjeta de Negocio') }}
+                            </x-dropdown-link>
+                        @endif
+
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
@@ -103,6 +109,12 @@
                     <x-responsive-nav-link :href="route('profile.edit')">
                         {{ __('Profile') }}
                     </x-responsive-nav-link>
+
+                    @if(auth()->user()->seller)
+                        <x-responsive-nav-link :href="route('sellers.edit', auth()->user()->seller->slug)">
+                            {{ __('Editar Tarjeta de Negocio') }}
+                        </x-responsive-nav-link>
+                    @endif
 
                     <!-- Authentication -->
                     <form method="POST" action="{{ route('logout') }}">

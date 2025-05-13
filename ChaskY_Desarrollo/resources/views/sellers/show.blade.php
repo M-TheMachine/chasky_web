@@ -33,23 +33,25 @@
             <div class="max-w-4xl mx-auto">
                 <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
                     <!-- Información del vendedor -->
-                    <div class="relative px-6 pb-8">
-            <!-- Foto de perfil -->
-            <div class="relative -mt-16 mb-4">
-                <img class="w-32 h-32 rounded-full border-4 border-white shadow-lg mx-auto object-cover" 
-                     src="{{ $seller->photo_url }}" 
-                     alt="{{ $seller->name }}">
-            </div>
+                    <div class="relative p-8">
+                        <!-- Foto de perfil -->
+                        <div class="relative -mt-24 mb-6">
+                            <div class="w-28 h-28 mx-auto overflow-hidden rounded-full border-4 border-white shadow-lg">
+                                <img class="w-full h-full object-cover" 
+                                     src="{{ $seller->photo_url }}" 
+                                     alt="{{ $seller->name }}">
             
             <!-- Detalles -->
             <div class="text-center">
-                <h1 class="text-2xl font-bold text-gray-800">{{ $seller->name }}</h1>
-                <p class="text-gray-600 font-medium">{{ $seller->position }}</p>
-                <p class="mt-2 text-gray-500">{{ $seller->bio }}</p>
+                <h1 class="text-3xl font-bold text-gray-800">{{ $seller->name }}</h1>
+                <p class="text-lg text-gray-600 font-medium mt-2">{{ $seller->position }}</p>
+                @if($seller->bio)
+                    <p class="mt-4 text-gray-500 max-w-2xl mx-auto">{{ $seller->bio }}</p>
+                @endif
             </div>
 
             <!-- Botones de contacto -->
-            <div class="mt-6 space-y-3">
+            <div class="mt-8 space-y-4 max-w-md mx-auto">
                 <!-- Email -->
                 <a href="mailto:{{ $seller->email }}" 
                    class="flex items-center justify-center space-x-2 bg-blue-50 text-blue-600 py-3 rounded-lg hover:bg-blue-100 transition duration-300">
