@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class Seller extends Model
 {
@@ -36,9 +37,18 @@ class Seller extends Model
 
     public function getPhotoUrlAttribute()
     {
-        return $this->photo
-            ? asset('storage/' . $this->photo)
-            : 'https://ui-avatars.com/api/?name=' . urlencode($this->name) . '&color=7F9CF5&background=EBF4FF';
+        if ($this->photo) {
+            return asset('storage/' . $this->photo);
+        }
+        
+        // Si no hay foto, usar la imagen por defecto
+        if (Storage::disk('public')->exists('images/default-profile.svg')) {
+            return asset('storage/images/default-profile.svg');
+        }
+        
+        // Como respaldo, usar un avatar generado
+        return 'https://ui-avatars.com/api/?name=' . urlencode($this->name) . 
+               '&background=f4bc21&color=701516&bold=true&size=400';
     }
 
     public function getWhatsappLinkAttribute()

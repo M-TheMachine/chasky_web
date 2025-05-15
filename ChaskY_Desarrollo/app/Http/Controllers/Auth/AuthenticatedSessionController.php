@@ -28,6 +28,13 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
+        // Verificar si el usuario tiene tarjetas
+        $hasSellers = auth()->user()->sellers()->exists();
+
+        if (!$hasSellers) {
+            return redirect()->route('sellers.create')->with('welcome', true);
+        }
+
         return redirect()->intended(route('sellers.index', absolute: false));
     }
 

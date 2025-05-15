@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,11 +18,11 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-poppins antialiased">
+    <body class="font-poppins antialiased h-full">
         @include('layouts.navigation')
 
         <div class="min-h-screen bg-gradient-to-br from-[#701516]/5 to-[#c40606]/5">
-            <div class="flex flex-col min-h-screen relative"> <!-- Contenedor principal -->
+            <div class="flex flex-col min-h-screen">
                 <!-- Page Heading -->
                 @isset($header)
                     <header class="bg-white/70 backdrop-blur-md border-b border-[#701516]/10 mt-24 shadow-sm">
@@ -37,8 +37,18 @@
                     @yield('content')
                 </main>
 
-
+                <!-- Footer -->
+                <footer class="bg-white shadow mt-auto">
+                    <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+                        <div class="text-center text-sm text-gray-500">
+                            <p>&copy; {{ date('Y') }} Chasky. {{ __('Todos los derechos reservados.') }}</p>
+                            <p class="mt-1">{{ __('Desarrollado con') }} ❤️ {{ __('por el equipo de Chasky') }}</p>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
+
+        @stack('scripts')
     </body>
 </html>

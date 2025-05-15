@@ -7,6 +7,8 @@ export default {
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
+        './resources/js/**/*.{js,vue,ts}',
+        './resources/css/**/*.css',
     ],
 
     theme: {
@@ -14,6 +16,13 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
                 poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
+            },
+            colors: {
+                'chasky-red': {
+                    '500': '#701516',
+                    '600': '#c40606',
+                },
+                'chasky-yellow': '#f4bc21',
             },
         },
     },

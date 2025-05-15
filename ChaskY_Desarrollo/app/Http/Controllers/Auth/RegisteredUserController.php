@@ -51,7 +51,7 @@ class RegisteredUserController extends Controller
 
             Auth::login($user);
 
-            return redirect(route('sellers.index', absolute: false));
+            return redirect(route('sellers.create', absolute: false))->with('welcome', true);
         } catch (\Exception $e) {
             Log::error('Error durante el registro:', ['error' => $e->getMessage()]);
             throw $e;

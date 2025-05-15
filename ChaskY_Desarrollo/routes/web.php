@@ -12,6 +12,10 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+Route::get('/carreras', function () {
+    return view('carreras');
+})->name('carreras');
+
 Route::get('/servicios', function () {
     return view('servicios');
 })->name('servicios');

@@ -2,17 +2,32 @@
 
 @section('content')
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-[#701516] to-[#c40606] text-white min-h-[70vh] flex items-center mb-24 mt-16">
-        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+    <section class="relative min-h-[70vh] flex items-center mb-24 mt-16">
+        <!-- Gradient overlay con efecto de cristal -->
+        <div class="absolute inset-0 bg-gradient-to-br from-white to-[#701516]/20"></div>
+        
+        <!-- Patrón de fondo animado -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute w-full h-full" style="background-image: radial-gradient(#701516 1px, transparent 1px); background-size: 50px 50px;"></div>
+        </div>
+
         <div class="container mx-auto px-4 py-24 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-8" data-aos="fade-up">
+                <h1 class="text-4xl md:text-5xl font-bold mb-8 text-[#701516]" data-aos="fade-up">
                     {{ __('Nuestros Servicios') }}
                 </h1>
-                <p class="text-xl text-gray-200 mb-12" data-aos="fade-up" data-aos-delay="100">
+                <p class="text-xl text-gray-600 mb-12" data-aos="fade-up" data-aos-delay="100">
                     {{ __('Soluciones digitales adaptadas a tus necesidades') }}
                 </p>
             </div>
+        </div>
+        
+        <!-- Decorative wave -->
+        <div class="absolute bottom-0 left-0 right-0 h-32 overflow-hidden">
+            <svg class="absolute bottom-0 w-full h-full" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" 
+                      class="fill-[#701516]/5"></path>
+            </svg>
         </div>
     </section>
 
