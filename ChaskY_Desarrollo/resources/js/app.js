@@ -13,11 +13,19 @@ window.Alpine = Alpine;
 Alpine.start();
 
 // Inicializar AOS (Animate On Scroll)
-AOS.init({
-    duration: 800,
-    easing: 'ease-in-out',
-    once: true,
-    offset: 100,
+document.addEventListener('DOMContentLoaded', () => {
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 100,
+        disable: false,
+    });
+});
+
+// Reiniciar AOS cuando se carguen imágenes o cambien elementos dinámicos
+window.addEventListener('load', () => {
+    AOS.refresh();
 });
 
 // Configurar Swiper

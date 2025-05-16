@@ -15,8 +15,52 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @php
+            $manifestPath = public_path('build/manifest.json');
+            $manifest = json_decode(file_get_contents($manifestPath), true);
+        @endphp
+
+        @if (app()->environment('production'))
+            <link rel="stylesheet" href="{{ config('app.url') }}/build/assets/{{ basename($manifest['resources/css/app.css']['file']) }}">
+            <link rel="stylesheet" href="{{ config('app.url') }}/build/assets/{{ basename($manifest['resources/css/home.css']['file']) }}">
+            <script type="module" src="{{ config('app.url') }}/build/assets/{{ basename($manifest['resources/js/app.js']['file']) }}"></script>
+            @if(request()->is('/'))
+                <script type="module" src="{{ config('app.url') }}/build/assets/{{ basename($manifest['resources/js/home.js']['file']) }}"></script>
+            @endif
+            <script>
+                // Inicializar AOS después de que todos los assets estén cargados
+                window.addEventListener('load', function() {
+                    AOS.init({
+                        duration: 800,
+                        easing: 'ease-in-out',
+                        once: true,
+                        offset: 100,
+                        disable: false,
+                    });
+                    // Refrescar AOS después de cualquier cambio dinámico en el DOM
+                    setTimeout(function() {
+                        AOS.refresh();
+                    }, 100);
+                });
+                
+                // Observador de mutaciones para refrescar AOS cuando haya cambios en el DOM
+                const observer = new MutationObserver(function() {
+                    AOS.refresh();
+                });
+                
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            </script>
+        @else
+            @vite(['resources/css/app.css', 'resources/css/home.css', 'resources/js/app.js', 'resources/js/home.js'])
+        @endif
     </head>
     <body class="font-poppins antialiased h-full">
         @include('layouts.navigation')

@@ -1,7 +1,14 @@
+import Swiper from 'swiper';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 // Inicialización de los carruseles
 function initSwipers() {
     // Carrusel de proyectos
     const projectsSwiper = new Swiper('.projectsSwiper', {
+        modules: [Navigation, Pagination, Autoplay],
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
@@ -30,6 +37,7 @@ function initSwipers() {
 
     // Carrusel de testimonios
     const testimonialSwiper = new Swiper('.testimonialSwiper', {
+        modules: [Navigation, Pagination, Autoplay],
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
@@ -54,48 +62,6 @@ function initSwipers() {
             },
         },
     });
-}
-
-// Efecto de escritura para el título
-function initTypewriter() {
-    const textElement = document.querySelector('.typing-text');
-    if (!textElement) return;
-
-    const words = window.typingWords || ['Digital Solutions', 'Web Experiences', 'Innovative Apps', 'Digital Success'];
-    let wordIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    let isWaiting = false;
-
-    function type() {
-        const currentWord = words[wordIndex];
-        
-        if (isDeleting) {
-            textElement.textContent = currentWord.substring(0, charIndex - 1);
-            charIndex--;
-        } else {
-            textElement.textContent = currentWord.substring(0, charIndex + 1);
-            charIndex++;
-        }
-
-        if (!isDeleting && charIndex === currentWord.length) {
-            isWaiting = true;
-            setTimeout(() => {
-                isDeleting = true;
-                isWaiting = false;
-            }, 2000);
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            wordIndex = (wordIndex + 1) % words.length;
-        }
-
-        const typingSpeed = isDeleting ? 100 : 200;
-        const delay = isWaiting ? 0 : typingSpeed;
-
-        setTimeout(type, delay);
-    }
-
-    type();
 }
 
 // Validación del formulario
@@ -211,16 +177,12 @@ function initCounters() {
 
 // Inicialización cuando el DOM está listo
 document.addEventListener('DOMContentLoaded', () => {
-    // Inicializar AOS
-    AOS.init({
-        duration: 1000,
-        once: true,
-        offset: 100
-    });
-
     // Inicializar Swiper
     initSwipers();
 
-    // Inicializar efecto de escritura
-    initTypewriter();
+    // Inicializar parallax
+    initParallax();
+
+    // Inicializar contadores
+    initCounters();
 });

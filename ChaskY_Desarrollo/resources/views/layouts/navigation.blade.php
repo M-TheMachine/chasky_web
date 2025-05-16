@@ -1,13 +1,13 @@
-<nav class="nav-container">
+<nav class="nav-container fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm h-16">
     <div class="nav-background">
         <div class="nav-backdrop"></div>
         <!-- Primary Navigation Menu -->
-        <div class="nav-content">
-            <div class="nav-wrapper flex items-center justify-between w-full px-4">
+        <div class="nav-content max-w-7xl mx-auto">
+            <div class="nav-wrapper flex items-center justify-between w-full h-16 px-4">
                 <!-- Logo -->
                 <div class="shrink-0">
                     <a href="{{ route('home') }}">
-                        <x-application-logo class="block h-24 w-auto" />
+                        <x-application-logo class="block h-12 w-auto" />
                     </a>
                 </div>
 
@@ -27,7 +27,7 @@
                         <x-nav-link href="/contacto" :active="request()->is('contacto')">
                             {{ __('home.nav.contact') }}
                         </x-nav-link>
-                        <x-nav-link href="/carreras" :active="request()->is('carreras')" class="bg-[#701516] hover:bg-[#701516]/90 text-[#ffffff] font-bold px-4 py-2 rounded-full transition duration-300 shadow-sm hover:shadow-md">
+                        <x-nav-link href="/carreras" :active="request()->is('carreras')" class="bg-[#701516] hover:bg-[#701516]/90 text-[#ffffff] text-sm font-bold px-3 py-1.5 rounded-full transition duration-300 shadow-sm hover:shadow-md">
                             {{ __('Únete al equipo') }}
                         </x-nav-link>
                     </div>
@@ -70,11 +70,6 @@
                                     </form>
                                 </x-slot>
                             </x-dropdown>
-                        @else
-                            <div class="flex space-x-4">
-                                <a href="{{ route('login') }}" class="inline-flex items-center px-6 py-2 text-sm font-medium text-[#701516] bg-transparent border-2 border-[#701516] rounded-full hover:bg-[#701516] hover:text-white transition-all duration-200">{{ __('Iniciar sesión') }}</a>
-                                <a href="{{ route('register') }}" class="inline-flex items-center px-6 py-2 text-sm font-medium text-white bg-[#701516] border-2 border-[#701516] rounded-full hover:bg-[#c40606] hover:border-[#c40606] transition-all duration-200">{{ __('Registrarse') }}</a>
-                            </div>
                         @endauth
                     </div>
                 </div>
