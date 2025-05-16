@@ -24,6 +24,19 @@ Route::get('/portafolio', function () {
     return view('portafolio');
 })->name('portafolio');
 
+// Rutas para los proyectos específicos del portafolio
+Route::get('/portafolio/koko', function () {
+    return view('portafolio.koko');
+})->name('portafolio.koko');
+
+Route::get('/portafolio/mujeres-al-volante', function () {
+    return view('portafolio.mujeres-al-volante');
+})->name('portafolio.mujeres-al-volante');
+
+Route::get('/portafolio/galeno', function () {
+    return view('portafolio.galeno');
+})->name('portafolio.galeno');
+
 Route::get('/nosotros', function () {
     return view('about');
 })->name('about');

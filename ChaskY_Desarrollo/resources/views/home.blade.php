@@ -174,10 +174,24 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Add more portfolio items here -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1615719413546-198b25453f85?ixlib=rb-4.0.3" 
+                             alt="{{ __('home.portfolio.projects.koko.title') }}" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">{{ __('home.portfolio.projects.koko.title') }}</h3>
+                            <p class="text-gray-600 mb-4">{{ __('home.portfolio.projects.koko.description') }}</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                                </svg>
+                                {{ __('home.portfolio.projects.koko.tech') }}
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="text-center mt-12">
-                    <a href="/portfolio" class="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold transition duration-300">
+                    <a href="/portafolio" class="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold transition duration-300">
                         {{ __('home.portfolio.view_all') }}
                         <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>

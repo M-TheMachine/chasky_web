@@ -65,6 +65,21 @@ return [
                 'description' => 'Visualización de datos empresariales con insights accionables.',
                 'tech' => 'Vue.js + Laravel',
             ],
+            'koko' => [
+                'title' => 'E-commerce KOKO',
+                'description' => 'Plataforma de pedidos online para el restaurante de comida rápida KOKO con gestión de órdenes en tiempo real.',
+                'tech' => 'Laravel + Vue.js + Tailwind CSS',
+            ],
+            'mujeres_al_volante' => [
+                'title' => 'Mujeres al Volante',
+                'description' => 'Aplicación que conecta a mujeres conductoras con pasajeras para garantizar viajes seguros.',
+                'tech' => 'React Native + Firebase',
+            ],
+            'galeno' => [
+                'title' => 'Galeno Quiz Médico',
+                'description' => 'Plataforma educativa de quizzes para profesionales médicos con seguimiento de progreso.',
+                'tech' => 'Flutter + Laravel',
+            ],
         ],
         'view_project' => 'Ver proyecto',
     ],
