@@ -2,8 +2,8 @@
 
 @php
 $classes = ($active ?? false)
-            ? 'block w-full ps-3 pe-4 py-2 border-l-4 border-[#f4bc21] text-start text-base font-medium text-[#f4bc21] bg-[#701516]/50 focus:outline-none focus:text-[#f4bc21] focus:bg-[#701516]/50 focus:border-[#f4bc21] transition duration-150 ease-in-out'
-            : 'block w-full ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium text-white hover:text-[#f4bc21] hover:bg-[#701516]/30 hover:border-[#f4bc21]/50 focus:outline-none focus:text-[#f4bc21] focus:bg-[#701516]/30 focus:border-[#f4bc21]/50 transition duration-150 ease-in-out';
+            ? 'block pl-3 pr-4 py-2 border-l-4 border-[#701516] text-[#701516] bg-[#701516]/5 focus:outline-none transition duration-150 ease-in-out'
+            : 'block pl-3 pr-4 py-2 border-l-4 border-transparent text-gray-600 hover:text-[#701516] hover:bg-gray-50 hover:border-[#701516]/30 focus:outline-none transition duration-150 ease-in-out';
 @endphp
 
 <a {{ $attributes->merge(['class' => $classes]) }}>

@@ -1,0 +1,100 @@
+/* Estilos personalizados */
+
+/* Animación para el menú móvil */
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+#mobile-menu:not(.hidden) {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ajustes para el espacio superior en dispositivos móviles */
+@media (max-width: 768px) {
+    .mt-16, .mt-20, .mt-24 {
+        margin-top: 5rem !important;
+    }
+    
+    .pt-16, .pt-20, .pt-24 {
+        padding-top: 5rem !important;
+    }
+    
+    section.relative.min-h-\[70vh\], 
+    section.relative.min-h-\[60vh\] {
+        min-height: 60vh !important;
+    }
+}
+
+/* Estilo para marcar la página activa en la navegación móvil */
+.text-\[\#701516\].bg-\[\#701516\]\/5 {
+    border-left-width: 4px;
+    border-color: #701516;
+}
+
+/* Mejorar la transición entre íconos de menú */
+#menu-open-icon, #menu-close-icon {
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Estilos para la navegación y menús */
+nav .hidden {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+    nav .md\:flex {
+        display: flex !important;
+    }
+    
+    nav .md\:hidden {
+        display: none !important;
+    }
+}
+
+/* Mejoras para la navegación de escritorio */
+nav .flex-1 {
+    justify-content: flex-end;
+}
+
+nav .space-x-4 > * + * {
+    margin-left: 1rem;
+}
+
+/* Estilos para el botón de "Únete al equipo" */
+nav a.bg-\[\#701516\] {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: white;
+    background-color: #701516;
+    transition: all 0.3s ease;
+}
+
+nav a.bg-\[\#701516\]:hover {
+    background-color: rgba(112, 21, 22, 0.9);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Ajustes para menú móvil */
+@media (max-width: 768px) {
+    #mobile-menu {
+        border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+    }
+    
+    #mobile-menu a {
+        display: block;
+        padding: 0.5rem 1rem;
+        border-left: 2px solid transparent;
+    }
+    
+    #mobile-menu a.text-\[\#701516\] {
+        border-left-color: #701516;
+        background-color: rgba(112, 21, 22, 0.05);
+    }
+}
