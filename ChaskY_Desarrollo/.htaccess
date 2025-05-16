@@ -1,0 +1,32 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Redirigir todas las solicitudes al directorio /public
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# Denegar acceso a directorios sensibles
+<FilesMatch "^\.env">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "^composer\.json">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "^composer\.lock">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Denegar acceso a directorios
+<DirectoryMatch "^/(app|bootstrap|config|database|resources|routes|storage|tests|vendor)">
+    Order allow,deny
+    Deny from all
+</DirectoryMatch>
