@@ -241,37 +241,100 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Mario Reque -->
                     <div class="text-center" data-aos="fade-up">
                         <div class="relative mb-6 inline-block">
-                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3" 
-                                 alt="CEO" 
+                            <img src="{{ asset('mario.png') }}" 
+                                 alt="Gerente" 
                                  class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Carlos Rodriguez</h3>
-                        <p class="text-[#701516] font-medium mb-4">CEO & Fundador</p>
-                        <p class="text-gray-600">Visionario digital con más de 15 años de experiencia</p>
+                        <h3 class="text-xl font-bold mb-2">Mario Reque</h3>
+                        <p class="text-[#701516] font-medium mb-4">Gerente</p>
+                        <p class="text-gray-600">Liderando la visión estratégica de Chasky</p>
                     </div>
 
+                    <!-- Wilson Rodriguez -->
                     <div class="text-center" data-aos="fade-up" data-aos-delay="100">
                         <div class="relative mb-6 inline-block">
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3" 
-                                 alt="CTO" 
+                            <img src="{{ asset('wilson.png') }}" 
+                                 alt="Director de Negocios" 
                                  class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Ana Martínez</h3>
-                        <p class="text-[#701516] font-medium mb-4">Directora de Tecnología</p>
-                        <p class="text-gray-600">Experta en desarrollo de soluciones innovadoras</p>
+                        <h3 class="text-xl font-bold mb-2">Wilson Rodriguez</h3>
+                        <p class="text-[#701516] font-medium mb-4">Director de Negocios</p>
+                        <p class="text-gray-600">Experto en estrategias de crecimiento empresarial</p>
                     </div>
 
+                    <!-- Ana Belen Espinoza -->
                     <div class="text-center" data-aos="fade-up" data-aos-delay="200">
                         <div class="relative mb-6 inline-block">
-                            <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-4.0.3" 
-                                 alt="CCO" 
+                            <img src="{{ asset('ana-belen.png') }}" 
+                                 alt="Marketer" 
                                  class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Miguel Torres</h3>
-                        <p class="text-[#701516] font-medium mb-4">Director Creativo</p>
-                        <p class="text-gray-600">Creativo apasionado por el diseño digital</p>
+                        <h3 class="text-xl font-bold mb-2">Ana Belen Espinoza</h3>
+                        <p class="text-[#701516] font-medium mb-4">Marketer</p>
+                        <p class="text-gray-600">Especialista en estrategias de marketing digital</p>
+                    </div>
+                    
+                    <!-- Faby Fuentes -->
+                    <div class="text-center" data-aos="fade-up">
+                        <div class="relative mb-6 inline-block">
+                            <img src="{{ asset('faby.png') }}" 
+                                 alt="Diseñadora UX/UI" 
+                                 class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Faby Fuentes</h3>
+                        <p class="text-[#701516] font-medium mb-4">Diseñadora UX/UI</p>
+                        <p class="text-gray-600">Creando experiencias de usuario excepcionales</p>
+                    </div>
+                    
+                    <!-- Mike Flores -->
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative mb-6 inline-block">
+                            <img src="{{ asset('mike.png') }}" 
+                                 alt="Desarrollador Fullstack" 
+                                 class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Mike Flores</h3>
+                        <p class="text-[#701516] font-medium mb-4">Desarrollador Fullstack</p>
+                        <p class="text-gray-600">Experto en desarrollo web y móvil</p>
+                    </div>
+                    
+                    <!-- Jason Choque -->
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative mb-6 inline-block">
+                            <img src="{{ asset('jason.png') }}" 
+                                 alt="Desarrollador Fullstack" 
+                                 class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Jason Choque</h3>
+                        <p class="text-[#701516] font-medium mb-4">Desarrollador Fullstack</p>
+                        <p class="text-gray-600">Especialista en arquitectura de software</p>
+                    </div>
+                    
+                    <!-- Josue Flores -->
+                    <div class="text-center" data-aos="fade-up">
+                        <div class="relative mb-6 inline-block">
+                            <img src="{{ asset('josue.png') }}" 
+                                 alt="Diseñador Gráfico" 
+                                 class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Josue Flores</h3>
+                        <p class="text-[#701516] font-medium mb-4">Diseñador Gráfico</p>
+                        <p class="text-gray-600">Creando identidades visuales impactantes</p>
+                    </div>
+                    
+                    <!-- Americo Vespucio -->
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative mb-6 inline-block">
+                            <img src="{{ asset('americo.png') }}" 
+                                 alt="Desarrollador Junior" 
+                                 class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Americo Vespucio</h3>
+                        <p class="text-[#701516] font-medium mb-4">Desarrollador Junior</p>
+                        <p class="text-gray-600">Talento emergente con gran potencial</p>
                     </div>
                 </div>
             </div>
