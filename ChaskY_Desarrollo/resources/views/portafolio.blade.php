@@ -14,10 +14,10 @@
         <div class="container mx-auto px-4 py-24 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
                 <h1 class="text-4xl md:text-5xl font-bold mb-8 text-[#701516]" data-aos="fade-up">
-                    {{ __('Nuestro Portafolio') }}
+                    {{ __('portfolio.hero.title') }}
                 </h1>
                 <p class="text-xl text-gray-600 mb-12" data-aos="fade-up" data-aos-delay="100">
-                    {{ __('Descubre cómo hemos ayudado a nuestros clientes a alcanzar el éxito digital') }}
+                    {{ __('portfolio.hero.subtitle') }}
                 </p>
             </div>
         </div>
@@ -36,16 +36,16 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up">
                 <button class="px-6 py-2 rounded-full bg-[#701516] text-white hover:bg-[#c40606] transition-colors">
-                    Todos
+                    {{ __('portfolio.project_types.all') }}
                 </button>
                 <button class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-[#701516] hover:text-white transition-colors">
-                    Desarrollo Web
+                    {{ __('portfolio.project_types.web') }}
                 </button>
                 <button class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-[#701516] hover:text-white transition-colors">
-                    Marketing Digital
+                    {{ __('portfolio.project_types.marketing') }}
                 </button>
                 <button class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-[#701516] hover:text-white transition-colors">
-                    Diseño UX/UI
+                    {{ __('portfolio.project_types.design') }}
                 </button>
             </div>
         </div>
@@ -58,14 +58,14 @@
                 <!-- Proyecto 1: KOKO E-commerce -->
                 <div class="group relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up">
                     <img src="https://images.unsplash.com/photo-1615719413546-198b25453f85?ixlib=rb-4.0.3" 
-                         alt="E-commerce KOKO" 
+                         alt="{{ __('portfolio.projects.ecommerce.title') }}" 
                          class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="absolute bottom-0 left-0 right-0 p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">E-commerce KOKO</h3>
-                            <p class="text-gray-200 mb-4">Plataforma de pedidos online para el restaurante de comida rápida KOKO con gestión de órdenes en tiempo real.</p>
+                            <h3 class="text-xl font-bold text-white mb-2">{{ __('portfolio.projects.ecommerce.title') }}</h3>
+                            <p class="text-gray-200 mb-4">{{ __('portfolio.projects.ecommerce.description') }}</p>
                             <a href="/portafolio/koko" class="inline-block px-6 py-2 bg-[#f4bc21] text-[#701516] rounded-full font-semibold hover:bg-[#f4bc21]/90 transition-colors">
-                                Ver Proyecto
+                                {{ __('portfolio.detail.view_project') }}
                             </a>
                         </div>
                     </div>
@@ -74,14 +74,14 @@
                 <!-- Proyecto 2: Mujeres al Volante -->
                 <div class="group relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
                     <img src="https://images.unsplash.com/photo-1593526421301-b909ba2a1979?ixlib=rb-4.0.3" 
-                         alt="Mujeres al Volante" 
+                         alt="{{ __('portfolio.projects.mujeres_al_volante.title') }}" 
                          class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="absolute bottom-0 left-0 right-0 p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">Mujeres al Volante</h3>
-                            <p class="text-gray-200 mb-4">Aplicación que conecta a mujeres conductoras con pasajeras para garantizar viajes seguros.</p>
+                            <h3 class="text-xl font-bold text-white mb-2">{{ __('portfolio.projects.mujeres_al_volante.title') }}</h3>
+                            <p class="text-gray-200 mb-4">{{ __('portfolio.projects.mujeres_al_volante.description') }}</p>
                             <a href="/portafolio/mujeres-al-volante" class="inline-block px-6 py-2 bg-[#f4bc21] text-[#701516] rounded-full font-semibold hover:bg-[#f4bc21]/90 transition-colors">
-                                Ver Proyecto
+                                {{ __('portfolio.detail.view_project') }}
                             </a>
                         </div>
                     </div>
@@ -90,14 +90,14 @@
                 <!-- Proyecto 3: Galeno Quiz Médico -->
                 <div class="group relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
                     <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3" 
-                         alt="Galeno Quiz Médico" 
+                         alt="{{ __('portfolio.projects.galeno.title') }}" 
                          class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="absolute bottom-0 left-0 right-0 p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">Galeno Quiz Médico</h3>
-                            <p class="text-gray-200 mb-4">Plataforma educativa de quizzes para profesionales médicos con seguimiento de progreso.</p>
+                            <h3 class="text-xl font-bold text-white mb-2">{{ __('portfolio.projects.galeno.title') }}</h3>
+                            <p class="text-gray-200 mb-4">{{ __('portfolio.projects.galeno.description') }}</p>
                             <a href="/portafolio/galeno" class="inline-block px-6 py-2 bg-[#f4bc21] text-[#701516] rounded-full font-semibold hover:bg-[#f4bc21]/90 transition-colors">
-                                Ver Proyecto
+                                {{ __('portfolio.detail.view_project') }}
                             </a>
                         </div>
                     </div>
@@ -111,9 +111,9 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="absolute bottom-0 left-0 right-0 p-6">
                             <h3 class="text-xl font-bold text-white mb-2">E-commerce Innovation</h3>
-                            <p class="text-gray-200 mb-4">Transformamos la experiencia de compra online con tecnología de punta.</p>
+                            <p class="text-gray-200 mb-4">{{ __('Transformamos la experiencia de compra online con tecnología de punta.') }}</p>
                             <a href="#" class="inline-block px-6 py-2 bg-[#f4bc21] text-[#701516] rounded-full font-semibold hover:bg-[#f4bc21]/90 transition-colors">
-                                Ver Proyecto
+                                {{ __('portfolio.detail.view_project') }}
                             </a>
                         </div>
                     </div>
@@ -122,14 +122,14 @@
                 <!-- Proyecto 5: HealthTech App (proyecto existente) -->
                 <div class="group relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
                     <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3" 
-                         alt="HealthTech App" 
+                         alt="{{ __('portfolio.projects.health.title') }}" 
                          class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="absolute bottom-0 left-0 right-0 p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">HealthTech App</h3>
-                            <p class="text-gray-200 mb-4">Revolucionamos el seguimiento de la salud con IA y análisis en tiempo real.</p>
+                            <h3 class="text-xl font-bold text-white mb-2">{{ __('portfolio.projects.health.title') }}</h3>
+                            <p class="text-gray-200 mb-4">{{ __('portfolio.projects.health.description') }}</p>
                             <a href="#" class="inline-block px-6 py-2 bg-[#f4bc21] text-[#701516] rounded-full font-semibold hover:bg-[#f4bc21]/90 transition-colors">
-                                Ver Proyecto
+                                {{ __('portfolio.detail.view_project') }}
                             </a>
                         </div>
                     </div>
@@ -138,14 +138,14 @@
                 <!-- Proyecto 6: Business Intelligence (proyecto existente) -->
                 <div class="group relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3" 
-                         alt="Business Intelligence" 
+                         alt="{{ __('portfolio.projects.analytics.title') }}" 
                          class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="absolute bottom-0 left-0 right-0 p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">Business Intelligence</h3>
-                            <p class="text-gray-200 mb-4">Visualización de datos empresariales con insights accionables.</p>
+                            <h3 class="text-xl font-bold text-white mb-2">{{ __('portfolio.projects.analytics.title') }}</h3>
+                            <p class="text-gray-200 mb-4">{{ __('portfolio.projects.analytics.description') }}</p>
                             <a href="#" class="inline-block px-6 py-2 bg-[#f4bc21] text-[#701516] rounded-full font-semibold hover:bg-[#f4bc21]/90 transition-colors">
-                                Ver Proyecto
+                                {{ __('portfolio.detail.view_project') }}
                             </a>
                         </div>
                     </div>
@@ -160,13 +160,13 @@
         <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8" data-aos="fade-up">
-                    ¿Listo para crear tu próximo proyecto?
+                    {{ __('portfolio.cta.title') }}
                 </h2>
                 <p class="text-xl mb-12" data-aos="fade-up" data-aos-delay="100">
-                    Permítenos ayudarte a llevar tu visión al siguiente nivel
+                    {{ __('portfolio.cta.subtitle') }}
                 </p>
                 <a href="/contacto" class="inline-block bg-[#f4bc21] hover:bg-[#f4bc21]/90 text-[#701516] font-bold py-4 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg" data-aos="fade-up" data-aos-delay="200">
-                    Iniciar Proyecto
+                    {{ __('portfolio.cta.button') }}
                 </a>
             </div>
         </div>

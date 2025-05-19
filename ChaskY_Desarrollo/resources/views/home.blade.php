@@ -203,8 +203,8 @@
 
         <section class="container mx-auto py-24 px-4">
             <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">Lo que dicen nuestros clientes</h2>
-                <p class="text-gray-600 text-lg max-w-2xl mx-auto">Descubre por qué las empresas confían en nosotros para sus proyectos digitales</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">{{ __('home.testimonials.title') }}</h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">{{ __('home.testimonials.subtitle') }}</p>
             </div>
             
             <div class="swiper testimonialSwiper" data-aos="fade-up">
@@ -214,15 +214,15 @@
                             <div class="flex items-center mb-6">
                                 <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Cliente" class="w-16 h-16 rounded-full mr-4">
                                 <div>
-                                    <h3 class="font-semibold text-gray-800">Juan Pérez</h3>
-                                    <p class="text-gray-600">CEO, TechCorp</p>
+                                    <h3 class="font-semibold text-gray-800">{{ __('home.testimonials.client1.name') }}</h3>
+                                    <p class="text-gray-600">{{ __('home.testimonials.client1.position') }}</p>
                                 </div>
                             </div>
                             <div class="relative">
                                 <svg class="absolute text-purple-200 w-16 h-16 -top-6 -left-6 opacity-20" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                             </svg>
-                                <p class="text-gray-700 mb-6 relative z-10">"El trabajo de Chasky superó nuestras expectativas. Su profesionalismo y dedicación se reflejaron en los resultados obtenidos."</p>
+                                <p class="text-gray-700 mb-6 relative z-10">{{ __('home.testimonials.client1.testimonial') }}</p>
                                 <div class="flex text-yellow-400">
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -237,15 +237,15 @@
                             <div class="flex items-center mb-6">
                                 <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Cliente" class="w-16 h-16 rounded-full mr-4">
                                 <div>
-                                    <h3 class="font-semibold text-gray-800">María García</h3>
-                                    <p class="text-gray-600">Directora de Marketing, InnovateMKT</p>
+                                    <h3 class="font-semibold text-gray-800">{{ __('home.testimonials.client2.name') }}</h3>
+                                    <p class="text-gray-600">{{ __('home.testimonials.client2.position') }}</p>
                                 </div>
                             </div>
                             <div class="relative">
                                 <svg class="absolute text-purple-200 w-16 h-16 -top-6 -left-6 opacity-20" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                             </svg>
-                            <p class="text-gray-700 mb-6 relative z-10">"Gracias a Chasky, nuestra presencia en línea se fortaleció y logramos aumentar nuestras ventas significativamente."</p>
+                            <p class="text-gray-700 mb-6 relative z-10">{{ __('home.testimonials.client2.testimonial') }}</p>
                             <div class="flex text-yellow-400">
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -277,23 +277,23 @@
             <div class="container mx-auto relative">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="text-white" data-aos="fade-right">
-                        <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listo para transformar tu negocio?</h2>
-                        <p class="text-xl mb-8 text-gray-200">Ponte en contacto con nosotros y descubre cómo podemos ayudarte a alcanzar tus objetivos digitales</p>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">{{ __('home.contact.title') }}</h2>
+                        <p class="text-xl mb-8 text-gray-200">{{ __('home.contact.subtitle') }}</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div>
-                                <h3 class="font-semibold text-xl mb-4">Ubicación</h3>
-                                <p class="text-gray-300">Calle Salamanca esq Calle Antezana<br>Edificio Chasky Piso 1<br>Cochabamba, Bolivia</p>
+                                <h3 class="font-semibold text-xl mb-4">{{ __('home.contact.location_title') }}</h3>
+                                <p class="text-gray-300">{{ __('home.contact.location_address') }}</p>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-xl mb-4">Contacto</h3>
+                                <h3 class="font-semibold text-xl mb-4">{{ __('home.contact.contact_title') }}</h3>
                                 <p class="text-gray-300">
-                                    chasky@chaskymkt.com<br>
-                                    +591 77739802
+                                    {{ __('home.contact.contact_email') }}<br>
+                                    {{ __('home.contact.contact_phone') }}
                                 </p>
                             </div>
                         </div>
                         <div class="mt-8">
-                            <h3 class="font-semibold text-xl mb-4">Síguenos</h3>
+                            <h3 class="font-semibold text-xl mb-4">{{ __('home.contact.social_title') }}</h3>
                             <div class="flex space-x-4">
                                 <!-- Facebook -->
                                 <a href="https://www.facebook.com/chaskyMyD" target="_blank" rel="noopener noreferrer" class="text-white hover:text-yellow-400 transition duration-300">
@@ -330,44 +330,44 @@
                         <form action="/contacto" method="post" class="space-y-6">
                             @csrf
                             <div>
-                                <label class="block text-gray-700 font-medium mb-2" for="nombre">Nombre completo</label>
+                                <label class="block text-gray-700 font-medium mb-2" for="nombre">{{ __('home.contact.form.name') }}</label>
                                 <input type="text" id="nombre" name="nombre" required
                                     class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
-                                    placeholder="Tu nombre">
+                                    placeholder="{{ __('home.contact.form.name') }}">
                             </div>
                             <div>
-                                <label class="block text-gray-700 font-medium mb-2" for="email">Correo electrónico</label>
+                                <label class="block text-gray-700 font-medium mb-2" for="email">{{ __('home.contact.form.email') }}</label>
                                 <input type="email" id="email" name="email" required
                                     class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
                                     placeholder="tu@email.com">
                             </div>
                             <div>
-                                <label class="block text-gray-700 font-medium mb-2" for="telefono">Teléfono (opcional)</label>
+                                <label class="block text-gray-700 font-medium mb-2" for="telefono">{{ __('home.contact.form.phone') }}</label>
                                 <input type="tel" id="telefono" name="telefono"
                                     class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
                                     placeholder="+51 999 999 999">
                             </div>
                             <div>
-                                <label class="block text-gray-700 font-medium mb-2" for="servicio">Servicio de interés</label>
+                                <label class="block text-gray-700 font-medium mb-2" for="servicio">{{ __('home.contact.form.service') }}</label>
                                 <select id="servicio" name="servicio" required
                                     class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300">
-                                    <option value="">Selecciona un servicio</option>
-                                    <option value="web">Desarrollo Web</option>
-                                    <option value="marketing">Marketing Digital</option>
-                                    <option value="app">Aplicaciones Móviles</option>
-                                    <option value="design">Diseño UX/UI</option>
-                                    <option value="otro">Otro</option>
+                                    <option value="">{{ __('home.contact.form.select_service') }}</option>
+                                    <option value="web">{{ __('home.contact.form.web_dev') }}</option>
+                                    <option value="marketing">{{ __('home.contact.form.marketing') }}</option>
+                                    <option value="app">{{ __('home.contact.form.mobile') }}</option>
+                                    <option value="design">{{ __('home.contact.form.design') }}</option>
+                                    <option value="otro">{{ __('home.contact.form.other') }}</option>
                                 </select>
                             </div>
                             <div>
-                                <label class="block text-gray-700 font-medium mb-2" for="mensaje">Mensaje</label>
+                                <label class="block text-gray-700 font-medium mb-2" for="mensaje">{{ __('home.contact.form.message') }}</label>
                                 <textarea id="mensaje" name="mensaje" rows="4" required
                                     class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
-                                    placeholder="Cuéntanos sobre tu proyecto"></textarea>
+                                    placeholder="{{ __('home.contact.form.message_placeholder') }}"></textarea>
                             </div>
                             <button type="submit"
                                 class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold py-4 px-8 rounded-lg transition duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2">
-                                <span>Inicia tu viaje al éxito</span>
+                                <span>{{ __('home.contact.form.submit') }}</span>
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                                 </svg>

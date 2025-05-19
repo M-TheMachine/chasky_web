@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'profile' => 'Perfil',
+    'edit_profile' => 'Editar Perfil',
+    'edit_business_card' => 'Editar Tarjeta de Negocio',
+    'log_out' => 'Cerrar Sesión',
+    'login' => 'Iniciar Sesión',
+    'register' => 'Registrarse',
+    'password' => 'Contraseña',
+    'confirm_password' => 'Confirmar Contraseña',
+    'remember_me' => 'Recordarme',
+    'forgot_password' => 'Olvidé mi contraseña',
+    'reset_password' => 'Restablecer Contraseña',
+    'email' => 'Correo Electrónico',
+    'name' => 'Nombre',
+    'save' => 'Guardar',
+    'cancel' => 'Cancelar',
+    'delete_account' => 'Eliminar Cuenta',
+    'delete_account_warning' => 'Una vez que tu cuenta sea eliminada, todos sus recursos y datos serán eliminados permanentemente. Antes de eliminar tu cuenta, por favor descarga cualquier dato o información que desees conservar.',
+    'login_with_google' => 'Iniciar sesión con Google',
+    'menu' => 'Menú',
+    'language' => 'Idioma / Language',
+    'language_not_supported' => 'Idioma no soportado',
+    'language_changed' => 'Idioma cambiado a Español',
+];

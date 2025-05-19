@@ -5,6 +5,10 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\View;
+use App\View\Composers\LocaleComposer;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -26,8 +30,26 @@ class AppServiceProvider extends ServiceProvider
             URL::forceScheme('https');
         }
 
-        // Configurar el idioma por defecto
-        $locale = session()->get('locale', config('app.locale'));
-        App::setLocale($locale);
+        // Obtener el idioma de la cookie o sesión (prioritario) 
+        // o usar el configurado por defecto
+        $locale = Request::cookie('locale') ?? session('locale');
+        
+        // Solo aplicar si existe un idioma en la cookie o sesión,
+        // y si está entre los idiomas soportados
+        if ($locale && in_array($locale, ['en', 'es'])) {
+            App::setLocale($locale);
+            app()->setLocale($locale);
+            
+            // Log para depuración
+            Log::debug('AppServiceProvider: Locale set', [
+                'cookie' => Request::cookie('locale'),
+                'session' => session('locale'),
+                'applied' => $locale,
+                'app_locale' => app()->getLocale()
+            ]);
+        }
+        
+        // Registrar el compositor para todas las vistas
+        View::composer('*', LocaleComposer::class);
     }
 }

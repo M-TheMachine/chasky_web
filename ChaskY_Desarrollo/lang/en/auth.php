@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'profile' => 'Profile',
+    'edit_profile' => 'Edit Profile',
+    'edit_business_card' => 'Edit Business Card',
+    'log_out' => 'Log Out',
+    'login' => 'Login',
+    'register' => 'Register',
+    'password' => 'Password',
+    'confirm_password' => 'Confirm Password',
+    'remember_me' => 'Remember Me',
+    'forgot_password' => 'Forgot your password?',
+    'reset_password' => 'Reset Password',
+    'email' => 'Email',
+    'name' => 'Name',
+    'save' => 'Save',
+    'cancel' => 'Cancel',
+    'delete_account' => 'Delete Account',
+    'delete_account_warning' => 'Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.',
+    'login_with_google' => 'Login with Google',
+    'menu' => 'Menu',
+    'language' => 'Language / Idioma',
+    'language_not_supported' => 'Language not supported',
+    'language_changed' => 'Language changed to English',
+];

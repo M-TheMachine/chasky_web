@@ -7,7 +7,9 @@ return [
         'portfolio' => 'Portafolio',
         'about' => 'Nosotros',
         'contact' => 'Contacto',
+        'outsourcing' => 'Planes de Outsourcing',
         'cta_button' => 'Desata el potencial de tu negocio',
+        'join_team' => 'Únete al equipo',
     ],
     'hero' => [
         'title' => 'Somos tu aliado estratégico en marketing y software',
@@ -86,14 +88,41 @@ return [
     'testimonials' => [
         'title' => 'Lo que dicen nuestros clientes',
         'subtitle' => 'Descubre por qué las empresas confían en nosotros para sus proyectos digitales',
+        'client1' => [
+            'name' => 'Juan Pérez',
+            'position' => 'CEO, TechCorp',
+            'testimonial' => 'El trabajo de Chasky superó nuestras expectativas. Su profesionalismo y dedicación se reflejaron en los resultados obtenidos.'
+        ],
+        'client2' => [
+            'name' => 'María García',
+            'position' => 'Directora de Marketing, InnovateMKT',
+            'testimonial' => 'Gracias a Chasky, nuestra presencia en línea se fortaleció y logramos aumentar nuestras ventas significativamente.'
+        ],
+        'prev' => 'Anterior',
+        'next' => 'Siguiente',
     ],
     'contact' => [
         'title' => '¿Listo para transformar tu negocio?',
-        'subtitle' => 'Ponte en contacto con nosotros y descubre cómo podemos ayudarte',
+        'subtitle' => 'Ponte en contacto con nosotros y descubre cómo podemos ayudarte a alcanzar tus objetivos digitales',
+        'location_title' => 'Ubicación',
+        'location_address' => 'Calle Salamanca esq Calle Antezana Edificio Chasky Piso 1 Cochabamba, Bolivia',
+        'contact_title' => 'Contacto',
+        'contact_email' => 'chasky@chaskymkt.com',
+        'contact_phone' => '+591 77739802',
+        'social_title' => 'Síguenos',
         'form' => [
-            'name' => 'Nombre',
+            'name' => 'Nombre completo',
             'email' => 'Correo Electrónico',
+            'phone' => 'Teléfono (opcional)',
+            'service' => 'Servicio de interés',
+            'select_service' => 'Selecciona un servicio',
+            'web_dev' => 'Desarrollo Web',
+            'marketing' => 'Marketing Digital',
+            'mobile' => 'Aplicaciones Móviles',
+            'design' => 'Diseño UX/UI',
+            'other' => 'Otro',
             'message' => 'Mensaje',
+            'message_placeholder' => 'Cuéntanos sobre tu proyecto',
             'submit' => 'Inicia tu viaje al éxito',
             'sending' => 'Enviando...',
         ],
@@ -106,5 +135,7 @@ return [
         'rights' => 'Todos los derechos reservados.',
         'privacy' => 'Aviso de privacidad',
         'terms' => 'Términos de uso',
+        'developed' => 'Desarrollado con',
+        'by_team' => 'por el equipo de Chasky',
     ],
 ];

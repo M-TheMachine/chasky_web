@@ -34,6 +34,7 @@ class Kernel extends HttpKernel
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \App\Http\Middleware\Localization::class, // Middleware de localización asegurado en todas las rutas web
+            \App\Http\Middleware\LanguageCookie::class, // Guardar el idioma en una cookie
         ],
 
         'api' => [

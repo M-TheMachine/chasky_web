@@ -14,10 +14,10 @@
         <div class="container mx-auto px-4 py-24 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
                 <h1 class="text-4xl md:text-5xl font-bold mb-8 text-[#701516]" data-aos="fade-up">
-                    {{ __('Nuestros Servicios') }}
+                    {{ __('services.hero.title') }}
                 </h1>
                 <p class="text-xl text-gray-600 mb-12" data-aos="fade-up" data-aos-delay="100">
-                    {{ __('Soluciones digitales adaptadas a tus necesidades') }}
+                    {{ __('services.hero.subtitle') }}
                 </p>
             </div>
         </div>
@@ -38,14 +38,14 @@
             <div class="mb-32" data-aos="fade-up">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div class="order-2 md:order-1">
-                        <h2 class="text-3xl font-bold mb-6 gradient-text">Desarrollo Web</h2>
-                        <p class="text-gray-600 mb-6">Creamos sitios web modernos, responsivos y optimizados para brindar la mejor experiencia a tus usuarios. Utilizamos las últimas tecnologías para garantizar un rendimiento óptimo.</p>
+                        <h2 class="text-3xl font-bold mb-6 gradient-text">{{ __('services.web_dev.title') }}</h2>
+                        <p class="text-gray-600 mb-6">{{ __('services.web_dev.description') }}</p>
                         <ul class="space-y-4">
                             <li class="flex items-center text-gray-600">
                                 <svg class="w-5 h-5 text-[#701516] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                Diseño personalizado y único
+                                {{ __('services.web_dev.features.feature1') }}
                             </li>
                             <li class="flex items-center text-gray-600">
                                 <svg class="w-5 h-5 text-[#701516] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -78,14 +78,14 @@
                              class="rounded-xl shadow-2xl transform hover:scale-105 transition duration-500">
                     </div>
                     <div>
-                        <h2 class="text-3xl font-bold mb-6 gradient-text">Marketing Digital</h2>
-                        <p class="text-gray-600 mb-6">Impulsamos tu presencia en línea con estrategias efectivas de marketing digital que generan resultados medibles y aumentan tu visibilidad en el mercado.</p>
+                        <h2 class="text-3xl font-bold mb-6 gradient-text">{{ __('services.marketing.title') }}</h2>
+                        <p class="text-gray-600 mb-6">{{ __('services.marketing.description') }}</p>
                         <ul class="space-y-4">
                             <li class="flex items-center text-gray-600">
                                 <svg class="w-5 h-5 text-[#701516] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                Gestión de redes sociales
+                                {{ __('services.marketing.features.feature1') }}
                             </li>
                             <li class="flex items-center text-gray-600">
                                 <svg class="w-5 h-5 text-[#701516] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -108,14 +108,14 @@
             <div class="mb-32" data-aos="fade-up">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div class="order-2 md:order-1">
-                        <h2 class="text-3xl font-bold mb-6 gradient-text">Diseño UX/UI</h2>
-                        <p class="text-gray-600 mb-6">Creamos interfaces intuitivas y atractivas que mejoran la experiencia del usuario y aumentan la conversión de tu sitio web o aplicación.</p>
+                        <h2 class="text-3xl font-bold mb-6 gradient-text">{{ __('services.uxui.title') }}</h2>
+                        <p class="text-gray-600 mb-6">{{ __('services.uxui.description') }}</p>
                         <ul class="space-y-4">
                             <li class="flex items-center text-gray-600">
                                 <svg class="w-5 h-5 text-[#701516] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                Investigación de usuarios
+                                {{ __('services.uxui.features.feature1') }}
                             </li>
                             <li class="flex items-center text-gray-600">
                                 <svg class="w-5 h-5 text-[#701516] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -148,14 +148,14 @@
                              class="rounded-xl shadow-2xl transform hover:scale-105 transition duration-500">
                     </div>
                     <div>
-                        <h2 class="text-3xl font-bold mb-6 gradient-text">Offshoring</h2>
-                        <p class="text-gray-600 mb-6">Optimiza tus costos operativos y accede a talento especializado con nuestros servicios de offshoring. Mantenemos los más altos estándares de calidad mientras reduces significativamente tus gastos.</p>
+                        <h2 class="text-3xl font-bold mb-6 gradient-text">{{ __('services.offshoring.title') }}</h2>
+                        <p class="text-gray-600 mb-6">{{ __('services.offshoring.description') }}</p>
                         <ul class="space-y-4">
                             <li class="flex items-center text-gray-600">
                                 <svg class="w-5 h-5 text-[#701516] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                Equipos dedicados de desarrollo
+                                {{ __('services.offshoring.features.feature1') }}
                             </li>
                             <li class="flex items-center text-gray-600">
                                 <svg class="w-5 h-5 text-[#701516] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -178,14 +178,14 @@
             <div class="mb-32" data-aos="fade-up">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div class="order-2 md:order-1">
-                        <h2 class="text-3xl font-bold mb-6 gradient-text">Nearshoring</h2>
-                        <p class="text-gray-600 mb-6">Aprovecha las ventajas de la proximidad geográfica y cultural con nuestros servicios de nearshoring. Obtén la mejor combinación de calidad, costo y facilidad de comunicación.</p>
+                        <h2 class="text-3xl font-bold mb-6 gradient-text">{{ __('services.nearshoring.title') }}</h2>
+                        <p class="text-gray-600 mb-6">{{ __('services.nearshoring.description') }}</p>
                         <ul class="space-y-4">
                             <li class="flex items-center text-gray-600">
                                 <svg class="w-5 h-5 text-[#701516] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                Zona horaria compatible
+                                {{ __('services.nearshoring.features.feature1') }}
                             </li>
                             <li class="flex items-center text-gray-600">
                                 <svg class="w-5 h-5 text-[#701516] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -217,13 +217,13 @@
         <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8" data-aos="fade-up">
-                    ¿Listo para impulsar tu negocio?
+                    {{ __('services.cta.title') }}
                 </h2>
                 <p class="text-xl mb-12" data-aos="fade-up" data-aos-delay="100">
-                    Contáctanos hoy mismo y descubre cómo podemos ayudarte a alcanzar tus objetivos
+                    {{ __('services.cta.subtitle') }}
                 </p>
                 <a href="/contacto" class="inline-block bg-[#f4bc21] hover:bg-[#f4bc21]/90 text-[#701516] font-bold py-4 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg" data-aos="fade-up" data-aos-delay="200">
-                    Solicitar Cotización
+                    {{ __('services.cta.button') }}
                 </a>
             </div>
         </div>

@@ -7,10 +7,10 @@
         <div class="container mx-auto px-4 py-24 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
                 <h1 class="text-4xl md:text-6xl font-bold mb-8 tracking-tight" data-aos="fade-up">
-                    {{ __('Contáctanos') }}
+                    {{ __('contact.hero.title') }}
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-100 mb-12 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
-                    {{ __('Estamos aquí para ayudarte a hacer crecer tu negocio') }}
+                    {{ __('contact.hero.subtitle') }}
                 </p>
             </div>
         </div>
@@ -23,9 +23,9 @@
                 <!-- Información de Contacto -->
                 <div class="space-y-8" data-aos="fade-right">
                     <div>
-                        <h2 class="text-3xl font-bold mb-6 gradient-text">Información de Contacto</h2>
+                        <h2 class="text-3xl font-bold mb-6 gradient-text">{{ __('contact.info.title') }}</h2>
                         <p class="text-gray-600 mb-8">
-                            Estamos disponibles para atenderte y resolver todas tus dudas. No dudes en contactarnos por cualquiera de estos medios.</p>
+                            {{ __('contact.info.description') }}</p>
                     </div>
                     
                     <div class="space-y-6">
@@ -36,8 +36,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-lg text-gray-800">Teléfono</h3>
-                                <p class="text-gray-600">+591 77739802</p>
+                                <h3 class="font-semibold text-lg text-gray-800">{{ __('contact.info.contact.phone_title') }}</h3>
+                                <p class="text-gray-600">{{ __('contact.info.contact.phone') }}</p>
                             </div>
                         </div>
 
@@ -48,8 +48,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-lg text-gray-800">Email</h3>
-                                <p class="text-gray-600">chasky@chaskymkt.com</p>
+                                <h3 class="font-semibold text-lg text-gray-800">{{ __('contact.info.contact.email_title') }}</h3>
+                                <p class="text-gray-600">{{ __('contact.info.contact.email') }}</p>
                             </div>
                         </div>
 
@@ -61,15 +61,15 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-lg text-gray-800">Ubicación</h3>
-                                <p class="text-gray-600">Calle Salamanca esq Calle Antezana<br>Edificio Chasky Piso 1<br>Cochabamba, Bolivia</p>
+                                <h3 class="font-semibold text-lg text-gray-800">{{ __('contact.info.location.title') }}</h3>
+                                <p class="text-gray-600">{!! __('contact.info.location.address') !!}</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Redes Sociales -->
                     <div class="pt-8">
-                        <h3 class="font-semibold text-lg text-gray-800 mb-4">Síguenos en redes sociales</h3>
+                        <h3 class="font-semibold text-lg text-gray-800 mb-4">{{ __('contact.info.social.title') }}</h3>
                         <div class="flex space-x-4">
                             <a href="https://www.facebook.com/chaskyMyD" target="_blank" rel="noopener noreferrer" class="bg-[#701516] text-[#f4bc21] p-3 rounded-full hover:bg-[#c40606] transition duration-300">
                                 <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
@@ -95,46 +95,45 @@
                     <form action="/contacto" method="post" class="space-y-6">
                         @csrf
                         <div>
-                            <label class="block text-gray-700 font-medium mb-2" for="nombre">Nombre completo</label>
+                            <label class="block text-gray-700 font-medium mb-2" for="nombre">{{ __('contact.form.name') }}</label>
                             <input type="text" id="nombre" name="nombre" required
                                 class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
-                                placeholder="Tu nombre">
+                                placeholder="{{ __('contact.form.name') }}">
                         </div>
                         <div>
-                            <label class="block text-gray-700 font-medium mb-2" for="email">Correo electrónico</label>
+                            <label class="block text-gray-700 font-medium mb-2" for="email">{{ __('contact.form.email') }}</label>
                             <input type="email" id="email" name="email" required
                                 class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
                                 placeholder="tu@email.com">
                         </div>
                         <div>
-                            <label class="block text-gray-700 font-medium mb-2" for="telefono">Teléfono (opcional)</label>
+                            <label class="block text-gray-700 font-medium mb-2" for="telefono">{{ __('contact.form.phone') }}</label>
                             <input type="tel" id="telefono" name="telefono"
                                 class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
                                 placeholder="+591 ">
                         </div>
                         <div>
-                            <label class="block text-gray-700 font-medium mb-2" for="servicio">Servicio de interés</label>
+                            <label class="block text-gray-700 font-medium mb-2" for="servicio">{{ __('contact.form.service') }}</label>
                             <select id="servicio" name="servicio" required
                                 class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300">
-                                <option value="">Selecciona un servicio</option>
-                                <option value="web">Desarrollo Web</option>
-                                <option value="marketing">Marketing Digital</option>
-                                <option value="ux">Diseño UX/UI</option>
-                                <option value="offshoring">Offshoring</option>
-                                <option value="nearshoring">Nearshoring</option>
-                                <option value="otro">Otro</option>
+                                <option value="">{{ __('contact.form.select_service') }}</option>
+                                <option value="web">{{ __('contact.form.web') }}</option>
+                                <option value="marketing">{{ __('contact.form.marketing') }}</option>
+                                <option value="ux">{{ __('contact.form.ux') }}</option>
+                                <option value="offshoring">{{ __('contact.form.offshoring') }}</option>
+                                <option value="nearshoring">{{ __('contact.form.nearshoring') }}</option>
+                                <option value="otro">{{ __('contact.form.other') }}</option>
                             </select>
                         </div>
                         <div>
-                            <label class="block text-gray-700 font-medium mb-2" for="mensaje">Mensaje</label>
+                            <label class="block text-gray-700 font-medium mb-2" for="mensaje">{{ __('contact.form.message') }}</label>
                             <textarea id="mensaje" name="mensaje" rows="4" required
                                 class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
-                                placeholder="¿En qué podemos ayudarte?"></textarea>
-                        </div>
-                        <button type="submit"
-                            class="w-full bg-[#701516] hover:bg-[#c40606] text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
-                            Enviar mensaje
-                        </button>
+                                placeholder="{{ __('contact.form.message_placeholder') }}"></textarea>
+                        </div>                            <button type="submit"
+                                class="w-full bg-[#701516] hover:bg-[#c40606] text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
+                                {{ __('contact.form.submit') }}
+                            </button>
                     </form>
                 </div>
             </div>
@@ -145,8 +144,8 @@
     <section class="py-24 bg-white">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">Nuestra Ubicación</h2>
-                <p class="text-gray-600 text-lg">Visítanos en nuestras oficinas</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">{{ __('contact.map.title') }}</h2>
+                <p class="text-gray-600 text-lg">{{ __('contact.map.subtitle') }}</p>
             </div>
             <div class="rounded-2xl overflow-hidden shadow-2xl" data-aos="zoom-in">
                 <iframe 

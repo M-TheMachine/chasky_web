@@ -7,7 +7,9 @@ return [
         'portfolio' => 'Portfolio',
         'about' => 'About',
         'contact' => 'Contact',
+        'outsourcing' => 'Outsourcing Plans',
         'cta_button' => 'Unlock your business potential',
+        'join_team' => 'Join our team',
     ],
     'hero' => [
         'title' => 'We are your strategic ally in marketing and software',
@@ -63,25 +65,50 @@ return [
     'testimonials' => [
         'title' => 'What our clients say',
         'subtitle' => 'Discover why companies trust us for their digital projects',
+        'client1' => [
+            'name' => 'John Smith',
+            'position' => 'CEO, TechCorp',
+            'testimonial' => 'Chasky\'s work exceeded our expectations. Their professionalism and dedication were reflected in the results obtained.'
+        ],
+        'client2' => [
+            'name' => 'Mary Johnson',
+            'position' => 'Marketing Director, InnovateMKT',
+            'testimonial' => 'Thanks to Chasky, our online presence was strengthened and we managed to significantly increase our sales.'
+        ],
+        'prev' => 'Previous',
+        'next' => 'Next',
     ],
     'contact' => [
         'title' => 'Ready to transform your business?',
-        'subtitle' => 'Get in touch with us and discover how we can help you',
+        'subtitle' => 'Get in touch with us and discover how we can help you achieve your digital goals',
+        'location_title' => 'Location',
+        'location_address' => 'Salamanca Street corner Antezana Street Chasky Building 1st Floor Cochabamba, Bolivia',
+        'contact_title' => 'Contact',
+        'contact_email' => 'chasky@chaskymkt.com',
+        'contact_phone' => '+591 77739802',
+        'social_title' => 'Follow us',
         'form' => [
-            'name' => 'Name',
+            'name' => 'Full name',
             'email' => 'Email',
+            'phone' => 'Phone (optional)',
+            'service' => 'Service of interest',
+            'select_service' => 'Select a service',
+            'web_dev' => 'Web Development',
+            'marketing' => 'Digital Marketing',
+            'mobile' => 'Mobile Applications',
+            'design' => 'UX/UI Design',
+            'other' => 'Other',
             'message' => 'Message',
+            'message_placeholder' => 'Tell us about your project',
             'submit' => 'Start your journey to success',
             'sending' => 'Sending...',
-        ],
-        'validation' => [
-            'required' => 'Please complete all fields.',
-            'email' => 'Please enter a valid email address.',
         ],
     ],
     'footer' => [
         'rights' => 'All rights reserved.',
         'privacy' => 'Privacy Policy',
         'terms' => 'Terms of Use',
-    ],
+        'developed' => 'Developed with',
+        'by_team' => 'by the Chasky team',
+    ]
 ];

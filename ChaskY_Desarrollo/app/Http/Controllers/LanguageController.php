@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\Log;
 
 class LanguageController extends Controller
 {
@@ -17,17 +19,33 @@ class LanguageController extends Controller
     {
         // Validar el idioma
         if (!in_array($locale, ['en', 'es'])) {
-            return back()->with('error', 'Idioma no soportado');
+            return back()->with('error', 'Idioma no soportado / Language not supported');
         }
 
-        // Guardar el idioma en la sesión
-        session()->put('locale', $locale);
+        // IMPORTANTE: Configurar la cookie sin usar Cookie::queue para que se establezca inmediatamente
+        $cookie = cookie('locale', $locale, 60 * 24 * 365); // 1 año
         
-        // Establecer el idioma en la aplicación
+        // Guardar también en sesión
+        session(['locale' => $locale]);
+        
+        // Establecer el idioma en la aplicación (esto afectará la respuesta actual)
+        app()->setLocale($locale);
         App::setLocale($locale);
 
-        // Redirigir con mensaje de éxito
-        $message = $locale == 'es' ? 'Idioma cambiado a Español' : 'Language changed to English';
-        return redirect()->back()->with('success', $message);
+        // Mensaje según el idioma seleccionado
+        $message = ($locale === 'es') 
+            ? 'Idioma cambiado a Español' 
+            : 'Language changed to English';
+
+        // Log para depuración
+        Log::info('Idioma cambiado en controlador', [
+            'requested_locale' => $locale,
+            'cookie' => $cookie->getValue(),
+            'session' => session('locale'),
+            'app_locale' => app()->getLocale()
+        ]);
+
+        // Devolver respuesta con la cookie adjuntada
+        return redirect()->back()->with('success', $message)->cookie($cookie);
     }
 }

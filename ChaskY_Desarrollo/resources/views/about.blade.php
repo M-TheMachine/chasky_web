@@ -14,10 +14,10 @@
         <div class="container mx-auto px-4 py-24 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
                 <h1 class="text-4xl md:text-5xl font-bold mb-8 text-[#701516]" data-aos="fade-up">
-                    {{ __('Sobre Nosotros') }}
+                    {{ __('about.hero.title') }}
                 </h1>
                 <p class="text-xl text-gray-600 mb-12" data-aos="fade-up" data-aos-delay="100">
-                    {{ __('Conoce nuestra historia y el equipo detrás de Chasky') }}
+                    {{ __('about.hero.subtitle') }}
                 </p>
             </div>
         </div>
@@ -36,35 +36,36 @@
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-16" data-aos="fade-up">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">Nuestra Historia</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">{{ __('about.history.title') }}</h2>
                     <p class="text-gray-600 text-lg leading-relaxed">
-                        Desde nuestros inicios en 2018, nos hemos dedicado a transformar ideas en soluciones digitales innovadoras. 
-                        Nuestro compromiso con la excelencia y la innovación nos ha permitido crecer y evolucionar junto a 
-                        nuestros clientes, ayudándoles a alcanzar sus objetivos en el mundo digital.
+                        {{ __('about.history.description') }}
                     </p>
                 </div>
                 
                 <!-- Timeline -->
                 <div class="relative">
                     <!-- Línea central -->
-                    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-[#701516] to-[#c40606] rounded-full"></div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-[#701516] to-[#c40606] rounded-full md:block hidden"></div>
+                    <!-- Línea móvil (izquierda) -->
+                    <div class="absolute left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-[#701516] to-[#c40606] rounded-full md:hidden block"></div>
                     
                     <!-- 2018 -->
-                    <div class="relative mb-24" data-aos="fade-right">
+                    <div class="relative mb-16 md:mb-24" data-aos="fade-right">
                         <div class="flex items-center">
-                            <div class="w-1/2 pr-12 text-right">
+                            <!-- Contenido para escritorio (derecha) -->
+                            <div class="w-1/2 pr-12 text-right hidden md:block">
                                 <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
-                                    <h3 class="text-2xl font-bold mb-3 gradient-text">2018</h3>
-                                    <p class="text-gray-600">Fundación de Chasky con la visión de transformar el panorama digital</p>
-                                    <ul class="mt-4 space-y-2 text-gray-600 text-left">
+                                    <h3 class="text-2xl font-bold mb-3 gradient-text">{{ __('about.history.timeline.2018.title') }}</h3>
+                                    <p class="text-gray-600">{{ __('about.history.timeline.2018.description') }}</p>
+                                    <ul class="mt-4 space-y-2 text-gray-600 text-right">
                                         <li class="flex items-center justify-end">
-                                            <span class="text-gray-600">Inicio de operaciones</span>
+                                            <span class="text-gray-600">{{ __('about.history.timeline.2018.achievements.achievement1') }}</span>
                                             <svg class="w-4 h-4 text-[#f4bc21] ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                             </svg>
                                         </li>
                                         <li class="flex items-center justify-end">
-                                            <span class="text-gray-600">Primeros proyectos exitosos</span>
+                                            <span class="text-gray-600">{{ __('about.history.timeline.2018.achievements.achievement2') }}</span>
                                             <svg class="w-4 h-4 text-[#f4bc21] ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                             </svg>
@@ -72,55 +73,113 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full border-4 border-[#701516] bg-white shadow-xl"></div>
-                            <div class="w-1/2 pl-12"></div>
-                        </div>
-                    </div>
-
-                    <!-- 2020 -->
-                    <div class="relative mb-24" data-aos="fade-left">
-                        <div class="flex items-center">
-                            <div class="w-1/2 pr-12"></div>
-                            <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full border-4 border-[#701516] bg-white shadow-xl"></div>
-                            <div class="w-1/2 pl-12">
+                            
+                            <!-- Punto central escritorio -->
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full border-4 border-[#701516] bg-white shadow-xl hidden md:block"></div>
+                            
+                            <!-- Contenido para móvil (full width) -->
+                            <div class="w-full px-4 pl-12 md:hidden block">
                                 <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
-                                    <h3 class="text-2xl font-bold mb-3 gradient-text">2020</h3>
-                                    <p class="text-gray-600">Superación de desafíos y crecimiento durante la pandemia</p>
+                                    <h3 class="text-2xl font-bold mb-3 gradient-text">{{ __('about.history.timeline.2018.title') }}</h3>
+                                    <p class="text-gray-600">{{ __('about.history.timeline.2018.description') }}</p>
                                     <ul class="mt-4 space-y-2 text-gray-600">
                                         <li class="flex items-center">
                                             <svg class="w-4 h-4 text-[#f4bc21] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                             </svg>
-                                            <span class="text-gray-600">Adaptación a servicios remotos</span>
+                                            <span class="text-gray-600">{{ __('about.history.timeline.2018.achievements.achievement1') }}</span>
                                         </li>
                                         <li class="flex items-center">
                                             <svg class="w-4 h-4 text-[#f4bc21] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                             </svg>
-                                            <span class="text-gray-600">Expansión de servicios digitales</span>
+                                            <span class="text-gray-600">{{ __('about.history.timeline.2018.achievements.achievement2') }}</span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
+                            
+                            <!-- Punto móvil (izquierda) -->
+                            <div class="absolute left-4 transform -translate-x-1/2 w-8 h-8 rounded-full border-4 border-[#701516] bg-white shadow-xl md:hidden block"></div>
+                            
+                            <div class="w-1/2 pl-12 md:block hidden"></div>
+                        </div>
+                    </div>
+
+                    <!-- 2020 -->
+                    <div class="relative mb-16 md:mb-24" data-aos="fade-left">
+                        <div class="flex items-center">
+                            <div class="w-1/2 pr-12 md:block hidden"></div>
+                            
+                            <!-- Punto central escritorio -->
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full border-4 border-[#701516] bg-white shadow-xl hidden md:block"></div>
+                            
+                            <!-- Contenido para escritorio (izquierda) -->
+                            <div class="w-1/2 pl-12 hidden md:block">
+                                <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+                                    <h3 class="text-2xl font-bold mb-3 gradient-text">{{ __('about.history.timeline.2020.title') }}</h3>
+                                    <p class="text-gray-600">{{ __('about.history.timeline.2020.description') }}</p>
+                                    <ul class="mt-4 space-y-2 text-gray-600">
+                                        <li class="flex items-center">
+                                            <svg class="w-4 h-4 text-[#f4bc21] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span class="text-gray-600">{{ __('about.history.timeline.2020.achievements.achievement1') }}</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-4 h-4 text-[#f4bc21] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span class="text-gray-600">{{ __('about.history.timeline.2020.achievements.achievement2') }}</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Contenido para móvil (full width) -->
+                            <div class="w-full px-4 pl-12 md:hidden block">
+                                <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+                                    <h3 class="text-2xl font-bold mb-3 gradient-text">{{ __('about.history.timeline.2020.title') }}</h3>
+                                    <p class="text-gray-600">{{ __('about.history.timeline.2020.description') }}</p>
+                                    <ul class="mt-4 space-y-2 text-gray-600">
+                                        <li class="flex items-center">
+                                            <svg class="w-4 h-4 text-[#f4bc21] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span class="text-gray-600">{{ __('about.history.timeline.2020.achievements.achievement1') }}</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-4 h-4 text-[#f4bc21] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span class="text-gray-600">{{ __('about.history.timeline.2020.achievements.achievement2') }}</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Punto móvil (izquierda) -->
+                            <div class="absolute left-4 transform -translate-x-1/2 w-8 h-8 rounded-full border-4 border-[#701516] bg-white shadow-xl md:hidden block"></div>
                         </div>
                     </div>
 
                     <!-- 2022 -->
-                    <div class="relative mb-24" data-aos="fade-right">
+                    <div class="relative mb-16 md:mb-24" data-aos="fade-right">
                         <div class="flex items-center">
-                            <div class="w-1/2 pr-12 text-right">
+                            <!-- Contenido para escritorio (derecha) -->
+                            <div class="w-1/2 pr-12 text-right hidden md:block">
                                 <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
-                                    <h3 class="text-2xl font-bold mb-3 gradient-text">2022</h3>
-                                    <p class="text-gray-600">Expansión de servicios y crecimiento del equipo</p>
-                                    <ul class="mt-4 space-y-2 text-gray-600 text-left">
+                                    <h3 class="text-2xl font-bold mb-3 gradient-text">{{ __('about.history.timeline.2022.title') }}</h3>
+                                    <p class="text-gray-600">{{ __('about.history.timeline.2022.description') }}</p>
+                                    <ul class="mt-4 space-y-2 text-gray-600 text-right">
                                         <li class="flex items-center justify-end">
-                                            <span class="text-gray-600">Ampliación de la cartera de servicios</span>
+                                            <span class="text-gray-600">{{ __('about.history.timeline.2022.achievements.achievement1') }}</span>
                                             <svg class="w-4 h-4 text-[#f4bc21] ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                             </svg>
                                         </li>
                                         <li class="flex items-center justify-end">
-                                            <span class="text-gray-600">Incorporación de nuevos talentos</span>
+                                            <span class="text-gray-600">{{ __('about.history.timeline.2022.achievements.achievement2') }}</span>
                                             <svg class="w-4 h-4 text-[#f4bc21] ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                             </svg>
@@ -128,36 +187,105 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full border-4 border-[#701516] bg-white shadow-xl"></div>
-                            <div class="w-1/2 pl-12"></div>
+                            
+                            <!-- Punto central escritorio -->
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full border-4 border-[#701516] bg-white shadow-xl hidden md:block"></div>
+                            
+                            <!-- Contenido para móvil (full width) -->
+                            <div class="w-full px-4 pl-12 md:hidden block">
+                                <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+                                    <h3 class="text-2xl font-bold mb-3 gradient-text">{{ __('about.history.timeline.2022.title') }}</h3>
+                                    <p class="text-gray-600">{{ __('about.history.timeline.2022.description') }}</p>
+                                    <ul class="mt-4 space-y-2 text-gray-600">
+                                        <li class="flex items-center">
+                                            <svg class="w-4 h-4 text-[#f4bc21] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span class="text-gray-600">{{ __('about.history.timeline.2022.achievements.achievement1') }}</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-4 h-4 text-[#f4bc21] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span class="text-gray-600">{{ __('about.history.timeline.2022.achievements.achievement2') }}</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Punto móvil (izquierda) -->
+                            <div class="absolute left-4 transform -translate-x-1/2 w-8 h-8 rounded-full border-4 border-[#701516] bg-white shadow-xl md:hidden block"></div>
+                            
+                            <div class="w-1/2 pl-12 md:block hidden"></div>
                         </div>
                     </div>
 
                     <!-- 2025 -->
                     <div class="relative" data-aos="fade-left">
                         <div class="flex items-center">
-                            <div class="w-1/2 pr-12"></div>
-                            <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full border-4 border-[#701516] bg-white shadow-xl"></div>
-                            <div class="w-1/2 pl-12">
+                            <div class="w-1/2 pr-12 md:block hidden"></div>
+                            
+                            <!-- Punto central escritorio -->
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full border-4 border-[#701516] bg-white shadow-xl hidden md:block"></div>
+                            
+                            <!-- Contenido para escritorio (izquierda) -->
+                            <div class="w-1/2 pl-12 hidden md:block">
                                 <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
-                                    <h3 class="text-2xl font-bold mb-3 gradient-text">2025</h3>
-                                    <p class="text-gray-600">Consolidación como referente en soluciones digitales</p>
+                                    <h3 class="text-2xl font-bold mb-3 gradient-text">{{ __('about.history.timeline.2025.title') }}</h3>
+                                    <p class="text-gray-600">{{ __('about.history.timeline.2025.description') }}</p>
                                     <ul class="mt-4 space-y-2 text-gray-600">
                                         <li class="flex items-center">
                                             <svg class="w-4 h-4 text-[#f4bc21] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                             </svg>
-                                            <span class="text-gray-600">Expansión internacional</span>
+                                            <span class="text-gray-600">{{ __('about.history.timeline.2025.achievements.achievement1') }}</span>
                                         </li>
                                         <li class="flex items-center">
                                             <svg class="w-4 h-4 text-[#f4bc21] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                             </svg>
-                                            <span class="text-gray-600">Innovación continua</span>
+                                            <span class="text-gray-600">{{ __('about.history.timeline.2025.achievements.achievement2') }}</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-4 h-4 text-[#f4bc21] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span class="text-gray-600">{{ __('about.history.timeline.2025.achievements.achievement3') }}</span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
+                            
+                            <!-- Contenido para móvil (full width) -->
+                            <div class="w-full px-4 pl-12 md:hidden block">
+                                <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+                                    <h3 class="text-2xl font-bold mb-3 gradient-text">{{ __('about.history.timeline.2025.title') }}</h3>
+                                    <p class="text-gray-600">{{ __('about.history.timeline.2025.description') }}</p>
+                                    <ul class="mt-4 space-y-2 text-gray-600">
+                                        <li class="flex items-center">
+                                            <svg class="w-4 h-4 text-[#f4bc21] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span class="text-gray-600">{{ __('about.history.timeline.2025.achievements.achievement1') }}</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-4 h-4 text-[#f4bc21] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span class="text-gray-600">{{ __('about.history.timeline.2025.achievements.achievement2') }}</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-4 h-4 text-[#f4bc21] mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                            <span class="text-gray-600">{{ __('about.history.timeline.2025.achievements.achievement3') }}</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Punto móvil (izquierda) -->
+                            <div class="absolute left-4 transform -translate-x-1/2 w-8 h-8 rounded-full border-4 border-[#701516] bg-white shadow-xl md:hidden block"></div>
                         </div>
                     </div>
                 </div>
@@ -170,8 +298,8 @@
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-16" data-aos="fade-up">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">Nuestros Valores</h2>
-                    <p class="text-gray-600 text-lg">Los principios que guían nuestro trabajo y relaciones</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">{{ __('about.values.title') }}</h2>
+                    <p class="text-gray-600 text-lg">{{ __('about.values.subtitle') }}</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -183,9 +311,9 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold">Integridad</h3>
+                            <h3 class="text-xl font-bold">{{ __('about.values.integrity.title') }}</h3>
                         </div>
-                        <p class="text-gray-600">Actuamos con honestidad y transparencia en cada proyecto y relación profesional.</p>
+                        <p class="text-gray-600">{{ __('about.values.integrity.description') }}</p>
                     </div>
 
                     <!-- Innovación -->
@@ -196,9 +324,9 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h3v7l9-11h-3z" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold">Innovación</h3>
+                            <h3 class="text-xl font-bold">{{ __('about.values.innovation.title') }}</h3>
                         </div>
-                        <p class="text-gray-600">Buscamos constantemente nuevas formas de resolver desafíos y mejorar soluciones.</p>
+                        <p class="text-gray-600">{{ __('about.values.innovation.description') }}</p>
                     </div>
 
                     <!-- Colaboración -->
@@ -209,9 +337,9 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold">Colaboración</h3>
+                            <h3 class="text-xl font-bold">{{ __('about.values.collaboration.title') }}</h3>
                         </div>
-                        <p class="text-gray-600">Trabajamos en estrecha colaboración con nuestros clientes para alcanzar objetivos comunes.</p>
+                        <p class="text-gray-600">{{ __('about.values.collaboration.description') }}</p>
                     </div>
 
                     <!-- Excelencia -->
@@ -222,9 +350,9 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold">Excelencia</h3>
+                            <h3 class="text-xl font-bold">{{ __('about.values.excellence.title') }}</h3>
                         </div>
-                        <p class="text-gray-600">Nos esforzamos por alcanzar los más altos estándares en cada proyecto.</p>
+                        <p class="text-gray-600">{{ __('about.values.excellence.description') }}</p>
                     </div>
                 </div>
             </div>
@@ -236,8 +364,8 @@
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-16" data-aos="fade-up">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">Nuestro Equipo</h2>
-                    <p class="text-gray-600 text-lg">Profesionales apasionados por la innovación digital</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">{{ __('about.team.title') }}</h2>
+                    <p class="text-gray-600 text-lg">{{ __('about.team.subtitle') }}</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -245,96 +373,106 @@
                     <div class="text-center" data-aos="fade-up">
                         <div class="relative mb-6 inline-block">
                             <img src="{{ asset('mario.png') }}" 
-                                 alt="Gerente" 
+                                 alt="{{ __('about.team.members.mario.name') }}" 
                                  class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Mario Reque</h3>
-                        <p class="text-[#701516] font-medium mb-4">Gerente</p>
-                        <p class="text-gray-600">Liderando la visión estratégica de Chasky</p>
+                        <h3 class="text-xl font-bold mb-2">{{ __('about.team.members.mario.name') }}</h3>
+                        <p class="text-[#701516] font-medium mb-4">{{ __('about.team.members.mario.position') }}</p>
+                        <p class="text-gray-600">{{ __('about.team.members.mario.bio') }}</p>
                     </div>
 
                     <!-- Wilson Rodriguez -->
                     <div class="text-center" data-aos="fade-up" data-aos-delay="100">
                         <div class="relative mb-6 inline-block">
                             <img src="{{ asset('wilson.png') }}" 
-                                 alt="Director de Negocios" 
+                                 alt="{{ __('about.team.members.wilson.name') }}" 
                                  class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Wilson Rodriguez</h3>
-                        <p class="text-[#701516] font-medium mb-4">Director de Negocios</p>
-                        <p class="text-gray-600">Experto en estrategias de crecimiento empresarial</p>
+                        <h3 class="text-xl font-bold mb-2">{{ __('about.team.members.wilson.name') }}</h3>
+                        <p class="text-[#701516] font-medium mb-4">{{ __('about.team.members.wilson.position') }}</p>
+                        <p class="text-gray-600">{{ __('about.team.members.wilson.bio') }}</p>
                     </div>
 
                     <!-- Ana Belen Espinoza -->
                     <div class="text-center" data-aos="fade-up" data-aos-delay="200">
                         <div class="relative mb-6 inline-block">
                             <img src="{{ asset('ana-belen.png') }}" 
-                                 alt="Marketer" 
+                                 alt="{{ __('about.team.members.ana_belen.name') }}" 
                                  class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Ana Belen Espinoza</h3>
-                        <p class="text-[#701516] font-medium mb-4">Marketer</p>
-                        <p class="text-gray-600">Especialista en estrategias de marketing digital</p>
+                        <h3 class="text-xl font-bold mb-2">{{ __('about.team.members.ana_belen.name') }}</h3>
+                        <p class="text-[#701516] font-medium mb-4">{{ __('about.team.members.ana_belen.position') }}</p>
+                        <p class="text-gray-600">{{ __('about.team.members.ana_belen.bio') }}</p>
+                    </div>
+                        <div class="text-center" data-aos="fade-up">
+                        <div class="relative mb-6 inline-block">
+                            <img src="{{ asset('abigail.png') }}" 
+                                 alt="{{ __('about.team.members.abigail.name') }}" 
+                                 class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">{{ __('about.team.members.abigail.name') }}</h3>
+                        <p class="text-[#701516] font-medium mb-4">{{ __('about.team.members.abigail.position') }}</p>
+                        <p class="text-gray-600">{{ __('about.team.members.abigail.bio') }}</p>
                     </div>
                     
                     <!-- Faby Fuentes -->
-                    <div class="text-center" data-aos="fade-up">
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="100">
                         <div class="relative mb-6 inline-block">
                             <img src="{{ asset('faby.png') }}" 
-                                 alt="Diseñadora UX/UI" 
+                                 alt="{{ __('about.team.members.faby.name') }}" 
                                  class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Faby Fuentes</h3>
-                        <p class="text-[#701516] font-medium mb-4">Diseñadora UX/UI</p>
-                        <p class="text-gray-600">Creando experiencias de usuario excepcionales</p>
+                        <h3 class="text-xl font-bold mb-2">{{ __('about.team.members.faby.name') }}</h3>
+                        <p class="text-[#701516] font-medium mb-4">{{ __('about.team.members.faby.position') }}</p>
+                        <p class="text-gray-600">{{ __('about.team.members.faby.bio') }}</p>
                     </div>
                     
                     <!-- Mike Flores -->
                     <div class="text-center" data-aos="fade-up" data-aos-delay="100">
                         <div class="relative mb-6 inline-block">
                             <img src="{{ asset('mike.png') }}" 
-                                 alt="Desarrollador Fullstack" 
+                                 alt="{{ __('about.team.members.mike.name') }}" 
                                  class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Mike Flores</h3>
-                        <p class="text-[#701516] font-medium mb-4">Desarrollador Fullstack</p>
-                        <p class="text-gray-600">Experto en desarrollo web y móvil</p>
+                        <h3 class="text-xl font-bold mb-2">{{ __('about.team.members.mike.name') }}</h3>
+                        <p class="text-[#701516] font-medium mb-4">{{ __('about.team.members.mike.position') }}</p>
+                        <p class="text-gray-600">{{ __('about.team.members.mike.bio') }}</p>
                     </div>
                     
                     <!-- Jason Choque -->
                     <div class="text-center" data-aos="fade-up" data-aos-delay="200">
                         <div class="relative mb-6 inline-block">
                             <img src="{{ asset('jason.png') }}" 
-                                 alt="Desarrollador Fullstack" 
+                                 alt="{{ __('about.team.members.jason.name') }}" 
                                  class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Jason Choque</h3>
-                        <p class="text-[#701516] font-medium mb-4">Desarrollador Fullstack</p>
-                        <p class="text-gray-600">Especialista en arquitectura de software</p>
+                        <h3 class="text-xl font-bold mb-2">{{ __('about.team.members.jason.name') }}</h3>
+                        <p class="text-[#701516] font-medium mb-4">{{ __('about.team.members.jason.position') }}</p>
+                        <p class="text-gray-600">{{ __('about.team.members.jason.bio') }}</p>
                     </div>
                     
                     <!-- Josue Flores -->
                     <div class="text-center" data-aos="fade-up">
                         <div class="relative mb-6 inline-block">
                             <img src="{{ asset('josue.png') }}" 
-                                 alt="Diseñador Gráfico" 
+                                 alt="{{ __('about.team.members.josue.name') }}" 
                                  class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Josue Flores</h3>
-                        <p class="text-[#701516] font-medium mb-4">Diseñador Gráfico</p>
-                        <p class="text-gray-600">Creando identidades visuales impactantes</p>
+                        <h3 class="text-xl font-bold mb-2">{{ __('about.team.members.josue.name') }}</h3>
+                        <p class="text-[#701516] font-medium mb-4">{{ __('about.team.members.josue.position') }}</p>
+                        <p class="text-gray-600">{{ __('about.team.members.josue.bio') }}</p>
                     </div>
                     
                     <!-- Americo Vespucio -->
                     <div class="text-center" data-aos="fade-up" data-aos-delay="100">
                         <div class="relative mb-6 inline-block">
                             <img src="{{ asset('americo.png') }}" 
-                                 alt="Desarrollador Junior" 
+                                 alt="{{ __('about.team.members.americo.name') }}" 
                                  class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Americo Vespucio</h3>
-                        <p class="text-[#701516] font-medium mb-4">Desarrollador Junior</p>
-                        <p class="text-gray-600">Talento emergente con gran potencial</p>
+                        <h3 class="text-xl font-bold mb-2">{{ __('about.team.members.americo.name') }}</h3>
+                        <p class="text-[#701516] font-medium mb-4">{{ __('about.team.members.americo.position') }}</p>
+                        <p class="text-gray-600">{{ __('about.team.members.americo.bio') }}</p>
                     </div>
                 </div>
             </div>
@@ -347,13 +485,13 @@
         <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8" data-aos="fade-up">
-                    ¿Quieres ser parte de nuestra historia?
+                    {{ __('about.cta.title') }}
                 </h2>
                 <p class="text-xl mb-12" data-aos="fade-up" data-aos-delay="100">
-                    Únete a nosotros y ayúdanos a crear el futuro digital
+                    {{ __('about.cta.subtitle') }}
                 </p>
                 <a href="/contacto" class="inline-block bg-[#f4bc21] hover:bg-[#f4bc21]/90 text-[#701516] font-bold py-4 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg" data-aos="fade-up" data-aos-delay="200">
-                    Contáctanos
+                    {{ __('about.cta.button') }}
                 </a>
             </div>
         </div>

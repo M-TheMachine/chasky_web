@@ -77,9 +77,9 @@ return [
     |
     */
 
-    'locale' => 'es',
+    'locale' => 'en',
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'es',
 
     'supported_locales' => [
         'en' => 'English',

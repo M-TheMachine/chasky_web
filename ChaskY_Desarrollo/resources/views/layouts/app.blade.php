@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full">
+<html lang="{{ request()->cookie('locale') ?? session('locale', app()->getLocale()) }}" class="h-full">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta name="locale" content="{{ request()->cookie('locale') ?? session('locale', app()->getLocale()) }}">
+        <meta name="app-locale" content="{{ app()->getLocale() }}">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
@@ -18,6 +20,9 @@
         <!-- AOS -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        
+        <!-- Language Switcher -->
+        <script src="{{ asset('js/language-switcher.js') }}"></script>
 
         <!-- Scripts -->
         @php
@@ -85,13 +90,17 @@
                 <footer class="bg-white shadow mt-auto">
                     <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
                         <div class="text-center text-sm text-gray-500">
-                            <p>&copy; {{ date('Y') }} Chasky. {{ __('Todos los derechos reservados.') }}</p>
-                            <p class="mt-1">{{ __('Desarrollado con') }} ❤️ {{ __('por el equipo de Chasky') }}</p>
+                            <p>&copy; {{ date('Y') }} Chasky. {{ __('home.footer.rights') }}</p>
+                            <p class="mt-1">{{ __('home.footer.developed') }} ❤️ {{ __('home.footer.by_team') }}</p>
                         </div>
                     </div>
                 </footer>
             </div>
         </div>
+
+        @if(config('app.debug'))
+            <x-language-debug />
+        @endif
 
         @stack('scripts')
     </body>
