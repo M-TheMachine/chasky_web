@@ -1,7 +1,15 @@
 @php
-    $title = "E-commerce KOKO";
-    $subtitle = "Plataforma de pedidos online para el restaurante de comida rápida KOKO";
-    $featured_image = "https://images.unsplash.com/photo-1615719413546-198b25453f85?ixlib=rb-4.0.3";
+    $title = "E-commerce KOKO";    
+    $images = [
+        asset('images/projects/koko/food1.jpg'),
+        asset('images/projects/koko/food2.jpg'),
+        asset('images/projects/koko/food3.jpg'),
+        asset('images/projects/koko/food4.jpg'),
+        asset('images/projects/koko/food5.jpg'),
+        asset('images/projects/koko/food6.jpg'),
+    ];
+    $btitle = "Plataforma de pedidos online para el restaurante de comida rápida KOKO";
+    $featured_image = asset('images/projects/koko.jpg');
     $category = "Desarrollo Web";
     $description = "KOKO es un restaurante de comida rápida que buscaba optimizar su proceso de pedidos y expandir su alcance. Desarrollamos una plataforma de e-commerce que permite a los clientes realizar pedidos online, con un sistema de gestión en tiempo real para el restaurante.";
     $client = "Restaurante KOKO";
@@ -35,12 +43,12 @@
     ];
     
     $gallery = [
-        "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-4.0.3",
+        asset('images/projects/koko/food1.jpg'),
+        asset('images/projects/koko/food2.jpg'),
+        asset('images/projects/koko/food3.jpg'),
+        asset('images/projects/koko/food4.jpg'),
+        asset('images/projects/koko/food5.jpg'),
+        asset('images/projects/koko/food6.jpg'),
     ];
     
     $testimonial = [
@@ -48,24 +56,24 @@
         'name' => 'Carlos Mendoza',
         'position' => 'Gerente General',
         'company' => 'Restaurante KOKO',
-        'avatar' => 'https://randomuser.me/api/portraits/men/32.jpg'
+        'avatar' => asset('images/avatars/man4.jpg')
     ];
     
     $related_projects = [
         [
-            'image' => 'https://images.unsplash.com/photo-1593526421301-b909ba2a1979?ixlib=rb-4.0.3',
+            'image' => asset('images/projects/related1.jpg'),
             'title' => 'Mujeres al Volante',
             'description' => 'Aplicación que conecta a mujeres conductoras con pasajeras para garantizar viajes seguros.',
             'url' => '/portafolio/mujeres-al-volante'
         ],
         [
-            'image' => 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3',
+            'image' => asset('images/projects/related2.jpg'),
             'title' => 'Galeno Quiz Médico',
             'description' => 'Plataforma educativa de quizzes para profesionales médicos con seguimiento de progreso.',
             'url' => '/portafolio/galeno'
         ],
         [
-            'image' => 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3',
+            'image' => asset('images/projects/related3.jpg'),
             'title' => 'E-commerce Innovation',
             'description' => 'Transformamos la experiencia de compra online con tecnología de punta.',
             'url' => '#'

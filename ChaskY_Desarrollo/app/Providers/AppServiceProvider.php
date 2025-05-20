@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Facades\Blade;
 use App\View\Composers\LocaleComposer;
 
 class AppServiceProvider extends ServiceProvider
@@ -49,7 +50,10 @@ class AppServiceProvider extends ServiceProvider
             ]);
         }
         
-        // Registrar el compositor para todas las vistas
+        // Registrar componentes
         View::composer('*', LocaleComposer::class);
+        
+        // Registrar componente Alert
+        Blade::component('alert', \App\View\Components\Alert::class);
     }
 }

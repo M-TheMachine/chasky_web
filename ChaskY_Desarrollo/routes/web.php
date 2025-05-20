@@ -41,6 +41,14 @@ Route::get('/portafolio/galeno', function () {
     return view('portafolio.galeno');
 })->name('portafolio.galeno');
 
+Route::get('/portafolio/memoria', function () {
+    return view('portafolio.memoria');
+})->name('portafolio.memoria');
+
+Route::get('/portafolio/pick', function () {
+    return view('portafolio.pick');
+})->name('portafolio.pick');
+
 Route::get('/nosotros', function () {
     return view('about');
 })->name('about');

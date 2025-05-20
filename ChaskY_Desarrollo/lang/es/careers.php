@@ -30,7 +30,11 @@ return [
     ],
     'positions' => [
         'title' => 'Posiciones Abiertas',
+        'subtitle' => 'Explora nuestras oportunidades laborales',
         'empty' => 'No hay posiciones abiertas en este momento. Sin embargo, siempre estamos buscando talento excepcional. ¡Envíanos tu CV!',
+        'apply' => 'Aplicar',
+        'requirements' => 'Requisitos:',
+        'offer' => 'Ofrecemos:',
         'frontend' => [
             'title' => 'Desarrollador Frontend',
             'type' => 'Tiempo completo',
@@ -52,6 +56,40 @@ return [
             'requirements' => 'Figma, Adobe XD, Principios de diseño UX/UI',
             'description' => 'Buscamos un diseñador creativo para transformar conceptos complejos en experiencias de usuario claras y atractivas.',
         ],
+        'flutter' => [
+            'title' => 'Desarrollador Flutter Junior',
+            'location' => 'Cochabamba, Bolivia · Híbrido',
+            'description' => 'Buscamos un desarrollador Flutter Junior apasionado por crear aplicaciones móviles excepcionales.',
+            'requirements' => [
+                'Experiencia básica con Flutter y Dart',
+                'Conocimientos de Git',
+                'Capacidad de trabajo en equipo',
+                'Deseos de aprender y crecer profesionalmente'
+            ],
+            'offer' => [
+                'Mentoría personalizada',
+                'Capacitación continua',
+                'Proyectos desafiantes',
+                'Horario flexible'
+            ]
+        ],
+        'fullstack' => [
+            'title' => 'Desarrollador Fullstack',
+            'location' => 'Cochabamba, Bolivia · Híbrido',
+            'description' => 'Estamos en busca de un desarrollador Fullstack con experiencia en tecnologías modernas.',
+            'requirements' => [
+                'Experiencia con Laravel y Vue.js/React',
+                'Conocimientos de bases de datos SQL',
+                'Experiencia con API RESTful',
+                'Familiaridad con metodologías ágiles'
+            ],
+            'offer' => [
+                'Proyectos internacionales',
+                'Stack tecnológico moderno',
+                'Desarrollo profesional continuo',
+                'Excelente ambiente laboral'
+            ]
+        ]
     ],
     'application' => [
         'title' => 'Cómo Aplicar',

@@ -26,6 +26,7 @@ class ContactoEmail extends Mailable
     public function build()
     {
         return $this->markdown('emails.contacto')
-                    ->subject('Nuevo mensaje de contacto desde la web');
+                    ->subject('Nuevo contacto web: ' . $this->datos['asunto'])
+                    ->replyTo($this->datos['email'], $this->datos['nombre']);
     }
 }

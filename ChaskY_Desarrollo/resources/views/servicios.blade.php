@@ -61,10 +61,12 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="order-1 md:order-2">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2015&q=80" 
-                             alt="Desarrollo Web" 
-                             class="rounded-xl shadow-2xl transform hover:scale-105 transition duration-500">
+                    <div class="order-1 md:order-2 flex justify-center items-center">
+                        <div class="bg-gradient-to-br from-[#701516] to-[#c40606] p-12 rounded-full shadow-xl transform hover:scale-110 transition duration-500">
+                            <svg class="w-32 h-32 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,10 +74,12 @@
             <!-- Marketing Digital -->
             <div class="mb-32" data-aos="fade-up">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1774&q=80" 
-                             alt="Marketing Digital" 
-                             class="rounded-xl shadow-2xl transform hover:scale-105 transition duration-500">
+                    <div class="flex justify-center items-center">
+                        <div class="bg-gradient-to-br from-[#701516] to-[#c40606] p-12 rounded-full shadow-xl transform hover:scale-110 transition duration-500">
+                            <svg class="w-32 h-32 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
                     </div>
                     <div>
                         <h2 class="text-3xl font-bold mb-6 gradient-text">{{ __('services.marketing.title') }}</h2>
@@ -131,21 +135,24 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="order-1 md:order-2">
-                        <img src="https://images.unsplash.com/photo-1616400619175-5beda3a17896?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80" 
-                             alt="Diseño UX/UI" 
-                             class="rounded-xl shadow-2xl transform hover:scale-105 transition duration-500">
+                    <div class="order-1 md:order-2 flex justify-center items-center">
+                        <div class="bg-gradient-to-br from-[#701516] to-[#c40606] p-12 rounded-full shadow-xl transform hover:scale-110 transition duration-500">
+                            <svg class="w-32 h-32 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Offshoring -->
-            <div class="mb-32" data-aos="fade-up">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3" 
-                             alt="Offshoring" 
-                             class="rounded-xl shadow-2xl transform hover:scale-105 transition duration-500">
+            <div class="mb-32" data-aos="fade-up">                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="flex justify-center items-center">
+                        <div class="bg-gradient-to-br from-[#701516] to-[#c40606] p-12 rounded-full shadow-xl transform hover:scale-110 transition duration-500">
+                            <svg class="w-32 h-32 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                            </svg>
+                        </div>
                     </div>
                     <div>
                         <h2 class="text-3xl font-bold mb-6 gradient-text">{{ __('services.offshoring.title') }}</h2>
@@ -201,10 +208,12 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="order-1 md:order-2">
-                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3" 
-                             alt="Nearshoring" 
-                             class="rounded-xl shadow-2xl transform hover:scale-105 transition duration-500">
+                    <div class="order-1 md:order-2 flex justify-center items-center">
+                        <div class="bg-gradient-to-br from-[#701516] to-[#c40606] p-12 rounded-full shadow-xl transform hover:scale-110 transition duration-500">
+                            <svg class="w-32 h-32 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -212,7 +221,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-32 bg-gradient-to-br from-[#701516] to-[#c40606] text-white relative">
+    <section class="py-32 bg-gradient-to-br from-[#701516] to-[#c40606] text-white relative mt-16">
         <div class="absolute inset-0 bg-black bg-opacity-30"></div>
         <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-4xl mx-auto text-center">

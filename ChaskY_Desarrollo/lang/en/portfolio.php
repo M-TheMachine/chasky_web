@@ -8,16 +8,22 @@ return [
     'project_types' => [
         'all' => 'All',
         'web' => 'Web Development',
-        'mobile' => 'Mobile Apps',
-        'design' => 'UX/UI Design',
-        'marketing' => 'Digital Marketing',
+        'mobile' => 'Mobile Development',
+        'marketing' => 'Marketing',
     ],
     'projects' => [
-        'ecommerce' => [
-            'title' => 'E-commerce KOKO',
-            'subtitle' => 'Online ordering platform for restaurant',
-            'tech' => 'Laravel + Vue.js',
-            'description' => 'Online ordering platform for KOKO fast food restaurant with real-time order management.',
+        'memoria' => [
+            'title' => 'En Memoria Bolivia',
+            'subtitle' => 'A Digital Tribute to Life',
+            'tech' => 'Laravel + Node.js + Tailwind CSS',
+            'description' => 'Innovative web platform designed to preserve and honor the memory of deceased loved ones, with QR medallions integration.',
+            'category' => 'Web Development',
+        ],
+        'pick' => [
+            'title' => 'Pick n Truck',
+            'subtitle' => 'Connecting the Future of Transportation',
+            'tech' => 'Laravel + Node.js + Tailwind CSS',
+            'description' => 'Revolutionary B2B platform that connects transport companies with importers and exporters to optimize logistics operations.',
             'category' => 'Web Development',
         ],
         'health' => [
@@ -25,28 +31,73 @@ return [
             'subtitle' => 'Health tracking application',
             'tech' => 'Flutter + Firebase',
             'description' => 'We revolutionize health tracking with AI and real-time analytics.',
-            'category' => 'Mobile Apps',
-        ],
-        'analytics' => [
-            'title' => 'Business Intelligence',
-            'subtitle' => 'Business analytical dashboard',
-            'tech' => 'Vue.js + Laravel',
-            'description' => 'Business data visualization with actionable insights.',
-            'category' => 'Web Development',
+            'category' => 'Mobile Development',
         ],
         'mujeres_al_volante' => [
-            'title' => 'Mujeres al Volante',
-            'subtitle' => 'Safe transportation app for women',
-            'tech' => 'React Native + Firebase',
-            'description' => 'Application that connects women drivers with female passengers to ensure safe rides.',
-            'category' => 'Mobile Apps',
+            'title' => 'Mujeres al Volante Bolivia',
+            'subtitle' => 'Safety and Empowerment in Transportation',
+            'tech' => 'Flutter + Dart + Firebase',
+            'description' => 'Innovative app connecting users with female drivers, prioritizing safety through identity verification and real-time tracking.',
+            'category' => 'Mobile Development',
+            'client' => 'Gabriela Strauss',
+            'date' => 'May 2025',
+            'services' => 'Mobile Development, UX/UI Design, Geolocation',
+            'challenge' => 'The main objective was to create a solution that not only guarantees the peace of mind of users but also elevates the role of women in a traditionally male-dominated sector, offering a distinctive and accessible service. The goal was to develop an application that combined security, usability, and a clear social purpose.',
+            'solution' => 'We developed this application using a robust technology stack focused on security. We built a fluid and responsive interface with Flutter, using Dart for optimal performance on iOS and Android, ensuring a consistent experience for users and drivers. We integrated advanced geolocation functionalities to track routes in real-time, allowing users to monitor their journey and drivers to optimize their travels. We implemented strict measures such as driver verification, data encryption, and secure authentication, complying with the highest standards to protect all involved parties.',
+            'results' => 'Mujeres al Volante Bolivia has revolutionized local transportation, serving thousands of users with a service that combines security and empathy. With more than 38 female drivers and a team that includes specialized support, the app has gained international recognition for its focus on gender inclusion and innovation. Its intuitive design and geolocation functions have been key to providing peace of mind to families, while drivers have found a means for their economic independence.',
+            'features' => [
+                [
+                    'title' => 'Advanced security system',
+                    'description' => 'Panic button, real-time route sharing, and identity verification to ensure safety on every trip.'
+                ],
+                [
+                    'title' => 'Intelligent geolocation',
+                    'description' => 'Optimized route system with safe zone alerts and suggestions for verified meeting points.'
+                ],
+                [
+                    'title' => 'Rigorous verification',
+                    'description' => 'Strict verification process for users and drivers, with background checks and document validation.'
+                ],
+            ],
+            'testimonial' => [
+                'text' => 'Mujeres al Volante has revolutionized the way I commute daily. As a user, I finally feel safe and at ease during my journeys. As a founder, I am proud to work with Chasky on a technological solution that addresses a real social problem with an innovative and effective approach.',
+                'name' => 'Gabriela Strauss',
+                'position' => 'Founder',
+                'company' => 'Mujeres al Volante Bolivia',
+            ],
         ],
         'galeno' => [
             'title' => 'Galeno Medical Quiz',
-            'subtitle' => 'Educational platform for doctors',
-            'tech' => 'Flutter + Laravel',
-            'description' => 'Educational quiz platform for medical professionals with progress tracking.',
-            'category' => 'Mobile Apps',
+            'subtitle' => 'The App Revolutionizing Medical Learning',
+            'tech' => 'Flutter + Dart + Firebase',
+            'description' => 'Innovative app that centralizes medical exams, allowing students and professionals to practice, compete with friends, and participate in group battles.',
+            'category' => 'Mobile Development',
+            'client' => 'Faculty of Medicine, Universidad Mayor de San Andrés',
+            'date' => 'May 2025',
+            'services' => 'Mobile Development, Gamification, UX/UI Design',
+            'challenge' => 'Our goal was to create a tool that not only facilitates access to educational resources but also makes learning a social and competitive process, helping students improve their knowledge in a practical and fun way. The main challenge was organizing a large amount of medical content into an easy-to-navigate structure and creating a competitive system that truly motivated learning.',
+            'solution' => 'We developed Galeno with a modern and efficient technology stack. We used Flutter and Dart to build a fluid, cross-platform application, ensuring optimal performance and a consistent user experience on both iOS and Android. We designed an organized system that classifies exams by book and year, allowing quick and efficient access to content. We implemented a system of challenges and group battles, integrating gamification tools that encourage real-time interaction between users. We focused on offering an intuitive interface and a scalable system that supports a growing volume of users and content, ensuring an uninterrupted educational experience.',
+            'results' => 'Galeno has transformed the way medical students prepare for their exams, offering an accessible and motivating platform that combines learning and entertainment. The ability to challenge friends and participate in group battles has created an active learning community, while the organization by book and year has simplified access to key educational resources. The app has been well received for its user-centered design and its ability to make studying more dynamic and social. Galeno reflects our ability to merge technology and education, creating solutions that empower users and promote collaborative learning.',
+            'features' => [
+                [
+                    'title' => 'Organization system by book and year',
+                    'description' => 'Centralizes all medical exams in an organized and accessible way for efficient navigation.'
+                ],
+                [
+                    'title' => 'Competitions and challenges',
+                    'description' => 'System of individual challenges and group battles that encourage competitive and collaborative learning.'
+                ],
+                [
+                    'title' => 'Customized exams',
+                    'description' => 'Creation of tailored assessments according to the specific learning needs of each user.'
+                ],
+            ],
+            'testimonial' => [
+                'text' => 'Galeno has revolutionized the way our students prepare for their exams. The combination of learning and gamification has significantly increased interest in studying. The structure organized by book and year has greatly simplified the search for relevant material, and the competitions between students have created a collaborative learning dynamic that we had never seen before.',
+                'name' => 'Dr. Carlos Mendoza',
+                'position' => 'Dean',
+                'company' => 'Faculty of Medicine, UMSA',
+            ],
         ],
     ],
     'detail' => [
@@ -55,6 +106,7 @@ return [
         'services' => 'Services',
         'tech' => 'Technologies',
         'visit_site' => 'Visit Site',
+        'download_app' => 'Download App',
         'challenge' => 'The Challenge',
         'solution' => 'Our Solution',
         'results' => 'Results',

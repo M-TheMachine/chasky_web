@@ -30,7 +30,11 @@ return [
     ],
     'positions' => [
         'title' => 'Open Positions',
+        'subtitle' => 'Explore our job opportunities',
         'empty' => 'There are no open positions at this time. However, we are always looking for exceptional talent. Send us your CV!',
+        'apply' => 'Apply',
+        'requirements' => 'Requirements:',
+        'offer' => 'We offer:',
         'frontend' => [
             'title' => 'Frontend Developer',
             'type' => 'Full-time',
@@ -52,6 +56,40 @@ return [
             'requirements' => 'Figma, Adobe XD, UX/UI Design Principles',
             'description' => 'We are looking for a creative designer to transform complex concepts into clear and attractive user experiences.',
         ],
+        'flutter' => [
+            'title' => 'Junior Flutter Developer',
+            'location' => 'Cochabamba, Bolivia · Hybrid',
+            'description' => 'We are looking for a Junior Flutter Developer passionate about creating exceptional mobile applications.',
+            'requirements' => [
+                'Basic experience with Flutter and Dart',
+                'Knowledge of Git',
+                'Teamwork ability',
+                'Desire to learn and grow professionally'
+            ],
+            'offer' => [
+                'Personalized mentoring',
+                'Continuous training',
+                'Challenging projects',
+                'Flexible schedule'
+            ]
+        ],
+        'fullstack' => [
+            'title' => 'Fullstack Developer',
+            'location' => 'Cochabamba, Bolivia · Hybrid',
+            'description' => 'We are looking for a Fullstack developer with experience in modern technologies.',
+            'requirements' => [
+                'Experience with Laravel and Vue.js/React',
+                'Knowledge of SQL databases',
+                'Experience with RESTful API',
+                'Familiarity with agile methodologies'
+            ],
+            'offer' => [
+                'International projects',
+                'Modern technology stack',
+                'Continuous professional development',
+                'Excellent work environment'
+            ]
+        ]
     ],
     'application' => [
         'title' => 'How to Apply',

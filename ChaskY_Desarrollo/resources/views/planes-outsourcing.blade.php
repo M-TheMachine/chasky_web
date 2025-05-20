@@ -46,10 +46,10 @@
                     <!-- Essential Plan -->
                     <div class="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" data-aos="fade-up">
                         <div class="bg-[#701516] px-6 py-12 text-white text-center">
-                            <h3 class="text-2xl font-bold mb-4">🚀 Essential Plan</h3>
+                            <h3 class="text-2xl font-bold mb-4">{{ __('outsourcing.plans.essential.title') }}</h3>
                             <div class="flex justify-center items-baseline">
-                                <span class="text-3xl font-extrabold tracking-tight">$2,500</span>
-                                <span class="ml-1 text-xl font-normal text-white/70">USD</span>
+                                <span class="text-3xl font-extrabold tracking-tight">{{ __('outsourcing.plans.essential.price') }}</span>
+                                <span class="ml-1 text-xl font-normal text-white/70">{{ __('outsourcing.plans.essential.currency') }}</span>
                             </div>
                         </div>
                         <div class="p-6">
@@ -60,7 +60,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="ml-3 text-base text-gray-700">1 desarrollador full-stack dedicado (web o móvil).</p>
+                                    <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.essential.features.developer') }}</p>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="flex-shrink-0">
@@ -68,7 +68,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="ml-3 text-base text-gray-700">1 project manager bilingüe para comunicación directa.</p>
+                                    <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.essential.features.manager') }}</p>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="flex-shrink-0">
@@ -76,7 +76,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="ml-3 text-base text-gray-700">Reuniones semanales con metodología Scrum y seguimiento ágil.</p>
+                                    <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.essential.features.meetings') }}</p>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="flex-shrink-0">
@@ -84,7 +84,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="ml-3 text-base text-gray-700">Hasta 160 horas mensuales de desarrollo.</p>
+                                    <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.essential.features.hours') }}</p>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="flex-shrink-0">
@@ -92,7 +92,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="ml-3 text-base text-gray-700">Acceso a herramientas de gestión profesional (Jira, Slack, Trello, etc.).</p>
+                                    <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.essential.features.tools') }}</p>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="flex-shrink-0">
@@ -100,15 +100,15 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="ml-3 text-base text-gray-700">Entrega white-label: todo el crédito es para tu agencia.</p>
+                                    <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.essential.features.whitelabel') }}</p>
                                 </li>
                             </ul>
                             <div class="mt-8 mb-4 text-gray-600 text-center italic">
-                                Ideal para agencias que necesitan aumentar su capacidad de producción sin aumentar su nómina.
+                                {{ __('outsourcing.plans.essential.ideal') }}
                             </div>
                             <div class="mt-6">
                                 <a href="/contacto" class="block w-full bg-[#701516] hover:bg-[#701516]/90 text-white text-center font-bold py-3 px-4 rounded-lg transition duration-300">
-                                    Contáctanos
+                                    {{ __('outsourcing.plans.essential.button') }}
                                 </a>
                             </div>
                         </div>
@@ -117,11 +117,11 @@
                     <!-- Growth Plan -->
                     <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform scale-105 z-10 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
                         <div class="bg-gradient-to-r from-[#701516] to-[#c40606] px-6 py-12 text-white text-center">
-                            <span class="inline-block px-3 py-1 text-xs font-semibold bg-[#f4bc21] text-[#701516] rounded-full mb-4">RECOMENDADO</span>
-                            <h3 class="text-2xl font-bold mb-4">🌱 Growth Plan</h3>
+                            <span class="inline-block px-3 py-1 text-xs font-semibold bg-[#f4bc21] text-[#701516] rounded-full mb-4">{{ __('outsourcing.plans.growth.tag') }}</span>
+                            <h3 class="text-2xl font-bold mb-4">{{ __('outsourcing.plans.growth.title') }}</h3>
                             <div class="flex justify-center items-baseline">
-                                <span class="text-3xl font-extrabold tracking-tight">$4,300</span>
-                                <span class="ml-1 text-xl font-normal text-white/70">USD</span>
+                                <span class="text-3xl font-extrabold tracking-tight">{{ __('outsourcing.plans.growth.price') }}</span>
+                                <span class="ml-1 text-xl font-normal text-white/70">{{ __('outsourcing.plans.growth.currency') }}</span>
                             </div>
                         </div>
                         <div class="p-6">
@@ -132,7 +132,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="ml-3 text-base text-gray-700">2 desarrolladores full-stack dedicados.</p>
+                                    <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.growth.features.developers') }}</p>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="flex-shrink-0">
@@ -140,7 +140,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="ml-3 text-base text-gray-700">1 project manager bilingüe.</p>
+                                    <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.growth.features.manager') }}</p>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="flex-shrink-0">
@@ -148,7 +148,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="ml-3 text-base text-gray-700">1 diseñador UI/UX compartido.</p>
+                                    <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.growth.features.designer') }}</p>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="flex-shrink-0">
@@ -156,7 +156,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="ml-3 text-base text-gray-700">Hasta 320 horas mensuales de trabajo.</p>
+                                    <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.growth.features.hours') }}</p>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="flex-shrink-0">
@@ -164,7 +164,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="ml-3 text-base text-gray-700">Scrum diario, QA básico y seguimiento continuo.</p>
+                                    <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.growth.features.scrum') }}</p>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="flex-shrink-0">
@@ -172,15 +172,15 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="ml-3 text-base text-gray-700">Entrega white-label con NDA incluida.</p>
+                                    <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.growth.features.whitelabel') }}</p>
                                 </li>
                             </ul>
                             <div class="mt-8 mb-4 text-gray-600 text-center italic">
-                                Ideal para agencias con múltiples proyectos en simultáneo y necesidad de agilidad y control de calidad.
+                                {{ __('outsourcing.plans.growth.ideal') }}
                             </div>
                             <div class="mt-6">
                                 <a href="/contacto" class="block w-full bg-gradient-to-r from-[#701516] to-[#c40606] hover:opacity-90 text-white text-center font-bold py-3 px-4 rounded-lg transition duration-300">
-                                    Contáctanos
+                                    {{ __('outsourcing.plans.growth.button') }}
                                 </a>
                             </div>
                         </div>
@@ -189,10 +189,10 @@
                     <!-- Custom Plan -->
                     <div class="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
                         <div class="bg-[#701516] px-6 py-12 text-white text-center">
-                            <h3 class="text-2xl font-bold mb-4">🛠️ Custom Plan</h3>
+                            <h3 class="text-2xl font-bold mb-4">{{ __('outsourcing.plans.custom.title') }}</h3>
                             <div class="flex justify-center items-baseline">
-                                <span class="text-3xl font-extrabold tracking-tight">$5,000</span>
-                                <span class="ml-1 text-xl font-normal text-white/70">USD+</span>
+                                <span class="text-3xl font-extrabold tracking-tight">{{ __('outsourcing.plans.custom.price') }}</span>
+                                <span class="ml-1 text-xl font-normal text-white/70">{{ __('outsourcing.plans.custom.currency') }}</span>
                             </div>
                         </div>
                         <div class="p-6">
@@ -203,7 +203,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="ml-3 text-base text-gray-700">Equipo personalizado según el tipo de proyecto.</p>
+                                    <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.custom.features.team') }}</p>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="flex-shrink-0">
@@ -211,7 +211,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="ml-3 text-base text-gray-700">QA manual o automatizado según requerimiento.</p>
+                                    <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.custom.features.qa') }}</p>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="flex-shrink-0">
@@ -219,7 +219,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="ml-3 text-base text-gray-700">Diseño UI/UX completo y soporte de marketing opcional.</p>
+                                    <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.custom.features.design') }}</p>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="flex-shrink-0">
@@ -227,7 +227,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="ml-3 text-base text-gray-700">DevOps y arquitectura escalable disponibles.</p>
+                                    <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.custom.features.devops') }}</p>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="flex-shrink-0">
@@ -235,15 +235,15 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="ml-3 text-base text-gray-700">Integración directa con los equipos internos del cliente.</p>
+                                    <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.custom.features.integration') }}</p>
                                 </li>
                             </ul>
                             <div class="mt-8 mb-4 text-gray-600 text-center italic">
-                                Ideal para agencias que buscan escalar rápidamente, manejar productos complejos o reforzar su equipo interno con talento especializado.
+                                {{ __('outsourcing.plans.custom.ideal') }}
                             </div>
                             <div class="mt-6">
                                 <a href="/contacto" class="block w-full bg-[#701516] hover:bg-[#701516]/90 text-white text-center font-bold py-3 px-4 rounded-lg transition duration-300">
-                                    Contáctanos
+                                    {{ __('outsourcing.plans.custom.button') }}
                                 </a>
                             </div>
                         </div>
@@ -271,9 +271,9 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold">Talento Especializado</h3>
+                            <h3 class="text-xl font-bold">{{ __('outsourcing.benefits.talent.title') }}</h3>
                         </div>
-                        <p class="text-gray-600">Accede a desarrolladores altamente cualificados con experiencia en las últimas tecnologías y frameworks.</p>
+                        <p class="text-gray-600">{{ __('outsourcing.benefits.talent.description') }}</p>
                     </div>
 
                     <!-- Flexibilidad -->
@@ -284,9 +284,9 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold">Flexibilidad</h3>
+                            <h3 class="text-xl font-bold">{{ __('outsourcing.benefits.flexibility.title') }}</h3>
                         </div>
-                        <p class="text-gray-600">Escala tu equipo según tus necesidades, sin los riesgos y costos asociados a contratar empleados de tiempo completo.</p>
+                        <p class="text-gray-600">{{ __('outsourcing.benefits.flexibility.description') }}</p>
                     </div>
 
                     <!-- Ahorro de Costos -->
@@ -297,9 +297,9 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold">Ahorro de Costos</h3>
+                            <h3 class="text-xl font-bold">{{ __('outsourcing.benefits.cost.title') }}</h3>
                         </div>
-                        <p class="text-gray-600">Reduce gastos operativos significativamente al eliminar costos de reclutamiento, capacitación, beneficios y espacio de oficina.</p>
+                        <p class="text-gray-600">{{ __('outsourcing.benefits.cost.description') }}</p>
                     </div>
 
                     <!-- Entrega Rápida -->
@@ -310,9 +310,9 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h3v7l9-11h-3z" />
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold">Entrega Rápida</h3>
+                            <h3 class="text-xl font-bold">{{ __('outsourcing.benefits.delivery.title') }}</h3>
                         </div>
-                        <p class="text-gray-600">Acelera el desarrollo de tus proyectos con equipos preconfigurados y metodologías ágiles implementadas desde el día uno.</p>
+                        <p class="text-gray-600">{{ __('outsourcing.benefits.delivery.description') }}</p>
                     </div>
                 </div>
             </div>
@@ -320,7 +320,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-32 bg-gradient-to-br from-[#701516] to-[#c40606] text-white relative">
+    <section class="py-32 bg-gradient-to-br from-[#701516] to-[#c40606] text-white relative mt-16">
         <div class="absolute inset-0 bg-black bg-opacity-30"></div>
         <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-4xl mx-auto text-center">

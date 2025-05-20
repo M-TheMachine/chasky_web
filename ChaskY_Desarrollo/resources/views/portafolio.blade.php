@@ -35,17 +35,17 @@
     <section class="py-24 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up">
-                <button class="px-6 py-2 rounded-full bg-[#701516] text-white hover:bg-[#c40606] transition-colors">
+                <button class="filter-btn px-6 py-2 rounded-full bg-[#701516] text-white hover:bg-[#c40606] transition-colors" data-filter="all">
                     {{ __('portfolio.project_types.all') }}
                 </button>
-                <button class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-[#701516] hover:text-white transition-colors">
+                <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-[#701516] hover:text-white transition-colors" data-filter="web">
                     {{ __('portfolio.project_types.web') }}
                 </button>
-                <button class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-[#701516] hover:text-white transition-colors">
-                    {{ __('portfolio.project_types.marketing') }}
+                <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-[#701516] hover:text-white transition-colors" data-filter="mobile">
+                    {{ __('portfolio.project_types.mobile') }}
                 </button>
-                <button class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-[#701516] hover:text-white transition-colors">
-                    {{ __('portfolio.project_types.design') }}
+                <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-[#701516] hover:text-white transition-colors" data-filter="marketing">
+                    {{ __('portfolio.project_types.marketing') }}
                 </button>
             </div>
         </div>
@@ -54,26 +54,42 @@
     <!-- Proyectos Grid -->
     <section class="py-24 bg-gray-50 mb-24">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Proyecto 1: KOKO E-commerce -->
-                <div class="group relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up">
-                    <img src="https://images.unsplash.com/photo-1615719413546-198b25453f85?ixlib=rb-4.0.3" 
-                         alt="{{ __('portfolio.projects.ecommerce.title') }}" 
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+                <!-- Proyecto: En Memoria Bolivia -->
+                <div class="portfolio-item group relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-category="web">
+                    <img src="{{ asset('memoria.png') }}" 
+                         alt="{{ __('portfolio.projects.memoria.title') }}" 
                          class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="absolute bottom-0 left-0 right-0 p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">{{ __('portfolio.projects.ecommerce.title') }}</h3>
-                            <p class="text-gray-200 mb-4">{{ __('portfolio.projects.ecommerce.description') }}</p>
-                            <a href="/portafolio/koko" class="inline-block px-6 py-2 bg-[#f4bc21] text-[#701516] rounded-full font-semibold hover:bg-[#f4bc21]/90 transition-colors">
+                            <h3 class="text-xl font-bold text-white mb-2">{{ __('portfolio.projects.memoria.title') }}</h3>
+                            <p class="text-gray-200 mb-4">{{ __('portfolio.projects.memoria.description') }}</p>
+                            <a href="/portafolio/memoria" class="inline-block px-6 py-2 bg-[#f4bc21] text-[#701516] rounded-full font-semibold hover:bg-[#f4bc21]/90 transition-colors">
                                 {{ __('portfolio.detail.view_project') }}
                             </a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Proyecto 2: Mujeres al Volante -->
-                <div class="group relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1593526421301-b909ba2a1979?ixlib=rb-4.0.3" 
+                
+                <!-- Proyecto: Pick n Truck -->
+                <div class="portfolio-item group relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="50" data-category="web">
+                    <img src="{{ asset('pick.png') }}" 
+                         alt="{{ __('portfolio.projects.pick.title') }}" 
+                         class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">{{ __('portfolio.projects.pick.title') }}</h3>
+                            <p class="text-gray-200 mb-4">{{ __('portfolio.projects.pick.description') }}</p>
+                            <a href="/portafolio/pick" class="inline-block px-6 py-2 bg-[#f4bc21] text-[#701516] rounded-full font-semibold hover:bg-[#f4bc21]/90 transition-colors">
+                                {{ __('portfolio.detail.view_project') }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto: Mujeres al Volante -->
+                <div class="portfolio-item group relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100" data-category="mobile">
+                    <img src="{{ asset('mav.png') }}" 
                          alt="{{ __('portfolio.projects.mujeres_al_volante.title') }}" 
                          class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -86,10 +102,10 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Proyecto 3: Galeno Quiz Médico -->
-                <div class="group relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3" 
+                
+                <!-- Proyecto: Galeno Quiz Médico -->
+                <div class="portfolio-item group relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="150" data-category="mobile">
+                    <img src="{{ asset('galeno.jpeg') }}" 
                          alt="{{ __('portfolio.projects.galeno.title') }}" 
                          class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -102,60 +118,12 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Proyecto 4: E-commerce Innovation (proyecto existente) -->
-                <div class="group relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up">
-                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3" 
-                         alt="E-commerce Innovation" 
-                         class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <div class="absolute bottom-0 left-0 right-0 p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">E-commerce Innovation</h3>
-                            <p class="text-gray-200 mb-4">{{ __('Transformamos la experiencia de compra online con tecnología de punta.') }}</p>
-                            <a href="#" class="inline-block px-6 py-2 bg-[#f4bc21] text-[#701516] rounded-full font-semibold hover:bg-[#f4bc21]/90 transition-colors">
-                                {{ __('portfolio.detail.view_project') }}
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 5: HealthTech App (proyecto existente) -->
-                <div class="group relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3" 
-                         alt="{{ __('portfolio.projects.health.title') }}" 
-                         class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <div class="absolute bottom-0 left-0 right-0 p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">{{ __('portfolio.projects.health.title') }}</h3>
-                            <p class="text-gray-200 mb-4">{{ __('portfolio.projects.health.description') }}</p>
-                            <a href="#" class="inline-block px-6 py-2 bg-[#f4bc21] text-[#701516] rounded-full font-semibold hover:bg-[#f4bc21]/90 transition-colors">
-                                {{ __('portfolio.detail.view_project') }}
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 6: Business Intelligence (proyecto existente) -->
-                <div class="group relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3" 
-                         alt="{{ __('portfolio.projects.analytics.title') }}" 
-                         class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <div class="absolute bottom-0 left-0 right-0 p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">{{ __('portfolio.projects.analytics.title') }}</h3>
-                            <p class="text-gray-200 mb-4">{{ __('portfolio.projects.analytics.description') }}</p>
-                            <a href="#" class="inline-block px-6 py-2 bg-[#f4bc21] text-[#701516] rounded-full font-semibold hover:bg-[#f4bc21]/90 transition-colors">
-                                {{ __('portfolio.detail.view_project') }}
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-32 bg-gradient-to-br from-[#701516] to-[#c40606] text-white relative">
+    <section class="py-32 bg-gradient-to-br from-[#701516] to-[#c40606] text-white relative mt-16">
         <div class="absolute inset-0 bg-black bg-opacity-30"></div>
         <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
@@ -171,4 +139,46 @@
             </div>
         </div>
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Obtener todos los botones de filtro y los elementos del portafolio
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            // Añadir event listener a cada botón de filtro
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remover la clase activa de todos los botones
+                    filterBtns.forEach(btn => {
+                        btn.classList.remove('bg-[#701516]', 'text-white');
+                        btn.classList.add('bg-gray-200', 'text-gray-700');
+                    });
+                    
+                    // Añadir la clase activa al botón actual
+                    this.classList.remove('bg-gray-200', 'text-gray-700');
+                    this.classList.add('bg-[#701516]', 'text-white');
+                    
+                    // Obtener la categoría del botón
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Filtrar los elementos del portafolio
+                    portfolioItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+
+                    // Refrescar AOS después de filtrar
+                    setTimeout(function() {
+                        if (typeof AOS !== 'undefined') {
+                            AOS.refresh();
+                        }
+                    }, 100);
+                });
+            });
+        });
+    </script>
 @endsection

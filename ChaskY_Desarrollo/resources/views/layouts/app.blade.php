@@ -13,13 +13,11 @@
         <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
 
         <!-- AOS -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <link rel="stylesheet" href="{{ asset('css/aos.css') }}" />
+        <script src="{{ asset('js/aos.js') }}"></script>
         
         <!-- Language Switcher -->
         <script src="{{ asset('js/language-switcher.js') }}"></script>
@@ -97,10 +95,6 @@
                 </footer>
             </div>
         </div>
-
-        @if(config('app.debug'))
-            <x-language-debug />
-        @endif
 
         @stack('scripts')
     </body>

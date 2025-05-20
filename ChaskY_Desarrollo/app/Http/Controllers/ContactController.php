@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Log;
+use App\Mail\ContactoEmail;
 
 class ContactController extends Controller
 {
@@ -14,14 +15,21 @@ class ContactController extends Controller
             'nombre' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'telefono' => 'required|string|max:20',
-            'asunto' => 'required|string|max:255',
+            'servicio' => 'required|string|max:255',
             'mensaje' => 'required|string',
         ]);
 
         try {
-            // Aquí puedes agregar la lógica para enviar el email
-            // Por ejemplo:
-            // Mail::to('contacto@chasky.com')->send(new ContactoEmail($request->all()));
+            // Preparar los datos del correo
+            $datos = $request->all();
+            
+            // Usar el servicio como asunto si no existe un campo de asunto explícito
+            if (!isset($datos['asunto'])) {
+                $datos['asunto'] = $datos['servicio'];
+            }
+            
+            // Enviar correo electrónico
+            Mail::to('dreambig@chaskydev.com')->send(new ContactoEmail($datos));
 
             Log::info('Formulario de contacto recibido:', $request->all());
 

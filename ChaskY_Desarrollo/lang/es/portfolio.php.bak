@@ -1,0 +1,123 @@
+<?php
+
+return [
+    'hero' => [
+        'title' => 'Nuestro Portafolio',
+        'subtitle' => 'Descubre cómo hemos ayudado a nuestros clientes a alcanzar el éxito digital',
+    ],
+    'project_types' => [
+        'all' => 'Todos',
+        'web' => 'Desarrollo Web',
+        'mobile' => 'Desarrollo Móvil',
+        'marketing' => 'Marketing',
+    ],
+    'projects' => [
+        'memoria' => [
+            'title' => 'En Memoria Bolivia',
+            'subtitle' => 'Un Tributo Digital a la Vida',
+            'tech' => 'Laravel + Node.js + Tailwind CSS',
+            'description' => 'Plataforma web innovadora diseñada para preservar y honrar la memoria de seres queridos fallecidos, con integración de medallones QR.',
+            'category' => 'Desarrollo Web',
+        ],
+        'pick' => [
+            'title' => 'Pick n Truck',
+            'subtitle' => 'Conectando el Futuro del Transporte',
+            'tech' => 'Laravel + Node.js + Tailwind CSS',
+            'description' => 'Plataforma B2B revolucionaria que conecta empresas de transporte con importadores y exportadores para optimizar operaciones logísticas.',
+            'category' => 'Desarrollo Web',
+        ],
+        'health' => [
+            'title' => 'HealthTech App',
+            'subtitle' => 'Aplicación de seguimiento de salud',
+            'tech' => 'Flutter + Firebase',
+            'description' => 'Revolucionamos el seguimiento de la salud con IA y análisis en tiempo real.',
+            'category' => 'Desarrollo Móvil',
+        ],
+        'mujeres_al_volante' => [
+            'title' => 'Mujeres al Volante Bolivia',
+            'subtitle' => 'Seguridad y Empoderamiento en el Transporte',
+            'tech' => 'Flutter + Dart + Firebase',
+            'description' => 'Aplicación innovadora que conecta a usuarias con conductoras femeninas, priorizando la seguridad mediante verificación de identidad y seguimiento en tiempo real.',
+            'category' => 'Desarrollo Móvil',
+            'client' => 'Gabriela Strauss',
+            'date' => 'Mayo 2025',
+            'services' => 'Desarrollo Móvil, Diseño UX/UI, Geolocalización',
+            'challenge' => 'El objetivo principal fue crear una solución que no solo garantice la tranquilidad de las usuarias, sino que también eleve el rol de las mujeres en un sector tradicionalmente dominado por hombres, ofreciendo un servicio distintivo y accesible. Se buscaba desarrollar una aplicación que combinara seguridad, usabilidad y un propósito social claro.',
+            'solution' => 'Desarrollamos esta aplicación utilizando un stack tecnológico robusto y enfocado en la seguridad. Construimos una interfaz fluida y responsiva con Flutter, utilizando Dart para un rendimiento óptimo en iOS y Android, asegurando una experiencia consistente para usuarias y conductoras. Integramos funcionalidades avanzadas de geolocalización para rastrear rutas en tiempo real, permitiendo a las usuarias monitorear su viaje y a las conductoras optimizar sus desplazamientos. Implementamos medidas estrictas como verificación de conductoras, cifrado de datos y autenticación segura, cumpliendo con los más altos estándares para proteger a todas las partes involucradas.',
+            'results' => 'Mujeres al Volante Bolivia ha revolucionado el transporte local, atendiendo a miles de usuarias con un servicio que combina seguridad y empatía. Con más de 38 conductoras femeninas y un equipo que incluye soporte especializado, la app ha ganado reconocimiento internacional por su enfoque en la inclusión de género y la innovación. Su diseño intuitivo y las funciones de geolocalización han sido clave para ofrecer tranquilidad a las familias, mientras que las conductoras han encontrado un medio para su independencia económica.',
+            'features' => [
+                [
+                    'title' => 'Sistema de seguridad avanzado',
+                    'description' => 'Botón de pánico, compartir ruta en tiempo real y verificación de identidad para garantizar la seguridad en cada viaje.'
+                ],
+                [
+                    'title' => 'Geolocalización inteligente',
+                    'description' => 'Sistema de rutas optimizadas con alertas de zonas seguras y sugerencias de puntos de encuentro verificados.'
+                ],
+                [
+                    'title' => 'Verificación rigurosa',
+                    'description' => 'Riguroso proceso de verificación para usuarias y conductoras, con revisión de antecedentes y validación de documentos.'
+                ],
+            ],
+            'testimonial' => [
+                'text' => 'Mujeres al Volante ha revolucionado la forma en que me transporto diariamente. Como usuaria, me siento finalmente segura y tranquila durante mis trayectos. Como fundadora, estoy orgullosa de trabajar con Chasky en una solución tecnológica que aborda un problema social real con un enfoque innovador y efectivo.',
+                'name' => 'Gabriela Strauss',
+                'position' => 'Fundadora',
+                'company' => 'Mujeres al Volante Bolivia',
+            ],
+        },
+        'galeno' => [
+            'title' => 'Galeno Quiz Médico',
+            'subtitle' => 'La App que Revoluciona el Aprendizaje Médico',
+            'tech' => 'Flutter + Dart + Firebase',
+            'description' => 'Aplicación innovadora que centraliza exámenes médicos, permitiendo a estudiantes y profesionales practicar, competir con amigos y participar en batallas grupales.',
+            'category' => 'Desarrollo Móvil',
+            'client' => 'Facultad de Medicina, Universidad Mayor de San Andrés',
+            'date' => 'Mayo 2025',
+            'services' => 'Desarrollo Móvil, Gamificación, Diseño UX/UI',
+            'challenge' => 'Nuestro objetivo fue crear una herramienta que no solo facilite el acceso a recursos educativos, sino que también haga del aprendizaje un proceso social y competitivo, ayudando a los estudiantes a mejorar sus conocimientos de manera práctica y divertida. El principal desafío fue organizar una gran cantidad de contenido médico en una estructura fácil de navegar y crear un sistema competitivo que realmente motivara el aprendizaje.',
+            'solution' => 'Desarrollamos Galeno con un stack tecnológico moderno y eficiente. Utilizamos Flutter y Dart para construir una aplicación fluida y multiplataforma, garantizando un rendimiento óptimo y una experiencia de usuario consistente tanto en iOS como en Android. Diseñamos un sistema organizado que clasifica los exámenes por libro y año, permitiendo un acceso rápido y eficiente al contenido. Implementamos un sistema de retos y batallas grupales, integrando herramientas de gamificación que fomentan la interacción entre usuarios en tiempo real. Nos enfocamos en ofrecer una interfaz intuitiva y un sistema escalable que soporte un creciente volumen de usuarios y contenido, asegurando una experiencia educativa sin interrupciones.',
+            'results' => 'Galeno ha transformado la forma en que los estudiantes de medicina se preparan para sus exámenes, ofreciendo una plataforma accesible y motivadora que combina aprendizaje y entretenimiento. La posibilidad de retar a amigos y participar en batallas grupales ha creado una comunidad activa de aprendizaje, mientras que la organización por libro y año ha simplificado el acceso a recursos educativos clave. La app ha sido bien recibida por su diseño centrado en el usuario y su capacidad para hacer que el estudio sea más dinámico y social. Galeno refleja nuestra capacidad para fusionar tecnología y educación, creando soluciones que empoderan a los usuarios y promueven el aprendizaje colaborativo.',
+            'features' => [
+                [
+                    'title' => 'Sistema de organización por libro y año',
+                    'description' => 'Centraliza todos los exámenes médicos de manera organizada y accesible para una navegación eficiente.'
+                ],
+                [
+                    'title' => 'Competencias y retos',
+                    'description' => 'Sistema de desafíos individuales y batallas grupales que fomentan el aprendizaje competitivo y colaborativo.'
+                ],
+                [
+                    'title' => 'Exámenes personalizados',
+                    'description' => 'Creación de evaluaciones a medida según las necesidades específicas de aprendizaje de cada usuario.'
+                ],
+            ],
+            'testimonial' => [
+                'text' => 'Galeno ha revolucionado la forma en que nuestros estudiantes se preparan para sus exámenes. La combinación de aprendizaje y gamificación ha aumentado significativamente el interés por el estudio. La estructura organizada por libro y año ha simplificado enormemente la búsqueda de material relevante, y las competencias entre estudiantes han creado una dinámica de aprendizaje colaborativo que nunca antes habíamos visto.',
+                'name' => 'Dr. Carlos Mendoza',
+                'position' => 'Decano',
+                'company' => 'Facultad de Medicina, UMSA',
+            ],
+        },
+    ],
+    'detail' => [
+        'client' => 'Cliente',
+        'date' => 'Fecha',
+        'services' => 'Servicios',
+        'tech' => 'Tecnologías',
+        'visit_site' => 'Visitar Sitio',
+        'download_app' => 'Descarga la app',
+        'challenge' => 'El Desafío',
+        'solution' => 'Nuestra Solución',
+        'results' => 'Resultados',
+        'gallery' => 'Galería del Proyecto',
+        'testimonial' => 'Testimonio del Cliente',
+        'other_projects' => 'Otros Proyectos',
+        'view_project' => 'Ver Proyecto',
+    ],
+    'cta' => [
+        'title' => '¿Tienes un proyecto en mente?',
+        'subtitle' => 'Estamos listos para convertir tu idea en realidad.',
+        'button' => '¡Conversemos!',
+    ],
+];

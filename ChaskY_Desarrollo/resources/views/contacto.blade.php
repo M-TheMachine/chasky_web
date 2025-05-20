@@ -92,44 +92,71 @@
 
                 <!-- Formulario de Contacto -->
                 <div class="bg-white rounded-2xl shadow-2xl p-8" data-aos="fade-left">
+                    @if(session('success'))
+                        <x-alert type="success" :message="session('success')" />
+                    @endif
+                    
+                    @if(session('error'))
+                        <x-alert type="error" :message="session('error')" />
+                    @endif
+                    
+                    @if($errors->any())
+                        <x-alert type="error" :message="'Por favor, corrija los errores en el formulario.'" />
+                    @endif
+                    
                     <form action="/contacto" method="post" class="space-y-6">
                         @csrf
                         <div>
                             <label class="block text-gray-700 font-medium mb-2" for="nombre">{{ __('contact.form.name') }}</label>
                             <input type="text" id="nombre" name="nombre" required
-                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
-                                placeholder="{{ __('contact.form.name') }}">
+                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border @error('nombre') border-red-500 @else border-gray-300 @enderror focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
+                                placeholder="{{ __('contact.form.name') }}" value="{{ old('nombre') }}">
+                            @error('nombre')
+                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                            @enderror
                         </div>
                         <div>
                             <label class="block text-gray-700 font-medium mb-2" for="email">{{ __('contact.form.email') }}</label>
                             <input type="email" id="email" name="email" required
-                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
-                                placeholder="tu@email.com">
+                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border @error('email') border-red-500 @else border-gray-300 @enderror focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
+                                placeholder="tu@email.com" value="{{ old('email') }}">
+                            @error('email')
+                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                            @enderror
                         </div>
                         <div>
                             <label class="block text-gray-700 font-medium mb-2" for="telefono">{{ __('contact.form.phone') }}</label>
-                            <input type="tel" id="telefono" name="telefono"
-                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
-                                placeholder="+591 ">
+                            <input type="tel" id="telefono" name="telefono" required
+                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border {{ $errors->has('telefono') ? 'border-red-500' : 'border-gray-300' }} focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
+                                placeholder="+591 " value="{{ old('telefono') }}">
+                            @error('telefono')
+                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                            @enderror
                         </div>
                         <div>
                             <label class="block text-gray-700 font-medium mb-2" for="servicio">{{ __('contact.form.service') }}</label>
                             <select id="servicio" name="servicio" required
-                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300">
+                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border {{ $errors->has('servicio') ? 'border-red-500' : 'border-gray-300' }} focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300">
                                 <option value="">{{ __('contact.form.select_service') }}</option>
-                                <option value="web">{{ __('contact.form.web') }}</option>
-                                <option value="marketing">{{ __('contact.form.marketing') }}</option>
-                                <option value="ux">{{ __('contact.form.ux') }}</option>
-                                <option value="offshoring">{{ __('contact.form.offshoring') }}</option>
-                                <option value="nearshoring">{{ __('contact.form.nearshoring') }}</option>
-                                <option value="otro">{{ __('contact.form.other') }}</option>
+                                <option value="web" {{ old('servicio') == 'web' ? 'selected' : '' }}>{{ __('contact.form.web') }}</option>
+                                <option value="marketing" {{ old('servicio') == 'marketing' ? 'selected' : '' }}>{{ __('contact.form.marketing') }}</option>
+                                <option value="ux" {{ old('servicio') == 'ux' ? 'selected' : '' }}>{{ __('contact.form.ux') }}</option>
+                                <option value="offshoring" {{ old('servicio') == 'offshoring' ? 'selected' : '' }}>{{ __('contact.form.offshoring') }}</option>
+                                <option value="nearshoring" {{ old('servicio') == 'nearshoring' ? 'selected' : '' }}>{{ __('contact.form.nearshoring') }}</option>
+                                <option value="otro" {{ old('servicio') == 'otro' ? 'selected' : '' }}>{{ __('contact.form.other') }}</option>
                             </select>
+                            @error('servicio')
+                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                            @enderror
                         </div>
                         <div>
                             <label class="block text-gray-700 font-medium mb-2" for="mensaje">{{ __('contact.form.message') }}</label>
                             <textarea id="mensaje" name="mensaje" rows="4" required
-                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
-                                placeholder="{{ __('contact.form.message_placeholder') }}"></textarea>
+                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border {{ $errors->has('mensaje') ? 'border-red-500' : 'border-gray-300' }} focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
+                                placeholder="{{ __('contact.form.message_placeholder') }}">{{ old('mensaje') }}</textarea>
+                            @error('mensaje')
+                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                            @enderror
                         </div>                            <button type="submit"
                                 class="w-full bg-[#701516] hover:bg-[#c40606] text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
                                 {{ __('contact.form.submit') }}

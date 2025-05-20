@@ -75,38 +75,36 @@
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-16" data-aos="fade-up">
                     <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">{{ __('careers.positions.title') }}</h2>
-                    <p class="text-gray-600 text-lg">{{ __('Explora nuestras oportunidades laborales') }}</p>
+                    <p class="text-gray-600 text-lg">{{ __('careers.positions.subtitle') }}</p>
                 </div>
 
                 <!-- Flutter Developer Junior -->
                 <div class="bg-white rounded-xl p-8 shadow-lg mb-8" data-aos="fade-up">
                     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                         <div>
-                            <h3 class="text-2xl font-bold text-[#701516] mb-2">Desarrollador Flutter Junior</h3>
-                            <p class="text-gray-600 mb-4">Cochabamba, Bolivia · Híbrido</p>
+                            <h3 class="text-2xl font-bold text-[#701516] mb-2">{{ __('careers.positions.flutter.title') }}</h3>
+                            <p class="text-gray-600 mb-4">{{ __('careers.positions.flutter.location') }}</p>
                         </div>
                         <a href="/contacto" class="bg-[#f4bc21] hover:bg-[#f4bc21]/90 text-[#701516] font-bold py-2 px-6 rounded-full transition duration-300">
-                            Aplicar
+                            {{ __('careers.positions.apply') }}
                         </a>
                     </div>
                     <div class="space-y-4">
-                        <p class="text-gray-700">Buscamos un desarrollador Flutter Junior apasionado por crear aplicaciones móviles excepcionales.</p>
+                        <p class="text-gray-700">{{ __('careers.positions.flutter.description') }}</p>
                         <div>
-                            <h4 class="font-semibold mb-2">Requisitos:</h4>
+                            <h4 class="font-semibold mb-2">{{ __('careers.positions.requirements') }}</h4>
                             <ul class="list-disc list-inside text-gray-600 space-y-2">
-                                <li>Experiencia básica con Flutter y Dart</li>
-                                <li>Conocimientos de Git</li>
-                                <li>Capacidad de trabajo en equipo</li>
-                                <li>Deseos de aprender y crecer profesionalmente</li>
+                                @foreach(__('careers.positions.flutter.requirements') as $requirement)
+                                <li>{{ $requirement }}</li>
+                                @endforeach
                             </ul>
                         </div>
                         <div>
-                            <h4 class="font-semibold mb-2">Ofrecemos:</h4>
+                            <h4 class="font-semibold mb-2">{{ __('careers.positions.offer') }}</h4>
                             <ul class="list-disc list-inside text-gray-600 space-y-2">
-                                <li>Mentoría personalizada</li>
-                                <li>Capacitación continua</li>
-                                <li>Proyectos desafiantes</li>
-                                <li>Horario flexible</li>
+                                @foreach(__('careers.positions.flutter.offer') as $offer)
+                                <li>{{ $offer }}</li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -116,31 +114,29 @@
                 <div class="bg-white rounded-xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                         <div>
-                            <h3 class="text-2xl font-bold text-[#701516] mb-2">Desarrollador Fullstack</h3>
-                            <p class="text-gray-600 mb-4">Cochabamba, Bolivia · Híbrido</p>
+                            <h3 class="text-2xl font-bold text-[#701516] mb-2">{{ __('careers.positions.fullstack.title') }}</h3>
+                            <p class="text-gray-600 mb-4">{{ __('careers.positions.fullstack.location') }}</p>
                         </div>
                         <a href="/contacto" class="bg-[#f4bc21] hover:bg-[#f4bc21]/90 text-[#701516] font-bold py-2 px-6 rounded-full transition duration-300">
-                            Aplicar
+                            {{ __('careers.positions.apply') }}
                         </a>
                     </div>
                     <div class="space-y-4">
-                        <p class="text-gray-700">Estamos en busca de un desarrollador Fullstack con experiencia en tecnologías modernas.</p>
+                        <p class="text-gray-700">{{ __('careers.positions.fullstack.description') }}</p>
                         <div>
-                            <h4 class="font-semibold mb-2">Requisitos:</h4>
+                            <h4 class="font-semibold mb-2">{{ __('careers.positions.requirements') }}</h4>
                             <ul class="list-disc list-inside text-gray-600 space-y-2">
-                                <li>Experiencia con Laravel y Vue.js/React</li>
-                                <li>Conocimientos de bases de datos SQL</li>
-                                <li>Experiencia con API RESTful</li>
-                                <li>Familiaridad con metodologías ágiles</li>
+                                @foreach(__('careers.positions.fullstack.requirements') as $requirement)
+                                <li>{{ $requirement }}</li>
+                                @endforeach
                             </ul>
                         </div>
                         <div>
-                            <h4 class="font-semibold mb-2">Ofrecemos:</h4>
+                            <h4 class="font-semibold mb-2">{{ __('careers.positions.offer') }}</h4>
                             <ul class="list-disc list-inside text-gray-600 space-y-2">
-                                <li>Proyectos internacionales</li>
-                                <li>Stack tecnológico moderno</li>
-                                <li>Desarrollo profesional continuo</li>
-                                <li>Excelente ambiente laboral</li>
+                                @foreach(__('careers.positions.fullstack.offer') as $offer)
+                                <li>{{ $offer }}</li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -150,7 +146,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-br from-[#701516] to-[#c40606] text-white relative">
+    <section class="py-24 bg-gradient-to-br from-[#701516] to-[#c40606] text-white relative mt-16">
         <div class="absolute inset-0 bg-black bg-opacity-30"></div>
         <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-4xl mx-auto text-center">

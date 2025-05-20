@@ -36,13 +36,13 @@
                             <div class="absolute top-1/4 right-1/4 w-64 h-64 bg-gradient-to-br from-[#f4bc21]/20 to-[#701516]/20 rounded-full blur-xl transform animate-float-slow"></div>
                             
                             <!-- Iconos tecnológicos flotantes -->
-                            <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/react.svg" 
+                            <img src="{{ asset('icons/react.svg') }}" 
                                 class="absolute top-0 right-0 w-16 h-16 text-blue-400 animate-float" 
                                 style="animation-delay: 0.2s">
-                            <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/javascript.svg" 
+                            <img src="{{ asset('icons/javascript.svg') }}" 
                                 class="absolute bottom-1/4 right-1/4 w-12 h-12 text-yellow-400 animate-float" 
                                 style="animation-delay: 0.4s">
-                            <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/python.svg" 
+                            <img src="{{ asset('icons/python.svg') }}" 
                                 class="absolute top-1/3 left-1/4 w-14 h-14 text-blue-500 animate-float" 
                                 style="animation-delay: 0.6s">
                             
@@ -143,51 +143,89 @@
                     <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">{{ __('home.portfolio.title') }}</h2>
                     <p class="text-gray-600 text-lg max-w-2xl mx-auto">{{ __('home.portfolio.subtitle') }}</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 transform hover:-translate-y-2" data-aos="fade-up">
-                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" 
-                             alt="{{ __('home.portfolio.projects.ecommerce.title') }}" 
-                             class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">{{ __('home.portfolio.projects.ecommerce.title') }}</h3>
-                            <p class="text-gray-600 mb-4">{{ __('home.portfolio.projects.ecommerce.description') }}</p>
-                            <div class="flex items-center text-sm text-gray-500">
-                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                                </svg>
-                                {{ __('home.portfolio.projects.ecommerce.tech') }}
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+                    <div class="bg-[#701516] hover:bg-[#8a1a1b] rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-xl group" data-aos="fade-up">
+                        <a href="/portafolio/mujeres-al-volante" class="block h-full">
+                            <div class="p-8 text-white h-full flex flex-col justify-between">
+                                <div>
+                                    <div class="mb-4 flex justify-between items-center">
+                                        <span class="bg-black/30 text-white text-xs px-3 py-1 rounded-full font-medium">App Móvil</span>
+                                        <svg class="w-8 h-8 text-white group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-2 text-white">{{ __('portfolio.projects.mujeres_al_volante.title') }}</h3>
+                                    <p class="text-white text-sm mb-6">{{ __('portfolio.projects.mujeres_al_volante.subtitle') }}</p>
+                                </div>
+                                <div class="pt-4 border-t border-white/20 flex items-center text-xs text-white">
+                                    <span class="mr-2">Tecnologías:</span>
+                                    <span class="font-medium">Flutter, Firebase</span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
-                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                             alt="{{ __('home.portfolio.projects.health.title') }}" 
-                             class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">{{ __('home.portfolio.projects.health.title') }}</h3>
-                            <p class="text-gray-600 mb-4">{{ __('home.portfolio.projects.health.description') }}</p>
-                            <div class="flex items-center text-sm text-gray-500">
-                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                                </svg>
-                                {{ __('home.portfolio.projects.health.tech') }}
+                    
+                    <div class="bg-[#701516] hover:bg-[#8a1a1b] rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-xl group" data-aos="fade-up" data-aos-delay="100">
+                        <a href="/portafolio/galeno" class="block h-full">
+                            <div class="p-8 text-white h-full flex flex-col justify-between">
+                                <div>
+                                    <div class="mb-4 flex justify-between items-center">
+                                        <span class="bg-black/30 text-white text-xs px-3 py-1 rounded-full font-medium">Plataforma Web</span>
+                                        <svg class="w-8 h-8 text-white group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-2 text-white">{{ __('portfolio.projects.galeno.title') }}</h3>
+                                    <p class="text-white text-sm mb-6">{{ __('portfolio.projects.galeno.subtitle') }}</p>
+                                </div>
+                                <div class="pt-4 border-t border-white/20 flex items-center text-xs text-white">
+                                    <span class="mr-2">Tecnologías:</span>
+                                    <span class="font-medium">Laravel, Vue, MySQL</span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
-                        <img src="https://images.unsplash.com/photo-1615719413546-198b25453f85?ixlib=rb-4.0.3" 
-                             alt="{{ __('home.portfolio.projects.koko.title') }}" 
-                             class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">{{ __('home.portfolio.projects.koko.title') }}</h3>
-                            <p class="text-gray-600 mb-4">{{ __('home.portfolio.projects.koko.description') }}</p>
-                            <div class="flex items-center text-sm text-gray-500">
-                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                                </svg>
-                                {{ __('home.portfolio.projects.koko.tech') }}
+                    
+                    <div class="bg-[#701516] hover:bg-[#8a1a1b] rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-xl group" data-aos="fade-up" data-aos-delay="200">
+                        <a href="/portafolio/memoria" class="block h-full">
+                            <div class="p-8 text-white h-full flex flex-col justify-between">
+                                <div>
+                                    <div class="mb-4 flex justify-between items-center">
+                                        <span class="bg-black/30 text-white text-xs px-3 py-1 rounded-full font-medium">App Móvil</span>
+                                        <svg class="w-8 h-8 text-white group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-2 text-white">{{ __('portfolio.projects.memoria.title') }}</h3>
+                                    <p class="text-white text-sm mb-6">{{ __('portfolio.projects.memoria.subtitle') }}</p>
+                                </div>
+                                <div class="pt-4 border-t border-white/20 flex items-center text-xs text-white">
+                                    <span class="mr-2">Tecnologías:</span>
+                                    <span class="font-medium">React Native, MongoDB</span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="bg-[#701516] hover:bg-[#8a1a1b] rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-xl group" data-aos="fade-up" data-aos-delay="300">
+                        <a href="/portafolio/pick" class="block h-full">
+                            <div class="p-8 text-white h-full flex flex-col justify-between">
+                                <div>
+                                    <div class="mb-4 flex justify-between items-center">
+                                        <span class="bg-black/30 text-white text-xs px-3 py-1 rounded-full font-medium">Plataforma Web</span>
+                                        <svg class="w-8 h-8 text-white group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-2 text-white">{{ __('portfolio.projects.pick.title') }}</h3>
+                                    <p class="text-white text-sm mb-6">{{ __('portfolio.projects.pick.subtitle') }}</p>
+                                </div>
+                                <div class="pt-4 border-t border-white/20 flex items-center text-xs text-white">
+                                    <span class="mr-2">Tecnologías:</span>
+                                    <span class="font-medium">React, Express, MongoDB</span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="text-center mt-12">
@@ -201,6 +239,7 @@
             </div>
         </section>
 
+        <!-- Sección de testimonios oculta 
         <section class="container mx-auto py-24 px-4">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">{{ __('home.testimonials.title') }}</h2>
@@ -212,7 +251,7 @@
                     <div class="swiper-slide">
                         <div class="bg-white rounded-2xl shadow-xl p-8 mx-4 transform hover:scale-105 transition duration-300">
                             <div class="flex items-center mb-6">
-                                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Cliente" class="w-16 h-16 rounded-full mr-4">
+                                <img src="{{ asset('images/avatars/man1.jpg') }}" alt="Cliente" class="w-16 h-16 rounded-full mr-4">
                                 <div>
                                     <h3 class="font-semibold text-gray-800">{{ __('home.testimonials.client1.name') }}</h3>
                                     <p class="text-gray-600">{{ __('home.testimonials.client1.position') }}</p>
@@ -235,7 +274,7 @@
                     <div class="swiper-slide">
                         <div class="bg-white rounded-2xl shadow-xl p-8 mx-4 transform hover:scale-105 transition duration-300">
                             <div class="flex items-center mb-6">
-                                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Cliente" class="w-16 h-16 rounded-full mr-4">
+                                <img src="{{ asset('images/avatars/woman1.jpg') }}" alt="Cliente" class="w-16 h-16 rounded-full mr-4">
                                 <div>
                                     <h3 class="font-semibold text-gray-800">{{ __('home.testimonials.client2.name') }}</h3>
                                     <p class="text-gray-600">{{ __('home.testimonials.client2.position') }}</p>
@@ -271,6 +310,7 @@
                 </div>
             </div>
         </section>
+        -->
 
         <section class="relative bg-gradient-to-br from-blue-500 to-purple-600 py-24 px-4" id="contact">
             <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -327,43 +367,70 @@
                     </div>
                     
                     <div class="bg-white rounded-2xl shadow-2xl p-8" data-aos="fade-left">
+                        @if(session('success'))
+                            <x-alert type="success" :message="session('success')" />
+                        @endif
+                        
+                        @if(session('error'))
+                            <x-alert type="error" :message="session('error')" />
+                        @endif
+                        
+                        @if($errors->any())
+                            <x-alert type="error" :message="'Por favor, corrija los errores en el formulario.'" />
+                        @endif
+                        
                         <form action="/contacto" method="post" class="space-y-6">
                             @csrf
                             <div>
                                 <label class="block text-gray-700 font-medium mb-2" for="nombre">{{ __('home.contact.form.name') }}</label>
                                 <input type="text" id="nombre" name="nombre" required
-                                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
-                                    placeholder="{{ __('home.contact.form.name') }}">
+                                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border {{ $errors->has('nombre') ? 'border-red-500' : 'border-gray-300' }} focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
+                                    placeholder="{{ __('home.contact.form.name') }}" value="{{ old('nombre') }}">
+                                @error('nombre')
+                                    <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                                @enderror
                             </div>
                             <div>
                                 <label class="block text-gray-700 font-medium mb-2" for="email">{{ __('home.contact.form.email') }}</label>
                                 <input type="email" id="email" name="email" required
-                                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
-                                    placeholder="tu@email.com">
+                                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border {{ $errors->has('email') ? 'border-red-500' : 'border-gray-300' }} focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
+                                    placeholder="tu@email.com" value="{{ old('email') }}">
+                                @error('email')
+                                    <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                                @enderror
                             </div>
                             <div>
                                 <label class="block text-gray-700 font-medium mb-2" for="telefono">{{ __('home.contact.form.phone') }}</label>
-                                <input type="tel" id="telefono" name="telefono"
-                                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
-                                    placeholder="+51 999 999 999">
+                                <input type="tel" id="telefono" name="telefono" required
+                                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border {{ $errors->has('telefono') ? 'border-red-500' : 'border-gray-300' }} focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
+                                    placeholder="+51 999 999 999" value="{{ old('telefono') }}">
+                                @error('telefono')
+                                    <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                                @enderror
                             </div>
                             <div>
                                 <label class="block text-gray-700 font-medium mb-2" for="servicio">{{ __('home.contact.form.service') }}</label>
                                 <select id="servicio" name="servicio" required
-                                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300">
+                                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border {{ $errors->has('servicio') ? 'border-red-500' : 'border-gray-300' }} focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300">
                                     <option value="">{{ __('home.contact.form.select_service') }}</option>
-                                    <option value="web">{{ __('home.contact.form.web_dev') }}</option>
-                                    <option value="marketing">{{ __('home.contact.form.marketing') }}</option>
-                                    <option value="app">{{ __('home.contact.form.mobile') }}</option>
-                                    <option value="design">{{ __('home.contact.form.design') }}</option>
-                                    <option value="otro">{{ __('home.contact.form.other') }}</option>
+                                    <option value="web" {{ old('servicio') == 'web' ? 'selected' : '' }}>{{ __('home.contact.form.web_dev') }}</option>
+                                    <option value="marketing" {{ old('servicio') == 'marketing' ? 'selected' : '' }}>{{ __('home.contact.form.marketing') }}</option>
+                                    <option value="app" {{ old('servicio') == 'app' ? 'selected' : '' }}>{{ __('home.contact.form.mobile') }}</option>
+                                    <option value="design" {{ old('servicio') == 'design' ? 'selected' : '' }}>{{ __('home.contact.form.design') }}</option>
+                                    <option value="otro" {{ old('servicio') == 'otro' ? 'selected' : '' }}>{{ __('home.contact.form.other') }}</option>
                                 </select>
+                                @error('servicio')
+                                    <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                                @enderror
                             </div>
                             <div>
                                 <label class="block text-gray-700 font-medium mb-2" for="mensaje">{{ __('home.contact.form.message') }}</label>
                                 <textarea id="mensaje" name="mensaje" rows="4" required
-                                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
-                                    placeholder="{{ __('home.contact.form.message_placeholder') }}"></textarea>
+                                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border {{ $errors->has('mensaje') ? 'border-red-500' : 'border-gray-300' }} focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
+                                    placeholder="{{ __('home.contact.form.message_placeholder') }}">{{ old('mensaje') }}</textarea>
+                                @error('mensaje')
+                                    <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                                @enderror
                             </div>
                             <button type="submit"
                                 class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold py-4 px-8 rounded-lg transition duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2">
@@ -416,7 +483,7 @@
         },
     });
 
-    // Inicializar Swiper para los testimonios
+    /* Inicializar Swiper para los testimonios (comentado)
     const testimonialSwiper = new Swiper('.testimonialSwiper', {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -442,6 +509,7 @@
             },
         },
     });
+    */
 
     // Efecto de escritura para el hero
     const typingText = document.querySelector('.typing-text');
