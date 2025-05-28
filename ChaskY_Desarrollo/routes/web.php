@@ -6,6 +6,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\Auth\GoogleController;
+use App\Http\Controllers\InternshipController;
 use Illuminate\Support\Facades\Route;
 
 // Rutas principales
@@ -89,5 +90,11 @@ Route::get('/v/{slug}', [SellerController::class, 'show'])->name('sellers.show')
 
 Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('google.login');
 Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback'])->name('google.callback');
+
+// Rutas para prácticas
+Route::get('/practicas/marketing', [InternshipController::class, 'showMarketing'])->name('internships.marketing');
+Route::post('/practicas/marketing/apply', [InternshipController::class, 'applyMarketing'])->name('internships.marketing.apply');
+Route::get('/practicas/audiovisual', [InternshipController::class, 'showAudiovisual'])->name('internships.audiovisual');
+Route::post('/practicas/audiovisual/apply', [InternshipController::class, 'applyAudiovisual'])->name('internships.audiovisual.apply');
 
 require __DIR__.'/auth.php';

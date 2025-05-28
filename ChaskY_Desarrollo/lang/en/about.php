@@ -112,7 +112,7 @@ return [
                 'bio' => 'Creating impactful visual identities',
             ],
             'americo' => [
-                'name' => 'Americo Vespucio',
+                'name' => 'Americo Lovera',
                 'position' => 'Junior Developer',
                 'bio' => 'Emerging talent with great potential',
             ],

@@ -474,6 +474,30 @@
                         <p class="text-[#701516] font-medium mb-4">{{ __('about.team.members.americo.position') }}</p>
                         <p class="text-gray-600">{{ __('about.team.members.americo.bio') }}</p>
                     </div>
+                    
+                    <!-- William Gaspar Ticona -->
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative mb-6 inline-block">
+                            <img src="{{ asset('william.jpg') }}" 
+                                 alt="{{ __('about.team.members.william.name') }}" 
+                                 class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">{{ __('about.team.members.william.name') }}</h3>
+                        <p class="text-[#701516] font-medium mb-4">{{ __('about.team.members.william.position') }}</p>
+                        <p class="text-gray-600">{{ __('about.team.members.william.bio') }}</p>
+                    </div>
+
+                    <!-- Fernando Reynaga Diaz -->
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative mb-6 inline-block">
+                            <img src="{{ asset('fer.png') }}" 
+                                 alt="{{ __('about.team.members.fernando.name') }}" 
+                                 class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">{{ __('about.team.members.fernando.name') }}</h3>
+                        <p class="text-[#701516] font-medium mb-4">{{ __('about.team.members.fernando.position') }}</p>
+                        <p class="text-gray-600">{{ __('about.team.members.fernando.bio') }}</p>
+                    </div>
                 </div>
             </div>
         </div>

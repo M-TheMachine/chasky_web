@@ -89,7 +89,49 @@ return [
                 'Continuous professional development',
                 'Excellent work environment'
             ]
-        ]
+        ],
+        'internship' => [
+            'title' => 'Internship Program',
+            'description' => 'Join our on-site internship program at our headquarters in Cochabamba',
+            'marketing' => [
+                'title' => 'Digital Marketing',
+                'location' => 'Cochabamba, Bolivia · On-site',
+                'description' => 'Be part of our marketing team and help us create innovative digital strategies',
+                'requirements' => [
+                    'Final year student in Marketing, Advertising or related fields',
+                    'Knowledge of design tools (Photoshop, Illustrator)',
+                    'Strong analytical and creative thinking skills',
+                    'Interest in digital marketing and social media',
+                    'Proactive and team-oriented mindset'
+                ],
+                'offer' => [
+                    'Hands-on experience in digital marketing',
+                    'Mentoring from experienced professionals',
+                    'Opportunity to work on real projects',
+                    'Flexible schedule',
+                    'Certificate upon completion'
+                ]
+            ],
+            'audiovisual' => [
+                'title' => 'Audiovisual Production',
+                'location' => 'Cochabamba, Bolivia · On-site',
+                'description' => 'Join our creative team and help us produce engaging multimedia content',
+                'requirements' => [
+                    'Final year student in Audiovisual Production, Communications or related fields',
+                    'Knowledge of video editing software',
+                    'Experience with photography and video equipment',
+                    'Creative storytelling abilities',
+                    'Attention to detail and quality'
+                ],
+                'offer' => [
+                    'Access to professional equipment',
+                    'Portfolio development opportunities',
+                    'Mentoring from industry experts',
+                    'Flexible schedule',
+                    'Certificate upon completion'
+                ]
+            ]
+        ],
     ],
     'application' => [
         'title' => 'How to Apply',

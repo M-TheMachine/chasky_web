@@ -145,6 +145,46 @@
         </div>
     </section>
 
+    <!-- Nueva Vacante: Prácticas en Marketing y Producción Audiovisual -->
+    <section class="py-24 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">{{ __('careers.positions.internship.title') }}</h2>
+                <p class="text-gray-600 text-lg">{{ __('careers.positions.internship.description') }}</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Marketing -->
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="flex flex-col mb-6">
+                        <h3 class="text-2xl font-bold text-[#701516] mb-2">{{ __('careers.positions.internship.marketing.title') }}</h3>
+                        <p class="text-gray-600 mb-2">{{ __('careers.positions.internship.marketing.location') }}</p>
+                        <p class="text-gray-600 mb-4">{{ __('careers.positions.internship.marketing.description') }}</p>
+                    </div>
+                    <div class="mt-6">
+                        <a href="{{ route('internships.marketing') }}" class="inline-block bg-[#f4bc21] hover:bg-[#f4bc21]/90 text-[#701516] font-bold py-2 px-6 rounded-full transition duration-300">
+                            {{ __('careers.positions.apply') }}
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producción Audiovisual -->
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="flex flex-col mb-6">
+                        <h3 class="text-2xl font-bold text-[#701516] mb-2">{{ __('careers.positions.internship.audiovisual.title') }}</h3>
+                        <p class="text-gray-600 mb-2">{{ __('careers.positions.internship.audiovisual.location') }}</p>
+                        <p class="text-gray-600 mb-4">{{ __('careers.positions.internship.audiovisual.description') }}</p>
+                    </div>
+                    <div class="mt-6">
+                        <a href="{{ route('internships.audiovisual') }}" class="inline-block bg-[#f4bc21] hover:bg-[#f4bc21]/90 text-[#701516] font-bold py-2 px-6 rounded-full transition duration-300">
+                            {{ __('careers.positions.apply') }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="py-24 bg-gradient-to-br from-[#701516] to-[#c40606] text-white relative mt-16">
         <div class="absolute inset-0 bg-black bg-opacity-30"></div>

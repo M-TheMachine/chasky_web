@@ -89,6 +89,48 @@ return [
                 'Desarrollo profesional continuo',
                 'Excelente ambiente laboral'
             ]
+        ],
+        'internship' => [
+            'title' => 'Programa de Prácticas',
+            'description' => 'Únete a nuestro programa de prácticas presenciales en nuestra oficina central de Cochabamba',
+            'marketing' => [
+                'title' => 'Marketing Digital',
+                'location' => 'Cochabamba, Bolivia · Presencial',
+                'description' => 'Forma parte de nuestro equipo de marketing y ayúdanos a crear estrategias digitales innovadoras',
+                'requirements' => [
+                    'Estudiante de últimos años de Marketing, Publicidad o carreras afines',
+                    'Conocimientos de herramientas de diseño (Photoshop, Illustrator)',
+                    'Conocimientos de redes sociales y marketing digital',
+                    'Creatividad y pensamiento estratégico',
+                    'Excelentes habilidades de comunicación'
+                ],
+                'offer' => [
+                    'Horario flexible',
+                    'Trabajo remoto',
+                    'Ambiente dinámico y startup',
+                    'Mentoría personalizada',
+                    'Posibilidad de contratación'
+                ]
+            ],
+            'audiovisual' => [
+                'title' => 'Producción Audiovisual',
+                'location' => 'Cochabamba, Bolivia · Presencial',
+                'description' => 'Forma parte de nuestro equipo creativo y ayúdanos a producir contenido multimedia atractivo',
+                'requirements' => [
+                    'Estudiante de últimos años de Comunicación Audiovisual o carreras afines',
+                    'Conocimientos de edición de video (Premiere, After Effects)',
+                    'Experiencia básica en fotografía y video',
+                    'Creatividad y atención al detalle',
+                    'Portfolio de trabajos previos'
+                ],
+                'offer' => [
+                    'Equipo de grabación profesional',
+                    'Horario flexible',
+                    'Trabajo híbrido',
+                    'Participación en proyectos reales',
+                    'Desarrollo profesional continuo'
+                ]
+            ]
         ]
     ],
     'application' => [

@@ -109,7 +109,7 @@
                         <div>
                             <label class="block text-gray-700 font-medium mb-2" for="nombre">{{ __('contact.form.name') }}</label>
                             <input type="text" id="nombre" name="nombre" required
-                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border @error('nombre') border-red-500 @else border-gray-300 @enderror focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
+                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border-[1px] ring-0 outline-none {{ $errors->has('nombre') ? 'border-red-500' : 'border-gray-300' }} focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
                                 placeholder="{{ __('contact.form.name') }}" value="{{ old('nombre') }}">
                             @error('nombre')
                                 <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
@@ -118,7 +118,7 @@
                         <div>
                             <label class="block text-gray-700 font-medium mb-2" for="email">{{ __('contact.form.email') }}</label>
                             <input type="email" id="email" name="email" required
-                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border @error('email') border-red-500 @else border-gray-300 @enderror focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
+                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border-[1px] ring-0 outline-none {{ $errors->has('email') ? 'border-red-500' : 'border-gray-300' }} focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
                                 placeholder="tu@email.com" value="{{ old('email') }}">
                             @error('email')
                                 <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
@@ -127,7 +127,7 @@
                         <div>
                             <label class="block text-gray-700 font-medium mb-2" for="telefono">{{ __('contact.form.phone') }}</label>
                             <input type="tel" id="telefono" name="telefono" required
-                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border {{ $errors->has('telefono') ? 'border-red-500' : 'border-gray-300' }} focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
+                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border-[1px] ring-0 outline-none {{ $errors->has('telefono') ? 'border-red-500' : 'border-gray-300' }} focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
                                 placeholder="+591 " value="{{ old('telefono') }}">
                             @error('telefono')
                                 <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
@@ -136,7 +136,7 @@
                         <div>
                             <label class="block text-gray-700 font-medium mb-2" for="servicio">{{ __('contact.form.service') }}</label>
                             <select id="servicio" name="servicio" required
-                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border {{ $errors->has('servicio') ? 'border-red-500' : 'border-gray-300' }} focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300">
+                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border-[1px] ring-0 outline-none {{ $errors->has('servicio') ? 'border-red-500' : 'border-gray-300' }} focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300">
                                 <option value="">{{ __('contact.form.select_service') }}</option>
                                 <option value="web" {{ old('servicio') == 'web' ? 'selected' : '' }}>{{ __('contact.form.web') }}</option>
                                 <option value="marketing" {{ old('servicio') == 'marketing' ? 'selected' : '' }}>{{ __('contact.form.marketing') }}</option>
@@ -152,7 +152,7 @@
                         <div>
                             <label class="block text-gray-700 font-medium mb-2" for="mensaje">{{ __('contact.form.message') }}</label>
                             <textarea id="mensaje" name="mensaje" rows="4" required
-                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border {{ $errors->has('mensaje') ? 'border-red-500' : 'border-gray-300' }} focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
+                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border-[1px] ring-0 outline-none {{ $errors->has('mensaje') ? 'border-red-500' : 'border-gray-300' }} focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition duration-300"
                                 placeholder="{{ __('contact.form.message_placeholder') }}">{{ old('mensaje') }}</textarea>
                             @error('mensaje')
                                 <p class="text-red-500 text-sm mt-1">{{ $message }}</p>

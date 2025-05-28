@@ -88,7 +88,7 @@ return [
             ],
             'abigail' => [
                 'name' => 'Abigail Geronimo',
-                'position' => 'Encargada de negocios Estados Unidos',
+                'position' => 'Encargada de negocios USA',
                 'bio' => 'Coordinando nuestras operaciones en el mercado norteamericano',
             ],
             'faby' => [
@@ -112,9 +112,24 @@ return [
                 'bio' => 'Creando identidades visuales impactantes',
             ],
             'americo' => [
-                'name' => 'Americo Vespucio',
+                'name' => 'Americo Lovera',
                 'position' => 'Desarrollador Junior',
                 'bio' => 'Talento emergente con gran potencial',
+            ],
+            'mikee' => [
+                'name' => 'Mike Flores',
+                'position' => 'Desarrollador Fullstack',
+                'bio' => 'Especialista en desarrollo de aplicaciones web',
+            ],
+            'william' => [
+                'name' => 'William Gaspar Ticona',
+                'position' => 'Productor Audiovisual',
+                'bio' => 'Especialista en producción y dirección audiovisual',
+            ],
+            'fernando' => [
+                'name' => 'Fernando Reynaga Diaz',
+                'position' => 'Productor Audiovisual',
+                'bio' => 'Experto en fotografía y edición de video',
             ],
         ],
     ],
