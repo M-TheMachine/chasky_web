@@ -17,9 +17,6 @@
                     <x-nav-link href="/portafolio" :active="request()->is('portafolio')">
                         {{ __('home.nav.portfolio') }}
                     </x-nav-link>
-                    <x-nav-link href="/planes-outsourcing" :active="request()->is('planes-outsourcing')">
-                        {{ __('home.nav.outsourcing') }}
-                    </x-nav-link>
                     <x-nav-link href="/nosotros" :active="request()->is('nosotros')">
                         {{ __('home.nav.about') }}
                     </x-nav-link>
@@ -110,9 +107,6 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link href="/portafolio" :active="request()->is('portafolio')">
                 {{ __('home.nav.portfolio') }}
-            </x-responsive-nav-link>
-            <x-responsive-nav-link href="/planes-outsourcing" :active="request()->is('planes-outsourcing')">
-                {{ __('home.nav.outsourcing') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link href="/nosotros" :active="request()->is('nosotros')">
                 {{ __('home.nav.about') }}

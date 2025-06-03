@@ -70,7 +70,7 @@
                     <p class="text-gray-600 text-lg max-w-2xl mx-auto">{{ __('home.services.subtitle') }}</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-full">
-                    <div class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up">
+                    <a href="/servicios/desarrollo-web" class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up">
                         <div class="text-[#701516] mb-6 group-hover:scale-110 transition-transform duration-500">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
@@ -78,8 +78,8 @@
                         </div>
                         <h3 class="text-xl font-semibold text-[#701516] mb-4">{{ __('home.services.web_dev.title') }}</h3>
                         <p class="text-gray-600">{{ __('home.services.web_dev.description') }}</p>
-                    </div>
-                    <div class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                    </a>
+                    <a href="/marketing" class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
                         <div class="text-[#c40606] mb-6 group-hover:scale-110 transition-transform duration-500">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
@@ -88,8 +88,8 @@
                         </div>
                         <h3 class="text-xl font-semibold text-[#701516] mb-4">{{ __('home.services.marketing.title') }}</h3>
                         <p class="text-gray-600">{{ __('home.services.marketing.description') }}</p>
-                    </div>
-                    <div class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                    </a>
+                    <a href="/services/mobile" class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
                         <div class="text-[#701516] mb-6 group-hover:scale-110 transition-transform duration-500">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
@@ -97,8 +97,8 @@
                         </div>
                         <h3 class="text-xl font-semibold text-[#701516] mb-4">{{ __('home.services.mobile.title') }}</h3>
                         <p class="text-gray-600">{{ __('home.services.mobile.description') }}</p>
-                    </div>
-                    <div class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+                    </a>
+                    <a href="/servicios/ux-ui" class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
                         <div class="text-[#f4bc21] mb-6 group-hover:scale-110 transition-transform duration-500">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
@@ -106,8 +106,8 @@
                         </div>
                         <h3 class="text-xl font-semibold text-gray-800 mb-4">{{ __('home.services.ux.title') }}</h3>
                         <p class="text-gray-600">{{ __('home.services.ux.description') }}</p>
-                    </div>
-                    <div class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
+                    </a>
+                    <a href="/servicios/offshoring" class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
                         <div class="text-[#701516] mb-6 group-hover:scale-110 transition-transform duration-500">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
@@ -115,8 +115,8 @@
                         </div>
                         <h3 class="text-xl font-semibold text-[#701516] mb-4">{{ __('home.services.offshoring.title') }}</h3>
                         <p class="text-gray-600">{{ __('home.services.offshoring.description') }}</p>
-                    </div>
-                    <div class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="500">
+                    </a>
+                    <a href="/servicios/nearshoring" class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="500">
                         <div class="text-[#c40606] mb-6 group-hover:scale-110 transition-transform duration-500">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -124,7 +124,7 @@
                         </div>
                         <h3 class="text-xl font-semibold text-[#701516] mb-4">{{ __('home.services.nearshoring.title') }}</h3>
                         <p class="text-gray-600">{{ __('home.services.nearshoring.description') }}</p>
-                    </div>
+                    </a>
                 </div>
                 <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="400">
                     <a href="/servicios" class="bg-gradient-to-r from-[#701516] to-[#c40606] text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center">
@@ -133,6 +133,89 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                         </svg>
                     </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Pasantías -->
+        <section class="relative bg-gradient-to-r from-[#701516] to-[#c40606] py-16 overflow-hidden">
+            <!-- Patrón de fondo -->
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute w-full h-full" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 20px 20px;"></div>
+            </div>
+
+            <!-- Overlay con gradiente -->
+            <div class="absolute inset-0 bg-black/20"></div>
+
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+                    <!-- Contenido -->
+                    <div class="text-white lg:w-2/3">
+                        <div class="inline-flex items-center bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6" data-aos="fade-right">
+                            <span class="animate-ping w-2 h-2 bg-[#f4bc21] rounded-full mr-2"></span>
+                            <span class="text-[#f4bc21] text-sm font-medium">¡Convocatoria abierta! 5 plazas disponibles</span>
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-right" data-aos-delay="100">
+                            Programa de Pasantías Chasky 2025
+                        </h2>
+                        <p class="text-lg text-white/90 mb-8" data-aos="fade-right" data-aos-delay="200">
+                            Inicia tu carrera profesional en una empresa líder en tecnología. Desarrolla tu potencial en Desarrollo de Software o Marketing Digital junto a expertos del sector.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="/pasantias" class="inline-flex items-center bg-[#f4bc21] hover:bg-[#f4bc21]/90 text-[#701516] font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 group" data-aos="fade-right" data-aos-delay="300">
+                                <span>Conoce más</span>
+                                <svg class="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                </svg>
+                            </a>
+                            <span class="text-white/80 flex items-center text-sm" data-aos="fade-right" data-aos-delay="400">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Postulaciones hasta el 15 de junio
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Características -->
+                    <div class="lg:w-1/3 grid grid-cols-2 gap-4" data-aos="fade-left">
+                        <div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+                            <div class="text-[#f4bc21] mb-2">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-white font-semibold">Proyectos Reales</h3>
+                            <p class="text-white/80 text-sm">Trabaja en proyectos activos con clientes</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+                            <div class="text-[#f4bc21] mb-2">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-white font-semibold">Mentoría</h3>
+                            <p class="text-white/80 text-sm">Guía de expertos del sector</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+                            <div class="text-[#f4bc21] mb-2">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-white font-semibold">Certificación</h3>
+                            <p class="text-white/80 text-sm">Certificado oficial al finalizar</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+                            <div class="text-[#f4bc21] mb-2">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-white font-semibold">Oportunidad Laboral</h3>
+                            <p class="text-white/80 text-sm">Posibilidad de contratación</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

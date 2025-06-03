@@ -7,6 +7,12 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\Auth\GoogleController;
 use App\Http\Controllers\InternshipController;
+use App\Http\Controllers\MarketingController;
+use App\Http\Controllers\WebDevController;
+use App\Http\Controllers\UxUiController;
+use App\Http\Controllers\OffshoringController;
+use App\Http\Controllers\NearshoringController;
+use App\Http\Controllers\MobileController;
 use Illuminate\Support\Facades\Route;
 
 // Rutas principales
@@ -14,8 +20,29 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+// Marketing routes
+Route::get('/marketing', [MarketingController::class, 'show'])->name('marketing.show');
+Route::post('/marketing/contact', [MarketingController::class, 'contact'])->name('marketing.contact');
+Route::get('/marketing/success', [MarketingController::class, 'success'])->name('marketing.success');
+
+// Mobile Development routes
+Route::get('/services/mobile', function () {
+    return view('services.mobile');
+})->name('services.mobile');
+Route::post('/services/mobile/contact', [MobileController::class, 'contact'])->name('mobile.contact');
+Route::get('/services/mobile/success', [MobileController::class, 'success'])->name('mobile.success');
+
 // Ruta para cambiar el idioma
 Route::get('/language/{locale}', [LanguageController::class, 'switch'])->name('language.switch');
+
+// Rutas de pasantías
+Route::get('/pasantias', function () {
+    return view('pasantias');
+})->name('pasantias');
+Route::get('/pasantias/software', [InternshipController::class, 'software'])->name('pasantias.software');
+Route::get('/pasantias/marketing', [InternshipController::class, 'marketing'])->name('pasantias.marketing');
+Route::post('/pasantias/software/submit', [InternshipController::class, 'submitSoftware'])->name('pasantias.software.submit');
+Route::post('/pasantias/marketing/submit', [InternshipController::class, 'submitMarketing'])->name('pasantias.marketing.submit');
 
 Route::get('/carreras', function () {
     return view('carreras');
@@ -96,5 +123,30 @@ Route::get('/practicas/marketing', [InternshipController::class, 'showMarketing'
 Route::post('/practicas/marketing/apply', [InternshipController::class, 'applyMarketing'])->name('internships.marketing.apply');
 Route::get('/practicas/audiovisual', [InternshipController::class, 'showAudiovisual'])->name('internships.audiovisual');
 Route::post('/practicas/audiovisual/apply', [InternshipController::class, 'applyAudiovisual'])->name('internships.audiovisual.apply');
+
+// Rutas para la sección de marketing
+Route::get('/marketing', [MarketingController::class, 'show'])->name('marketing.show');
+Route::post('/marketing/contact', [MarketingController::class, 'contact'])->name('marketing.contact');
+Route::get('/marketing/success', [MarketingController::class, 'success'])->name('marketing.success');
+
+// Web Development routes
+Route::get('/servicios/desarrollo-web', [WebDevController::class, 'show'])->name('webdev.show');
+Route::post('/servicios/desarrollo-web/contact', [WebDevController::class, 'contact'])->name('webdev.contact');
+Route::get('/servicios/desarrollo-web/success', [WebDevController::class, 'success'])->name('webdev.success');
+
+// UX/UI Design routes
+Route::get('/servicios/ux-ui', [UxUiController::class, 'show'])->name('uxui.show');
+Route::post('/servicios/ux-ui/contact', [UxUiController::class, 'contact'])->name('uxui.contact');
+Route::get('/servicios/ux-ui/success', [UxUiController::class, 'success'])->name('uxui.success');
+
+// Offshoring routes
+Route::get('/servicios/offshoring', [OffshoringController::class, 'show'])->name('offshoring.show');
+Route::post('/servicios/offshoring/contact', [OffshoringController::class, 'contact'])->name('offshoring.contact');
+Route::get('/servicios/offshoring/success', [OffshoringController::class, 'success'])->name('offshoring.success');
+
+// Nearshoring routes
+Route::get('/servicios/nearshoring', [NearshoringController::class, 'show'])->name('nearshoring.show');
+Route::post('/servicios/nearshoring/contact', [NearshoringController::class, 'contact'])->name('nearshoring.contact');
+Route::get('/servicios/nearshoring/success', [NearshoringController::class, 'success'])->name('nearshoring.success');
 
 require __DIR__.'/auth.php';

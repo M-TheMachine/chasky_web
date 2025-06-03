@@ -9,14 +9,68 @@ use Illuminate\Support\Facades\Storage;
 
 class InternshipController extends Controller
 {
-    public function showMarketing()
+    public function software()
     {
-        return view('internships.marketing');
+        return view('pasantias.software');
     }
 
-    public function showAudiovisual()
+    public function marketing()
     {
-        return view('internships.audiovisual');
+        return view('pasantias.marketing');
+    }
+
+    public function submitSoftware(Request $request)
+    {
+        $validated = $request->validate([
+            'nombre' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'telefono' => 'required|string|max:20',
+            'universidad' => 'required|string|max:255',
+            'carrera' => 'required|string|max:255',
+            'semestre' => 'required|string|max:50',
+            'mensaje' => 'required|string',
+            'cv' => 'required|file|mimes:pdf|max:5120',
+        ]);
+
+        // Guardar el CV
+        $cvPath = $request->file('cv')->store('cv_postulaciones');
+        
+        // Enviar email
+        Mail::to(config('mail.from.address'))->send(new InternshipApplication([
+            'area' => 'Desarrollo de Software',
+            'datos' => $validated,
+            'cv_path' => $cvPath
+        ]));
+
+        return redirect()->route('pasantias.software')->with('success', 'Tu postulación ha sido enviada exitosamente.');
+    }
+
+    public function submitMarketing(Request $request)
+    {
+        $validated = $request->validate([
+            'nombre' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'telefono' => 'required|string|max:20',
+            'universidad' => 'required|string|max:255',
+            'carrera' => 'required|string|max:255',
+            'semestre' => 'required|string|max:50',
+            'experiencia' => 'required|string',
+            'mensaje' => 'required|string',
+            'portafolio' => 'nullable|string|url',
+            'cv' => 'required|file|mimes:pdf|max:5120',
+        ]);
+
+        // Guardar el CV
+        $cvPath = $request->file('cv')->store('cv_postulaciones');
+        
+        // Enviar email
+        Mail::to(config('mail.from.address'))->send(new InternshipApplication([
+            'area' => 'Marketing Digital',
+            'datos' => $validated,
+            'cv_path' => $cvPath
+        ]));
+
+        return redirect()->route('pasantias.marketing')->with('success', 'Tu postulación ha sido enviada exitosamente.');
     }
 
     public function applyMarketing(Request $request)

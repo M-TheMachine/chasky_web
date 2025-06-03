@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Hero Section -->
-    <section class="relative min-h-[70vh] flex items-center mb-24 mt-16">
+        <section class="relative min-h-[70vh] flex items-center mb-24 mt-16">
         <!-- Gradient overlay con efecto de cristal -->
         <div class="absolute inset-0 bg-gradient-to-br from-white to-[#701516]/20"></div>
         
@@ -60,6 +60,14 @@
                                 Integración con sistemas de gestión de contenido
                             </li>
                         </ul>
+                        <div class="mt-8">
+                            <a href="/servicios/desarrollo-web" class="inline-block bg-[#701516] text-white font-bold py-3 px-6 rounded-lg hover:bg-[#701516]/90 transition-colors">
+                                Conoce más sobre desarrollo web
+                                <svg class="w-5 h-5 ml-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                     <div class="order-1 md:order-2 flex justify-center items-center">
                         <div class="bg-gradient-to-br from-[#701516] to-[#c40606] p-12 rounded-full shadow-xl transform hover:scale-110 transition duration-500">
@@ -89,13 +97,13 @@
                                 <svg class="w-5 h-5 text-[#701516] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                {{ __('services.marketing.features.feature1') }}
+                                Estrategias de SEO y SEM
                             </li>
                             <li class="flex items-center text-gray-600">
                                 <svg class="w-5 h-5 text-[#701516] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                Campañas de email marketing
+                                Marketing de contenidos
                             </li>
                             <li class="flex items-center text-gray-600">
                                 <svg class="w-5 h-5 text-[#701516] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -131,9 +139,17 @@
                                 <svg class="w-5 h-5 text-[#701516] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                Diseño de interfaces modernas
+                                Diseño responsive y accesible
                             </li>
                         </ul>
+                        <div class="mt-8">
+                            <a href="/servicios/ux-ui" class="inline-block bg-[#701516] text-white font-bold py-3 px-6 rounded-lg hover:bg-[#701516]/90 transition-colors">
+                                Conoce más sobre diseño UX/UI
+                                <svg class="w-5 h-5 ml-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                     <div class="order-1 md:order-2 flex justify-center items-center">
                         <div class="bg-gradient-to-br from-[#701516] to-[#c40606] p-12 rounded-full shadow-xl transform hover:scale-110 transition duration-500">
@@ -146,7 +162,8 @@
             </div>
 
             <!-- Offshoring -->
-            <div class="mb-32" data-aos="fade-up">                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="mb-32" data-aos="fade-up">                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div class="flex justify-center items-center">
                         <div class="bg-gradient-to-br from-[#701516] to-[#c40606] p-12 rounded-full shadow-xl transform hover:scale-110 transition duration-500">
                             <svg class="w-32 h-32 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -168,15 +185,128 @@
                                 <svg class="w-5 h-5 text-[#701516] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                Gestión de proyectos completos
-                            </li>
-                            <li class="flex items-center text-gray-600">
-                                <svg class="w-5 h-5 text-[#701516] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
                                 Soporte técnico 24/7
                             </li>
                         </ul>
+                        <div class="mt-8 flex items-center space-x-4">
+                            <button onclick="togglePlans('offshoring-plans')" class="inline-flex items-center px-6 py-3 bg-[#701516] text-white rounded-lg hover:bg-[#701516]/90 transition-colors">
+                                <span>Ver planes de outsourcing</span>
+                                <svg id="offshoring-arrow" class="w-5 h-5 ml-2 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <a href="/servicios/offshoring" class="inline-flex items-center px-6 py-3 border-2 border-[#701516] text-[#701516] rounded-lg hover:bg-[#701516] hover:text-white transition-colors">
+                                Conoce más sobre offshoring
+                                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Planes de Offshoring -->
+                <div id="offshoring-plans" class="hidden mt-12">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Essential Plan -->
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                            <div class="bg-[#701516] px-6 py-12 text-white text-center">
+                                <h3 class="text-2xl font-bold mb-4">{{ __('outsourcing.plans.essential.title') }}</h3>
+                                <div class="flex justify-center items-baseline">
+                                    <span class="text-3xl font-extrabold tracking-tight">{{ __('outsourcing.plans.essential.price') }}</span>
+                                    <span class="ml-1 text-xl font-normal text-white/70">{{ __('outsourcing.plans.essential.currency') }}</span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <ul class="space-y-4">
+                                    @foreach(['developer', 'manager', 'meetings', 'hours', 'tools', 'whitelabel'] as $feature)
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <svg class="h-6 w-6 text-[#f4bc21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.essential.features.' . $feature) }}</p>
+                                    </li>
+                                    @endforeach
+                                </ul>
+                                <div class="mt-8 mb-4 text-gray-600 text-center italic">
+                                    {{ __('outsourcing.plans.essential.ideal') }}
+                                </div>
+                                <div class="mt-6">
+                                    <a href="/contacto" class="block w-full bg-[#701516] hover:bg-[#701516]/90 text-white text-center font-bold py-3 px-4 rounded-lg transition duration-300">
+                                        {{ __('outsourcing.plans.essential.button') }}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Growth Plan -->
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform scale-105 z-10 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                            <div class="bg-gradient-to-r from-[#701516] to-[#c40606] px-6 py-12 text-white text-center">
+                                <span class="inline-block px-3 py-1 text-xs font-semibold bg-[#f4bc21] text-[#701516] rounded-full mb-4">{{ __('outsourcing.plans.growth.tag') }}</span>
+                                <h3 class="text-2xl font-bold mb-4">{{ __('outsourcing.plans.growth.title') }}</h3>
+                                <div class="flex justify-center items-baseline">
+                                    <span class="text-3xl font-extrabold tracking-tight">{{ __('outsourcing.plans.growth.price') }}</span>
+                                    <span class="ml-1 text-xl font-normal text-white/70">{{ __('outsourcing.plans.growth.currency') }}</span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <ul class="space-y-4">
+                                    @foreach(['developers', 'manager', 'designer', 'hours', 'scrum', 'whitelabel'] as $feature)
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <svg class="h-6 w-6 text-[#f4bc21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.growth.features.' . $feature) }}</p>
+                                    </li>
+                                    @endforeach
+                                </ul>
+                                <div class="mt-8 mb-4 text-gray-600 text-center italic">
+                                    {{ __('outsourcing.plans.growth.ideal') }}
+                                </div>
+                                <div class="mt-6">
+                                    <a href="/contacto" class="block w-full bg-gradient-to-r from-[#701516] to-[#c40606] hover:opacity-90 text-white text-center font-bold py-3 px-4 rounded-lg transition duration-300">
+                                        {{ __('outsourcing.plans.growth.button') }}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Custom Plan -->
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                            <div class="bg-[#701516] px-6 py-12 text-white text-center">
+                                <h3 class="text-2xl font-bold mb-4">{{ __('outsourcing.plans.custom.title') }}</h3>
+                                <div class="flex justify-center items-baseline">
+                                    <span class="text-3xl font-extrabold tracking-tight">{{ __('outsourcing.plans.custom.price') }}</span>
+                                    <span class="ml-1 text-xl font-normal text-white/70">{{ __('outsourcing.plans.custom.currency') }}</span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <ul class="space-y-4">
+                                    @foreach(['team', 'qa', 'design', 'devops', 'integration'] as $feature)
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <svg class="h-6 w-6 text-[#f4bc21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.custom.features.' . $feature) }}</p>
+                                    </li>
+                                    @endforeach
+                                </ul>
+                                <div class="mt-8 mb-4 text-gray-600 text-center italic">
+                                    {{ __('outsourcing.plans.custom.ideal') }}
+                                </div>
+                                <div class="mt-6">
+                                    <a href="/contacto" class="block w-full bg-[#701516] hover:bg-[#701516]/90 text-white text-center font-bold py-3 px-4 rounded-lg transition duration-300">
+                                        {{ __('outsourcing.plans.custom.button') }}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -198,21 +328,134 @@
                                 <svg class="w-5 h-5 text-[#701516] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                Comunicación fluida y sin barreras
-                            </li>
-                            <li class="flex items-center text-gray-600">
-                                <svg class="w-5 h-5 text-[#701516] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                Equipo altamente calificado
+                                {{ __('services.nearshoring.features.feature2') }}
                             </li>
                         </ul>
+                        <div class="mt-8 flex items-center space-x-4">
+                            <button onclick="togglePlans('nearshoring-plans')" class="inline-flex items-center px-6 py-3 bg-[#701516] text-white rounded-lg hover:bg-[#701516]/90 transition-colors">
+                                <span>Ver planes de outsourcing</span>
+                                <svg id="nearshoring-arrow" class="w-5 h-5 ml-2 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <a href="/servicios/nearshoring" class="inline-flex items-center px-6 py-3 border-2 border-[#701516] text-[#701516] rounded-lg hover:bg-[#701516] hover:text-white transition-colors">
+                                Conoce más sobre nearshoring
+                                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                     <div class="order-1 md:order-2 flex justify-center items-center">
                         <div class="bg-gradient-to-br from-[#701516] to-[#c40606] p-12 rounded-full shadow-xl transform hover:scale-110 transition duration-500">
                             <svg class="w-32 h-32 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
                             </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Planes de Nearshoring -->
+                <div id="nearshoring-plans" class="hidden mt-12">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Essential Plan -->
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                            <div class="bg-[#701516] px-6 py-12 text-white text-center">
+                                <h3 class="text-2xl font-bold mb-4">{{ __('outsourcing.plans.essential.title') }}</h3>
+                                <div class="flex justify-center items-baseline">
+                                    <span class="text-3xl font-extrabold tracking-tight">{{ __('outsourcing.plans.essential.price') }}</span>
+                                    <span class="ml-1 text-xl font-normal text-white/70">{{ __('outsourcing.plans.essential.currency') }}</span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <ul class="space-y-4">
+                                    @foreach(['developer', 'manager', 'meetings', 'hours', 'tools', 'whitelabel'] as $feature)
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <svg class="h-6 w-6 text-[#f4bc21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.essential.features.' . $feature) }}</p>
+                                    </li>
+                                    @endforeach
+                                </ul>
+                                <div class="mt-8 mb-4 text-gray-600 text-center italic">
+                                    {{ __('outsourcing.plans.essential.ideal') }}
+                                </div>
+                                <div class="mt-6">
+                                    <a href="/contacto" class="block w-full bg-[#701516] hover:bg-[#701516]/90 text-white text-center font-bold py-3 px-4 rounded-lg transition duration-300">
+                                        {{ __('outsourcing.plans.essential.button') }}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Growth Plan -->
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform scale-105 z-10 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                            <div class="bg-gradient-to-r from-[#701516] to-[#c40606] px-6 py-12 text-white text-center">
+                                <span class="inline-block px-3 py-1 text-xs font-semibold bg-[#f4bc21] text-[#701516] rounded-full mb-4">{{ __('outsourcing.plans.growth.tag') }}</span>
+                                <h3 class="text-2xl font-bold mb-4">{{ __('outsourcing.plans.growth.title') }}</h3>
+                                <div class="flex justify-center items-baseline">
+                                    <span class="text-3xl font-extrabold tracking-tight">{{ __('outsourcing.plans.growth.price') }}</span>
+                                    <span class="ml-1 text-xl font-normal text-white/70">{{ __('outsourcing.plans.growth.currency') }}</span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <ul class="space-y-4">
+                                    @foreach(['developers', 'manager', 'designer', 'hours', 'scrum', 'whitelabel'] as $feature)
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <svg class="h-6 w-6 text-[#f4bc21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.growth.features.' . $feature) }}</p>
+                                    </li>
+                                    @endforeach
+                                </ul>
+                                <div class="mt-8 mb-4 text-gray-600 text-center italic">
+                                    {{ __('outsourcing.plans.growth.ideal') }}
+                                </div>
+                                <div class="mt-6">
+                                    <a href="/contacto" class="block w-full bg-gradient-to-r from-[#701516] to-[#c40606] hover:opacity-90 text-white text-center font-bold py-3 px-4 rounded-lg transition duration-300">
+                                        {{ __('outsourcing.plans.growth.button') }}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Custom Plan -->
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                            <div class="bg-[#701516] px-6 py-12 text-white text-center">
+                                <h3 class="text-2xl font-bold mb-4">{{ __('outsourcing.plans.custom.title') }}</h3>
+                                <div class="flex justify-center items-baseline">
+                                    <span class="text-3xl font-extrabold tracking-tight">{{ __('outsourcing.plans.custom.price') }}</span>
+                                    <span class="ml-1 text-xl font-normal text-white/70">{{ __('outsourcing.plans.custom.currency') }}</span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <ul class="space-y-4">
+                                    @foreach(['team', 'qa', 'design', 'devops', 'integration'] as $feature)
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <svg class="h-6 w-6 text-[#f4bc21]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">{{ __('outsourcing.plans.custom.features.' . $feature) }}</p>
+                                    </li>
+                                    @endforeach
+                                </ul>
+                                <div class="mt-8 mb-4 text-gray-600 text-center italic">
+                                    {{ __('outsourcing.plans.custom.ideal') }}
+                                </div>
+                                <div class="mt-6">
+                                    <a href="/contacto" class="block w-full bg-[#701516] hover:bg-[#701516]/90 text-white text-center font-bold py-3 px-4 rounded-lg transition duration-300">
+                                        {{ __('outsourcing.plans.custom.button') }}
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -238,3 +481,40 @@
         </div>
     </section>
 @endsection
+
+<script>
+function togglePlans(sectionId) {
+    const plansSection = document.getElementById(sectionId);
+    const arrowIcon = document.getElementById(sectionId === 'offshoring-plans' ? 'offshoring-arrow' : 'nearshoring-arrow');
+    
+    if (plansSection.classList.contains('hidden')) {
+        // Mostrar los planes con animación
+        plansSection.classList.remove('hidden');
+        plansSection.style.opacity = '0';
+        plansSection.style.transform = 'translateY(-20px)';
+        plansSection.style.transition = 'opacity 300ms ease, transform 300ms ease';
+        
+        // Trigger reflow
+        void plansSection.offsetWidth;
+        
+        // Aplicar la animación
+        plansSection.style.opacity = '1';
+        plansSection.style.transform = 'translateY(0)';
+        
+        // Rotar la flecha
+        arrowIcon.style.transform = 'rotate(180deg)';
+    } else {
+        // Ocultar los planes con animación
+        plansSection.style.opacity = '0';
+        plansSection.style.transform = 'translateY(-20px)';
+        
+        // Rotar la flecha de vuelta
+        arrowIcon.style.transform = 'rotate(0)';
+        
+        // Esperar a que termine la animación antes de ocultar
+        setTimeout(() => {
+            plansSection.classList.add('hidden');
+        }, 300);
+    }
+}
+</script>
