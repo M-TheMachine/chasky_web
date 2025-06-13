@@ -20,7 +20,7 @@ class InternshipApplication extends Mailable
     public function build()
     {
         return $this->markdown('emails.internship-application')
-                    ->subject('Nueva postulación para prácticas: ' . $this->data['position'])
-                    ->attach($this->data['cv_full_path']);
+                    ->subject('Nueva postulación para prácticas: ' . $this->data['area'])
+                    ->attach(storage_path('app/' . $this->data['cv_path']));
     }
 }

@@ -1,24 +1,29 @@
 @component('mail::message')
-# Nueva Postulación para Prácticas
+# Nueva Postulación para Pasantías
 
-Se ha recibido una nueva postulación para el programa de prácticas en {{ $data['position'] }}.
+Se ha recibido una nueva postulación para el área de **{{ $data['area'] }}**.
 
 **Detalles del postulante:**
-- Nombre: {{ $data['name'] }}
-- Email: {{ $data['email'] }}
-- Teléfono: {{ $data['phone'] }}
-- Universidad: {{ $data['university'] }}
+- Nombre: {{ $data['datos']['nombre'] }}
+- Email: {{ $data['datos']['email'] }}
+- Teléfono: {{ $data['datos']['telefono'] }}
+- Universidad: {{ $data['datos']['universidad'] }}
+- Carrera: {{ $data['datos']['carrera'] }}
+- Semestre: {{ $data['datos']['semestre'] }}
 
-**¿Por qué quiere hacer prácticas en Chasky?**
-{{ $data['why_apply'] }}
+**Mensaje del postulante:**
+{{ $data['datos']['mensaje'] }}
 
-@if(isset($data['portfolio']))
-**Portafolio:** {{ $data['portfolio'] }}
+@if(isset($data['datos']['portafolio']))
+**Portafolio:** {{ $data['datos']['portafolio'] }}
 @endif
 
-@if(isset($data['demo_reel']))
-**Demo Reel:** {{ $data['demo_reel'] }}
+@if(isset($data['datos']['experiencia']))
+**Experiencia:**
+{{ $data['datos']['experiencia'] }}
 @endif
+
+Se ha adjuntado el CV del postulante a este correo.
 
 El CV del postulante está adjunto a este correo.
 

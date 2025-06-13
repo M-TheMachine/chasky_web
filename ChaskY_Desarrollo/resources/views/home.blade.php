@@ -79,7 +79,7 @@
                         <h3 class="text-xl font-semibold text-[#701516] mb-4">{{ __('home.services.web_dev.title') }}</h3>
                         <p class="text-gray-600">{{ __('home.services.web_dev.description') }}</p>
                     </a>
-                    <a href="/marketing" class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                    <a href="/marketing#paquetes" class="group bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
                         <div class="text-[#c40606] mb-6 group-hover:scale-110 transition-transform duration-500">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>

@@ -112,6 +112,14 @@
                                 Publicidad en redes sociales y Google Ads
                             </li>
                         </ul>
+                        <div class="mt-8">
+                            <a href="/marketing#paquetes" class="inline-block bg-[#701516] text-white font-bold py-3 px-6 rounded-lg hover:bg-[#701516]/90 transition-colors">
+                                Ver paquetes de TikTok + Redes Sociales
+                                <svg class="w-5 h-5 ml-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

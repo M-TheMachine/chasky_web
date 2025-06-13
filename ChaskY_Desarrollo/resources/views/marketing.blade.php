@@ -138,6 +138,163 @@
         </div>
     </section>
 
+    <!-- Paquetes de TikTok + Redes Sociales 2025 -->
+    <section class="py-24 bg-gradient-to-br from-white to-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">Paquetes de TikTok + Redes Sociales</h2>
+                    <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                        En Chasky, sabemos que el mundo digital se mueve rápido, y los videos cortos en TikTok son la clave para captar la atención de tu audiencia. Nuestros paquetes combinan la creación de videos virales con una gestión estratégica de Facebook e Instagram.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Paquete Básico -->
+                    <div class="bg-white rounded-xl p-8 shadow-lg transform transition-all duration-300 hover:scale-105" data-aos="fade-up">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-[#701516] mb-4">Paquete Básico</h3>
+                            <div class="text-4xl font-bold mb-2">Bs 2.400</div>
+                            <p class="text-gray-600">por mes</p>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-600">3 videos profesionales para TikTok (200 Bs c/u)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-600">2 publicaciones semanales en Facebook e Instagram*</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-600">Respuestas a mensajes y comentarios</span>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="/contacto" class="inline-block bg-[#701516] text-white font-bold py-3 px-8 rounded-full hover:bg-[#701516]/90 transition duration-300">
+                                Empezar Ahora
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Paquete Pro -->
+                    <div class="bg-white rounded-xl p-8 shadow-xl transform transition-all duration-300 hover:scale-105 relative" data-aos="fade-up" data-aos-delay="100">
+                        <div class="absolute top-0 right-0 bg-[#701516] text-white text-sm font-bold py-1 px-4 rounded-tr-xl rounded-bl-xl">
+                            Más Popular
+                        </div>
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-[#701516] mb-4">Paquete Pro</h3>
+                            <div class="text-4xl font-bold mb-2">Bs 4.000</div>
+                            <p class="text-gray-600">por mes</p>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-600">5 videos para TikTok (200 Bs c/u)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-600">3 publicaciones semanales en Facebook e Instagram*</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-600">Adaptación a reels y stories</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-600">Interacción activa con seguidores</span>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="/contacto" class="inline-block bg-[#701516] text-white font-bold py-3 px-8 rounded-full hover:bg-[#701516]/90 transition duration-300">
+                                Elegir Pro
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Paquete Premium -->
+                    <div class="bg-white rounded-xl p-8 shadow-lg transform transition-all duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-[#701516] mb-4">Paquete Premium</h3>
+                            <div class="text-4xl font-bold mb-2">Bs 5.600</div>
+                            <p class="text-gray-600">por mes</p>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-600">7 videos para TikTok (200 Bs c/u)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-600">Publicaciones diarias en Facebook e Instagram*</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-600">Branding visual completo</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-600">Asesoría creativa mensual</span>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="/contacto" class="inline-block bg-[#701516] text-white font-bold py-3 px-8 rounded-full hover:bg-[#701516]/90 transition duration-300">
+                                Elegir Premium
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 bg-white rounded-xl p-8 shadow-lg" data-aos="fade-up">
+                    <h3 class="text-xl font-bold text-[#701516] mb-6">Notas Adicionales</h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>Videos individuales disponibles a 200 Bs cada uno (sin gestión de redes incluida)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>*La gestión de Facebook e Instagram está incluida sin costo adicional al firmar un contrato mensual o trimestral</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>¡10% de descuento en tu primer mes como cliente nuevo al firmar un contrato mensual o trimestral!</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Formulario -->
     <section class="py-24 bg-white">
         <div class="container mx-auto px-4">
