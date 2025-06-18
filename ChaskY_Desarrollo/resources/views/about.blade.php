@@ -404,16 +404,6 @@
                         <p class="text-[#701516] font-medium mb-4">{{ __('about.team.members.ana_belen.position') }}</p>
                         <p class="text-gray-600">{{ __('about.team.members.ana_belen.bio') }}</p>
                     </div>
-                        <div class="text-center" data-aos="fade-up">
-                        <div class="relative mb-6 inline-block">
-                            <img src="{{ asset('abigail.png') }}" 
-                                 alt="{{ __('about.team.members.abigail.name') }}" 
-                                 class="w-48 h-48 rounded-full object-cover mx-auto ring-4 ring-[#701516]">
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">{{ __('about.team.members.abigail.name') }}</h3>
-                        <p class="text-[#701516] font-medium mb-4">{{ __('about.team.members.abigail.position') }}</p>
-                        <p class="text-gray-600">{{ __('about.team.members.abigail.bio') }}</p>
-                    </div>
                     
                     <!-- Faby Fuentes -->
                     <div class="text-center" data-aos="fade-up" data-aos-delay="100">

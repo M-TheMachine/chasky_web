@@ -153,7 +153,7 @@
                     <!-- Paquete Básico -->
                     <div class="bg-white rounded-xl p-8 shadow-lg transform transition-all duration-300 hover:scale-105" data-aos="fade-up">
                         <div class="text-center mb-6">
-                            <h3 class="text-2xl font-bold text-[#701516] mb-4">Paquete Básico</h3>
+                            <h3 class="text-2xl font-bold text-[#701516] mb-4">Paquete Emprendedor</h3>
                             <div class="text-4xl font-bold mb-2">Bs 2.400</div>
                             <p class="text-gray-600">por mes</p>
                         </div>
@@ -162,7 +162,7 @@
                                 <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-600">3 videos profesionales para TikTok (200 Bs c/u)</span>
+                                <span class="text-gray-600">12 videos profesionales para TikTok (3 por semana)</span>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -179,7 +179,7 @@
                         </ul>
                         <div class="text-center">
                             <a href="/contacto" class="inline-block bg-[#701516] text-white font-bold py-3 px-8 rounded-full hover:bg-[#701516]/90 transition duration-300">
-                                Empezar Ahora
+                                Impulsar mi Emprendimiento
                             </a>
                         </div>
                     </div>
@@ -190,7 +190,7 @@
                             Más Popular
                         </div>
                         <div class="text-center mb-6">
-                            <h3 class="text-2xl font-bold text-[#701516] mb-4">Paquete Pro</h3>
+                            <h3 class="text-2xl font-bold text-[#701516] mb-4">Paquete Crecimiento</h3>
                             <div class="text-4xl font-bold mb-2">Bs 4.000</div>
                             <p class="text-gray-600">por mes</p>
                         </div>
@@ -199,7 +199,7 @@
                                 <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-600">5 videos para TikTok (200 Bs c/u)</span>
+                                <span class="text-gray-600">20 videos para TikTok (5 por semana)</span>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -222,7 +222,7 @@
                         </ul>
                         <div class="text-center">
                             <a href="/contacto" class="inline-block bg-[#701516] text-white font-bold py-3 px-8 rounded-full hover:bg-[#701516]/90 transition duration-300">
-                                Elegir Pro
+                                Potenciar mi Negocio
                             </a>
                         </div>
                     </div>
@@ -230,7 +230,7 @@
                     <!-- Paquete Premium -->
                     <div class="bg-white rounded-xl p-8 shadow-lg transform transition-all duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="200">
                         <div class="text-center mb-6">
-                            <h3 class="text-2xl font-bold text-[#701516] mb-4">Paquete Premium</h3>
+                            <h3 class="text-2xl font-bold text-[#701516] mb-4">Paquete Empresarial</h3>
                             <div class="text-4xl font-bold mb-2">Bs 5.600</div>
                             <p class="text-gray-600">por mes</p>
                         </div>
@@ -239,7 +239,7 @@
                                 <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-gray-600">7 videos para TikTok (200 Bs c/u)</span>
+                                <span class="text-gray-600">28 videos para TikTok (7 por semana)</span>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -262,7 +262,7 @@
                         </ul>
                         <div class="text-center">
                             <a href="/contacto" class="inline-block bg-[#701516] text-white font-bold py-3 px-8 rounded-full hover:bg-[#701516]/90 transition duration-300">
-                                Elegir Premium
+                                Escalar mi Empresa
                             </a>
                         </div>
                     </div>
@@ -275,7 +275,7 @@
                             <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
-                            <span>Videos individuales disponibles a 200 Bs cada uno (sin gestión de redes incluida)</span>
+                            <span>Videos individuales disponibles bajo cotización (sin gestión de redes incluida)</span>
                         </li>
                         <li class="flex items-start">
                             <svg class="w-5 h-5 text-[#701516] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

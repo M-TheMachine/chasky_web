@@ -86,11 +86,6 @@ return [
                 'position' => 'Marketer',
                 'bio' => 'Specialist in digital marketing strategies',
             ],
-            'abigail' => [
-                'name' => 'Abigail Geronimo',
-                'position' => 'US Business Manager',
-                'bio' => 'Coordinating our operations in the North American market',
-            ],
             'faby' => [
                 'name' => 'Faby Fuentes',
                 'position' => 'UX/UI Designer',
