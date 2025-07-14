@@ -24,7 +24,7 @@
                             <a href="/servicios" class="bg-[#701516] hover:bg-[#701516]/90 text-white font-bold py-3 px-8 rounded-full transition-all duration-500 transform hover:scale-105 hover:shadow-2xl">
                                 {{ __('home.hero.cta_button') }}
                             </a>
-                            <a href="#contact" class="border-2 border-[#701516] text-[#701516] hover:bg-[#701516] hover:text-white font-bold py-3 px-8 rounded-full transition-all duration-500 transform hover:scale-105 hover:shadow-2xl">
+                            <a href="https://wa.me/59177739802" class="border-2 border-[#701516] text-[#701516] hover:bg-[#701516] hover:text-white font-bold py-3 px-8 rounded-full transition-all duration-500 transform hover:scale-105 hover:shadow-2xl">
                                 {{ __('home.hero.contact_button') }}
                             </a>
                         </div>
